@@ -1,13 +1,13 @@
 {
   "0": "package.json",
   "1": "[slug]/page.tsx",
-  "2": "actions.ts",
+  "2": "getLang",
   "3": "compilerOptions",
   "4": "Appendix B - Canonical Sources (read these before reinventing)",
   "5": "4. DESIGN ENGINEERING DIRECTIVES (Bias Correction)",
   "6": "10. REFERENCE VOCABULARY (Pattern Names the Agent Should Know)",
-  "7": "admin.ts",
-  "8": "LoginForm.tsx",
+  "7": "payments.test.ts",
+  "8": "login/page.tsx",
   "9": "Look At This — Claude Code 작업 지침",
   "10": "Look At This",
   "11": "9. AI TELLS (Forbidden Patterns)",
@@ -23,5 +23,7 @@
   "21": "5. CONTEXT-AWARE PROACTIVITY",
   "22": "8. DARK MODE PROTOCOL",
   "23": "1. THE THREE DIALS (Core Configuration)",
-  "24": "7. DIAL DEFINITIONS (Technical Reference)"
+  "24": "7. DIAL DEFINITIONS (Technical Reference)",
+  "25": "actions.ts",
+  "26": "error.tsx"
 }

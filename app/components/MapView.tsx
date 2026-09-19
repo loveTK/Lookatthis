@@ -13,23 +13,31 @@ interface Props {
   fromUrl: boolean;
   apiKey: string;
   mapId: string;
-  labels: Record<"pending" | "leader" | "locating", string>;
+  labels: Record<"pending" | "leader" | "locating" | "noMap", string>;
 }
 
 export function MapView({ posts, center, fromUrl, apiKey, mapId, labels }: Props) {
   const router = useRouter();
   const [selected, setSelected] = useState<FeedRow | null>(null);
-  const [locating, setLocating] = useState(!fromUrl);
+  const [locating, setLocating] = useState(!fromUrl && !!apiKey);
 
   // URL에 좌표 없으면 브라우저 위치로 한 번 이동 (사용자 위치는 저장 안 함, URL에만)
   useEffect(() => {
-    if (fromUrl || !navigator.geolocation) { setTimeout(() => setLocating(false), 0); return; }
+    if (!apiKey || fromUrl || !navigator.geolocation) { setTimeout(() => setLocating(false), 0); return; }
     navigator.geolocation.getCurrentPosition(
       (p) => router.replace(`/?lat=${p.coords.latitude.toFixed(4)}&lng=${p.coords.longitude.toFixed(4)}`),
       () => setLocating(false),
       { timeout: 8000, maximumAge: 300000 },
     );
-  }, [fromUrl, router]);
+  }, [apiKey, fromUrl, router]);
+
+  if (!apiKey) {
+    return (
+      <div className="flex h-[40vh] min-h-[260px] w-full items-center justify-center border-b border-line bg-panel px-4 text-center text-sm text-dim">
+        {labels.noMap}
+      </div>
+    );
+  }
 
   return (
     <div className="relative h-[60vh] min-h-[380px] w-full">

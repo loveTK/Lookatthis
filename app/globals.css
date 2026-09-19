@@ -25,4 +25,10 @@ a { color: inherit; }
   .input { @apply w-full rounded-xl border border-white/10 bg-panel px-3 py-2.5 text-sm text-ink placeholder:text-dim focus:border-accent focus:outline-none; }
   .card { @apply rounded-2xl border border-line bg-panel; }
   .chip { @apply inline-flex items-center rounded-full px-2.5 py-1 text-xs font-bold; }
+  .prose-lat h1 { @apply text-3xl font-bold tracking-tight; }
+  .prose-lat h2 { @apply mt-8 text-lg font-bold; }
+  .prose-lat p, .prose-lat li { @apply mt-2 text-sm leading-relaxed text-dim; }
+  .prose-lat ul { @apply list-disc pl-5; }
+  .prose-lat strong { @apply text-ink; }
+  .prose-lat a { @apply text-accent underline; }
 }

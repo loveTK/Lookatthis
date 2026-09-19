@@ -21,7 +21,7 @@ export default async function Home({ searchParams }: { searchParams: Promise<{ l
         fromUrl={fromUrl}
         apiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_KEY ?? ""}
         mapId={process.env.NEXT_PUBLIC_GOOGLE_MAP_ID ?? "DEMO_MAP_ID"}
-        labels={{ pending: tr("post.pending"), leader: tr("post.leader"), locating: tr("home.locating") }}
+        labels={{ pending: tr("post.pending"), leader: tr("post.leader"), locating: tr("home.locating"), noMap: tr("home.noMap") }}
       />
       <section className="mx-auto max-w-6xl px-4 py-8">
         <div className="mb-5 flex items-end justify-between gap-4">
@@ -44,6 +44,21 @@ export default async function Home({ searchParams }: { searchParams: Promise<{ l
             {posts.map((p) => <PostCard key={p.id} post={p} lang={lang} />)}
           </div>
         )}
+      </section>
+
+      <section className="border-t border-line">
+        <div className="mx-auto grid max-w-6xl gap-10 px-4 py-14 md:grid-cols-[1fr_2fr]">
+          <h2 className="text-2xl font-bold tracking-tight">{tr("how.title")}</h2>
+          <ol className="grid gap-6 sm:grid-cols-3">
+            {(["post", "vote", "win"] as const).map((k, i) => (
+              <li key={k}>
+                <div className="text-3xl font-extrabold text-accent">{i + 1}</div>
+                <h3 className="mt-2 font-bold">{tr(`how.${k}`)}</h3>
+                <p className="mt-1 text-sm text-dim">{tr(`how.${k}.body`)}</p>
+              </li>
+            ))}
+          </ol>
+        </div>
       </section>
     </>
   );
