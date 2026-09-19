@@ -18,7 +18,7 @@ export default async function OgImage({ params }: { params: Promise<{ slug: stri
         )}
         <div style={{ display: "flex", flexDirection: "column", justifyContent: "space-between", padding: 48, flex: 1 }}>
           <div style={{ display: "flex", alignItems: "center", gap: 12, fontSize: 28, color: "#43ffa1", fontWeight: 700 }}>
-            {post?.is_leader ? "🏆 #1 · " : ""}Look At This
+            {post?.is_leader ? "#1 · " : ""}Look At This
           </div>
           <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
             <div style={{ fontSize: 56, fontWeight: 800, lineHeight: 1.1 }}>{post?.title ?? "Look At This"}</div>
@@ -26,7 +26,7 @@ export default async function OgImage({ params }: { params: Promise<{ slug: stri
           </div>
           <div style={{ display: "flex", gap: 32, fontSize: 32 }}>
             <span>▲ {post?.votes ?? 0}</span>
-            <span style={{ color: "#43ffa1", fontWeight: 700 }}>{post?.value_usd != null ? money(post.value_usd) : "—"}</span>
+            <span style={{ color: "#43ffa1", fontWeight: 700 }}>{post?.value_usd != null ? money(post.value_usd) : "-"}</span>
           </div>
         </div>
       </div>

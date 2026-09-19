@@ -10,14 +10,16 @@
   --color-accent-ink: #06210f;
   --color-violet: #7c5cff;
   --color-pink: #ff5ca8;
+  --font-sans: var(--font-geist), system-ui, -apple-system, "Segoe UI", sans-serif;
 }
 
 html, body { height: 100%; }
-body { background: var(--color-bg); color: var(--color-ink); font-family: system-ui, -apple-system, "Segoe UI", sans-serif; }
+body { background: var(--color-bg); color: var(--color-ink); font-family: var(--font-sans); }
 a { color: inherit; }
+::selection { background: var(--color-accent); color: var(--color-accent-ink); }
 
 @layer components {
-  .btn-accent, .btn-ghost { @apply inline-flex items-center justify-center gap-2 rounded-xl px-4 py-2.5 text-sm font-bold transition; }
+  .btn-accent, .btn-ghost { @apply inline-flex items-center justify-center gap-2 rounded-xl px-4 py-2.5 text-sm font-bold whitespace-nowrap transition active:scale-[0.98]; }
   .btn-accent { @apply bg-accent text-accent-ink hover:brightness-110; }
   .btn-ghost { @apply border border-white/15 text-ink hover:bg-white/5; }
   .input { @apply w-full rounded-xl border border-white/10 bg-panel px-3 py-2.5 text-sm text-ink placeholder:text-dim focus:border-accent focus:outline-none; }

@@ -12,8 +12,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const posts = await feedWhere("city_slug", (await params).city, 1);
   const city = posts[0]?.city;
   if (!city) return {};
-  const tr = t(await getLang());
-  return { title: `${tr("city.top")} ${city}`, description: `${city} · ${posts[0].country ?? ""}`, alternates: { canonical: `/city/${posts[0].city_slug}` } };
+  return {
+    title: `Best of ${city} — hidden gems ranked by locals`,
+    description: `Local favorites in ${city}, ${posts[0].country ?? ""}: things to see that locals show off, ranked by upvotes and community appraisals.`,
+    alternates: { canonical: `/city/${posts[0].city_slug}` },
+  };
 }
 
 export default async function CityPage({ params }: Props) {

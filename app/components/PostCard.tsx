@@ -9,7 +9,7 @@ export function PostCard({ post, lang, rank }: { post: FeedRow; lang: Lang; rank
   const tr = t(lang);
   const place = [post.neighborhood, post.city].filter(Boolean).join(" · ");
   return (
-    <Link href={postPath(post.id, post.title)} className={`card block overflow-hidden ${post.is_leader ? "border-accent/40" : ""}`}>
+    <Link href={postPath(post.id, post.title)} className={`card block overflow-hidden transition hover:border-white/20 active:scale-[0.98] ${post.is_leader ? "border-accent/40" : ""}`}>
       <div className="relative aspect-[4/3] bg-black/30">
         <Image src={photoUrl(post.photo_path)} alt={`${post.title}, ${place}`} fill sizes="(max-width: 640px) 100vw, 33vw" className="object-cover" />
         <div className="absolute left-3 top-3 flex gap-2">

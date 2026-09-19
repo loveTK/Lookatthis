@@ -86,7 +86,7 @@ export default async function PostPage({ params }: Props) {
           <Image src={photoUrl(post.photo_path)} alt={`${post.title}, ${place}`} fill priority sizes="(max-width: 768px) 100vw, 768px" className="object-cover" />
         </div>
         <div className="absolute left-3 top-3 flex gap-2">
-          {post.is_leader && <span className="chip bg-accent text-accent-ink">🏆 {tr("post.leader")}</span>}
+          {post.is_leader && <span className="chip bg-accent text-accent-ink">{tr("post.leader")}</span>}
           {post.loc_source === "ip" && <span className="chip bg-black/60 text-dim">{tr("post.approx")}</span>}
         </div>
       </div>
@@ -115,9 +115,9 @@ export default async function PostPage({ params }: Props) {
 
       {/* 감정가 */}
       <section className="card mt-6 grid grid-cols-3 divide-x divide-line text-center">
-        <Stat label={tr("post.low")} value={range ? money(range.low) : "—"} />
+        <Stat label={tr("post.low")} value={range ? money(range.low) : "-"} />
         <Stat label={tr("post.value")} value={post.value_usd != null ? money(post.value_usd) : `${tr("post.pending")} ${post.appraisals}/3`} accent={post.value_usd != null} />
-        <Stat label={tr("post.high")} value={range ? money(range.high) : "—"} />
+        <Stat label={tr("post.high")} value={range ? money(range.high) : "-"} />
       </section>
       {post.self_price_usd != null && (
         <p className="mt-2 text-right text-xs text-dim">{tr("post.selfPrice")}: {money(post.self_price_usd)}</p>

@@ -3,6 +3,7 @@ import { headers } from "next/headers";
 import { createClient } from "@/lib/supabase/server";
 import { getLang, t } from "@/lib/i18n";
 import { setLang, signOut } from "@/app/actions";
+import { Logo } from "./Logo";
 
 export async function Header() {
   const lang = await getLang();
@@ -16,10 +17,10 @@ export async function Header() {
 
   return (
     <header className="sticky top-0 z-20 border-b border-line bg-bg/85 backdrop-blur">
-      <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3">
-        <Link href="/" className="flex items-center gap-2 font-bold tracking-tight">
-          <Pin />
-          Look At This
+      <div className="mx-auto flex h-14 max-w-6xl items-center justify-between gap-4 px-4">
+        <Link href="/" className="flex items-center gap-2 text-[15px] font-bold tracking-tight text-accent">
+          <Logo />
+          <span className="text-ink">Look At This</span>
         </Link>
         <nav className="flex items-center gap-3 text-sm font-semibold text-dim">
           <Link href="/upload" className="btn-accent py-1.5!">{tr("nav.upload")}</Link>
@@ -40,14 +41,5 @@ export async function Header() {
         </nav>
       </div>
     </header>
-  );
-}
-
-export function Pin({ className = "text-accent" }: { className?: string }) {
-  return (
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" className={className} aria-hidden>
-      <path d="M12 21s7-6.1 7-12a7 7 0 1 0-14 0c0 5.9 7 12 7 12z" stroke="currentColor" strokeWidth="1.6" strokeLinejoin="round" />
-      <circle cx="12" cy="9" r="2.4" stroke="currentColor" strokeWidth="1.6" />
-    </svg>
   );
 }

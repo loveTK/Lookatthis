@@ -22,9 +22,12 @@ export function LoginForm({ next, labels }: { next: string; labels: Record<"emai
   return (
     <div className="flex flex-col gap-4">
       <button onClick={google} className="btn-ghost w-full">{labels.google}</button>
-      <div className="text-center text-xs text-dim">— or —</div>
+      <div className="text-center text-xs text-dim">or</div>
       <form onSubmit={magic} className="flex flex-col gap-3">
-        <input className="input" type="email" required placeholder={labels.email} value={email} onChange={(e) => setEmail(e.target.value)} />
+        <label className="flex flex-col gap-2 text-sm font-semibold">
+          {labels.email}
+          <input className="input" type="email" required autoComplete="email" placeholder="you@example.com" value={email} onChange={(e) => setEmail(e.target.value)} />
+        </label>
         <button className="btn-accent w-full" disabled={sent}>{labels.magic}</button>
       </form>
       {sent && <p className="text-sm text-accent">{labels.sent}</p>}

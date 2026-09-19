@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { feedInBox } from "@/lib/data";
 import { ipLocation, SEOUL } from "@/lib/geo";
 import { getLang, t } from "@/lib/i18n";
@@ -23,9 +24,21 @@ export default async function Home({ searchParams }: { searchParams: Promise<{ l
         labels={{ pending: tr("post.pending"), leader: tr("post.leader"), locating: tr("home.locating") }}
       />
       <section className="mx-auto max-w-6xl px-4 py-8">
-        <h2 className="mb-4 text-lg font-bold">{tr("home.nearby")}</h2>
+        <div className="mb-5 flex items-end justify-between gap-4">
+          <div>
+            <h1 className="text-2xl font-bold tracking-tight">{tr("home.nearby")}</h1>
+            <p className="mt-1 text-sm text-dim">{tr("tagline")}</p>
+          </div>
+          <span className="hidden text-sm text-dim sm:inline">{posts.length} {tr("home.count")}</span>
+        </div>
         {posts.length === 0 ? (
-          <p className="text-dim">{tr("home.empty")}</p>
+          <div className="card flex flex-col items-start gap-4 p-8 sm:flex-row sm:items-center sm:justify-between">
+            <div>
+              <p className="text-lg font-bold">{tr("home.empty")}</p>
+              <p className="mt-1 text-sm text-dim">{tr("home.emptyHint")}</p>
+            </div>
+            <Link href="/upload" className="btn-accent">{tr("nav.upload")}</Link>
+          </div>
         ) : (
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {posts.map((p) => <PostCard key={p.id} post={p} lang={lang} />)}

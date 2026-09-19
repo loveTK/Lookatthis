@@ -1,0 +1,17 @@
+{
+  "0": "package.json",
+  "1": "[slug]/page.tsx",
+  "2": "getLang",
+  "3": "compilerOptions",
+  "4": "createPost",
+  "5": "postPath",
+  "6": "actions.ts",
+  "7": "admin.ts",
+  "8": "login/page.tsx",
+  "9": "Look At This — Claude Code 작업 지침",
+  "10": "Look At This",
+  "11": "scripts",
+  "12": "AGENTS.md",
+  "13": "postcss.config.mjs",
+  "14": "db-test.sh"
+}

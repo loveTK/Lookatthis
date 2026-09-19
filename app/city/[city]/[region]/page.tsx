@@ -13,9 +13,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const posts = await feedWhere("region_key", region, 1);
   const p = posts[0];
   if (!p || p.city_slug !== city) return {};
-  const tr = t(await getLang());
   const name = p.neighborhood ?? region;
-  return { title: `${tr("city.top")} ${name}, ${p.city}`, alternates: { canonical: `/city/${city}/${region}` } };
+  return {
+    title: `${name}, ${p.city} — what it's known for, ranked by locals`,
+    description: `Things to see in ${name}, ${p.city}: what locals show off, upvoted and appraised by the community.`,
+    alternates: { canonical: `/city/${city}/${region}` },
+  };
 }
 
 export default async function RegionPage({ params }: Props) {
