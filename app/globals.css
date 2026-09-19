@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #0a0d12;
+  --color-panel: #12161d;
+  --color-line: rgba(255, 255, 255, 0.08);
+  --color-ink: #eef1f6;
+  --color-dim: #9aa3b2;
+  --color-accent: #43ffa1;
+  --color-accent-ink: #06210f;
+  --color-violet: #7c5cff;
+  --color-pink: #ff5ca8;
+}
+
+html, body { height: 100%; }
+body { background: var(--color-bg); color: var(--color-ink); font-family: system-ui, -apple-system, "Segoe UI", sans-serif; }
+a { color: inherit; }
+
+@layer components {
+  .btn-accent, .btn-ghost { @apply inline-flex items-center justify-center gap-2 rounded-xl px-4 py-2.5 text-sm font-bold transition; }
+  .btn-accent { @apply bg-accent text-accent-ink hover:brightness-110; }
+  .btn-ghost { @apply border border-white/15 text-ink hover:bg-white/5; }
+  .input { @apply w-full rounded-xl border border-white/10 bg-panel px-3 py-2.5 text-sm text-ink placeholder:text-dim focus:border-accent focus:outline-none; }
+  .card { @apply rounded-2xl border border-line bg-panel; }
+  .chip { @apply inline-flex items-center rounded-full px-2.5 py-1 text-xs font-bold; }
+}
