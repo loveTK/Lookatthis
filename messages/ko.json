@@ -32,6 +32,7 @@
   "post.translated": "번역 보기",
   "post.upvote": "추천",
   "post.unvote": "추천 취소",
+  "post.voteError": "처리 안 됨. 본인 게시물은 추천할 수 없어요.",
   "post.comments": "댓글 · 감정",
   "post.comment.body": "한마디",
   "post.comment.price": "내 감정가 ($, 선택)",

@@ -11,7 +11,7 @@ import { translateMany } from "@/lib/translate";
 import { addComment, report, toggleVote } from "@/app/actions";
 import { ToggleOriginal } from "./ToggleOriginal";
 
-type Props = { params: Promise<{ slug: string }> };
+type Props = { params: Promise<{ slug: string }>; searchParams: Promise<{ voteError?: string }> };
 
 const isThin = (p: { votes: number; appraisals: number }) => p.votes === 0 && p.appraisals === 0;
 
@@ -32,8 +32,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-export default async function PostPage({ params }: Props) {
+export default async function PostPage({ params, searchParams }: Props) {
   const { slug } = await params;
+  const { voteError } = await searchParams;
   const id = idFromSlug(slug);
   const post = id ? await getPost(id) : null;
   if (!post) notFound();
@@ -104,13 +105,16 @@ export default async function PostPage({ params }: Props) {
           </p>
         </div>
 
-        <form action={toggleVote}>
-          <input type="hidden" name="post_id" value={post.id} />
-          <input type="hidden" name="path" value={path} />
-          <button className={voted ? "btn-accent" : "btn-ghost"} aria-pressed={voted}>
-            ▲ {post.votes} <span className="font-normal">{voted ? tr("post.unvote") : tr("post.upvote")}</span>
-          </button>
-        </form>
+        <div className="flex flex-col items-end gap-1">
+          <form action={toggleVote}>
+            <input type="hidden" name="post_id" value={post.id} />
+            <input type="hidden" name="path" value={path} />
+            <button className={voted ? "btn-accent" : "btn-ghost"} aria-pressed={voted}>
+              ▲ {post.votes} <span className="font-normal">{voted ? tr("post.unvote") : tr("post.upvote")}</span>
+            </button>
+          </form>
+          {voteError && <p className="text-xs text-pink">{tr("post.voteError")}</p>}
+        </div>
       </div>
 
       {/* 감정가 */}

@@ -111,9 +111,11 @@ export async function toggleVote(formData: FormData) {
   const { data: { user } } = await supabase.auth.getUser();
   if (!user) redirect(`/login?next=${encodeURIComponent(path)}`);
   const { data: existing } = await supabase.from("votes").select("post_id").eq("post_id", post_id).eq("user_id", user.id).maybeSingle();
-  if (existing) await supabase.from("votes").delete().eq("post_id", post_id).eq("user_id", user.id);
-  else await supabase.from("votes").insert({ post_id, user_id: user.id });
+  const { error } = existing
+    ? await supabase.from("votes").delete().eq("post_id", post_id).eq("user_id", user.id)
+    : await supabase.from("votes").insert({ post_id, user_id: user.id });
   revalidatePath(path);
+  if (error) redirect(`${path}?voteError=1`);
 }
 
 export async function addComment(formData: FormData) {

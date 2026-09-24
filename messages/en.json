@@ -32,6 +32,7 @@
   "post.translated": "Show translation",
   "post.upvote": "Upvote",
   "post.unvote": "Remove upvote",
+  "post.voteError": "Couldn't record that. You can't upvote your own post.",
   "post.comments": "Comments & appraisals",
   "post.comment.body": "Say something",
   "post.comment.price": "Your appraisal ($, optional)",
