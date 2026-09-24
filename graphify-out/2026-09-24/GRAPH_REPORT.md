@@ -1,7 +1,7 @@
-# Graph Report - Lookatthis  (2026-09-19)
+# Graph Report - Lookatthis  (2026-09-24)
 
 ## Corpus Check
-- 64 files · ~26,316 words
+- 64 files · ~26,367 words
 - Verdict: corpus is large enough that graph structure adds value.
 - Unclassified: 2 file(s) not represented in the graph (top: (none) 1, .css 1)
 
@@ -11,7 +11,7 @@
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `f49476a5`
+- Built from commit: `fd58d274`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 

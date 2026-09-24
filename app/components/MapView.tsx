@@ -68,7 +68,11 @@ export function MapView({ posts, center, fromUrl, apiKey, mapId, labels }: Props
       {selected && (
         <Link href={postPath(selected.id, selected.title)} className="card absolute inset-x-3 bottom-3 flex items-center gap-3 p-3 shadow-2xl">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={`${process.env.NEXT_PUBLIC_SUPABASE_URL}/storage/v1/object/public/photos/${selected.photo_path}`} alt="" className="h-16 w-16 rounded-lg object-cover" />
+          <img
+            src={selected.photo_path.startsWith("http") ? selected.photo_path : `${process.env.NEXT_PUBLIC_SUPABASE_URL}/storage/v1/object/public/photos/${selected.photo_path}`}
+            alt=""
+            className="h-16 w-16 rounded-lg object-cover"
+          />
           <div className="min-w-0 flex-1">
             <div className="flex items-center gap-2">
               {selected.is_leader && <span className="chip bg-accent text-accent-ink">{labels.leader}</span>}
