@@ -19,6 +19,7 @@ export async function generateMetadata(): Promise<Metadata> {
     description: t(lang)("tagline"),
     applicationName: "Look At This",
     openGraph: { siteName: "Look At This", type: "website" },
+    verification: { google: "30oQJpdZWM0glGtzyCxe5CFiHhrqsXlwKJCcz2r2PK0" },
   };
 }
 

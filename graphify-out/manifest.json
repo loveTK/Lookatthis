@@ -60,9 +60,9 @@
     "semantic_hash": ""
   },
   "app/layout.tsx": {
-    "mtime": 1789843690.5807197,
-    "seen": 1789843799.086044,
-    "ast_hash": "9e3777ab66fa111107e3ba79dba79302",
+    "mtime": 1790252376.0129287,
+    "seen": 1790252392.3157187,
+    "ast_hash": "18c3a4c60f9dd3674188cec4602ea9a3",
     "semantic_hash": ""
   },
   "app/login/LoginForm.tsx": {

@@ -545,7 +545,7 @@
       "file_type": "code",
       "norm_label": "rootlayout()",
       "source_file": "app/layout.tsx",
-      "source_location": "L25"
+      "source_location": "L26"
     },
     {
       "id": "app_not_found_notfound",
@@ -4686,7 +4686,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "app/layout.tsx",
-      "source_location": "L26",
+      "source_location": "L27",
       "weight": 1.0
     },
     {
@@ -9919,7 +9919,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "app/layout.tsx",
-      "source_location": "L25",
+      "source_location": "L26",
       "weight": 1.0
     },
     {
@@ -11591,5 +11591,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "abe52ef70a8c7359fb1afaf9d9a5900167c99558"
+  "built_at_commit": "7d99366f4c92b05e9c3e3593c14339515463c478"
 }
