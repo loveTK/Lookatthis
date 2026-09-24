@@ -9,7 +9,7 @@ export const dynamic = "force-dynamic";
 
 const geist = Geist({ subsets: ["latin"], variable: "--font-geist", display: "swap" });
 
-export const viewport: Viewport = { themeColor: "#0a0d12", colorScheme: "dark" };
+export const viewport: Viewport = { width: "device-width", initialScale: 1, themeColor: "#0a0d12", colorScheme: "dark" };
 
 export async function generateMetadata(): Promise<Metadata> {
   const lang = await getLang();

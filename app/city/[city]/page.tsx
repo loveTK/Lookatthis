@@ -13,7 +13,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const city = posts[0]?.city;
   if (!city) return {};
   return {
-    title: `Best of ${city} — hidden gems ranked by locals`,
+    title: `Best of ${city}: hidden gems ranked by locals`,
     description: `Local favorites in ${city}, ${posts[0].country ?? ""}: things to see that locals show off, ranked by upvotes and community appraisals.`,
     alternates: { canonical: `/city/${posts[0].city_slug}` },
   };
