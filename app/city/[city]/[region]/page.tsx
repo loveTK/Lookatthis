@@ -15,8 +15,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!p || p.city_slug !== city) return {};
   const name = p.neighborhood ?? region;
   return {
-    title: `${name}, ${p.city}: what it's known for, ranked by locals`,
-    description: `Things to see in ${name}, ${p.city}: what locals show off, upvoted and appraised by the community.`,
+    title: `Hidden gems in ${name}, ${p.city}, ranked by locals`,
+    description: `Things to see in ${name}, ${p.city}: hidden gems and local favorites that neighbors show off, upvoted and appraised by the community.`,
     alternates: { canonical: `/city/${city}/${region}` },
   };
 }

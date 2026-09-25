@@ -16,7 +16,9 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000"),
     title: { default: "Look At This", template: "%s | Look At This" },
-    description: t(lang)("tagline"),
+    description: lang === "ko"
+      ? "내 근처 숨은 명소를 동네 사람들이 올리고 추천으로 순위를 매깁니다. 추천하고, 달러로 감정하고, 동네 1등을 차지하세요."
+      : "Hidden gems near you, shown off by locals and ranked by their neighbors. Upvote, appraise in dollars, take the #1 spot in your area.",
     applicationName: "Look At This",
     openGraph: { siteName: "Look At This", type: "website" },
     verification: { google: "30oQJpdZWM0glGtzyCxe5CFiHhrqsXlwKJCcz2r2PK0" },
