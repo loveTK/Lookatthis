@@ -21,7 +21,7 @@ export async function generateMetadata(): Promise<Metadata> {
       : "Hidden gems near you, shown off by locals and ranked by their neighbors. Upvote, appraise in dollars, take the #1 spot in your area.",
     applicationName: "Look At This",
     openGraph: { siteName: "Look At This", type: "website" },
-    verification: { google: "30oQJpdZWM0glGtzyCxe5CFiHhrqsXlwKJCcz2r2PK0" },
+    verification: { google: ["30oQJpdZWM0glGtzyCxe5CFiHhrqsXlwKJCcz2r2PK0", "TLBmbVpEFgln003710LHM_j5e9FUEFw55MxZTBDXz0Q"] },
   };
 }
 
