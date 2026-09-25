@@ -19,6 +19,17 @@ export async function getComments(postId: number): Promise<CommentRow[]> {
   return (data ?? []) as unknown as CommentRow[];
 }
 
+export async function feedAll(limit = 3000): Promise<FeedRow[]> {
+  const supabase = await createClient();
+  const { data } = await supabase
+    .from("feed")
+    .select("*")
+    .eq("status", "active")
+    .order("votes", { ascending: false })
+    .limit(limit);
+  return data ?? [];
+}
+
 export async function feedInBox(lat: number, lng: number, dLat = 0.15, dLng = 0.2, limit = 200): Promise<FeedRow[]> {
   const supabase = await createClient();
   const { data } = await supabase

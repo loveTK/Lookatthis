@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { feedInBox } from "@/lib/data";
+import { feedAll, feedInBox } from "@/lib/data";
 import { ipLocation, SEOUL } from "@/lib/geo";
 import { getLang, t } from "@/lib/i18n";
 import { MapView } from "./components/MapView";
@@ -9,19 +9,17 @@ export default async function Home({ searchParams }: { searchParams: Promise<{ l
   const sp = await searchParams;
   const fromUrl = !!(Number(sp.lat) && Number(sp.lng));
   const center = fromUrl ? { lat: Number(sp.lat), lng: Number(sp.lng) } : (await ipLocation()) ?? SEOUL;
-  const posts = await feedInBox(center.lat, center.lng);
+  const [allPosts, posts] = await Promise.all([feedAll(), feedInBox(center.lat, center.lng)]);
   const lang = await getLang();
   const tr = t(lang);
 
   return (
     <>
       <MapView
-        posts={posts}
-        center={center}
-        fromUrl={fromUrl}
+        posts={allPosts}
         apiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_KEY ?? ""}
         mapId={process.env.NEXT_PUBLIC_GOOGLE_MAP_ID ?? "DEMO_MAP_ID"}
-        labels={{ pending: tr("post.pending"), leader: tr("post.leader"), locating: tr("home.locating"), noMap: tr("home.noMap") }}
+        labels={{ pending: tr("post.pending"), leader: tr("post.leader"), noMap: tr("home.noMap") }}
       />
       <section className="mx-auto max-w-6xl px-4 py-8">
         <div className="mb-5 flex items-end justify-between gap-4">

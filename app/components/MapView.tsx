@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
-import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { APIProvider, AdvancedMarker, Map, useMap } from "@vis.gl/react-google-maps";
 import type { FeedRow } from "@/lib/types";
@@ -9,11 +8,9 @@ import { money, postPath } from "@/lib/slug";
 
 interface Props {
   posts: FeedRow[];
-  center: { lat: number; lng: number };
-  fromUrl: boolean;
   apiKey: string;
   mapId: string;
-  labels: Record<"pending" | "leader" | "locating" | "noMap", string>;
+  labels: Record<"pending" | "leader" | "noMap", string>;
 }
 
 type Cluster = { lat: number; lng: number; posts: FeedRow[] };
@@ -46,11 +43,11 @@ const bubbleSize = (n: number) => Math.round(Math.max(24, Math.min(48, 18 + 10 *
 
 function ClusterMarkers({ posts, onSelect }: { posts: FeedRow[]; onSelect: (p: FeedRow) => void }) {
   const map = useMap();
-  const [zoom, setZoom] = useState(13);
+  const [zoom, setZoom] = useState(2);
 
   useEffect(() => {
     if (!map) return;
-    const listener = map.addListener("zoom_changed", () => setZoom(map.getZoom() ?? 13));
+    const listener = map.addListener("zoom_changed", () => setZoom(map.getZoom() ?? 2));
     return () => listener.remove();
   }, [map]);
 
@@ -92,20 +89,8 @@ function ClusterMarkers({ posts, onSelect }: { posts: FeedRow[]; onSelect: (p: F
   );
 }
 
-export function MapView({ posts, center, fromUrl, apiKey, mapId, labels }: Props) {
-  const router = useRouter();
+export function MapView({ posts, apiKey, mapId, labels }: Props) {
   const [selected, setSelected] = useState<FeedRow | null>(null);
-  const [locating, setLocating] = useState(!fromUrl && !!apiKey);
-
-  // URL에 좌표 없으면 브라우저 위치로 한 번 이동 (사용자 위치는 저장 안 함, URL에만)
-  useEffect(() => {
-    if (!apiKey || fromUrl || !navigator.geolocation) { setTimeout(() => setLocating(false), 0); return; }
-    navigator.geolocation.getCurrentPosition(
-      (p) => router.replace(`/?lat=${p.coords.latitude.toFixed(4)}&lng=${p.coords.longitude.toFixed(4)}`),
-      () => setLocating(false),
-      { timeout: 8000, maximumAge: 300000 },
-    );
-  }, [apiKey, fromUrl, router]);
 
   if (!apiKey) {
     return (
@@ -119,8 +104,8 @@ export function MapView({ posts, center, fromUrl, apiKey, mapId, labels }: Props
     <div className="relative h-[60vh] min-h-[380px] w-full">
       <APIProvider apiKey={apiKey}>
         <Map
-          defaultCenter={center}
-          defaultZoom={13}
+          defaultCenter={{ lat: 20, lng: 0 }}
+          defaultZoom={2}
           minZoom={2}
           mapId={mapId}
           colorScheme="DARK"
@@ -133,8 +118,6 @@ export function MapView({ posts, center, fromUrl, apiKey, mapId, labels }: Props
           <ClusterMarkers posts={posts} onSelect={setSelected} />
         </Map>
       </APIProvider>
-
-      {locating && <div className="absolute left-3 top-3 chip bg-bg/80 text-dim">{labels.locating}</div>}
 
       {selected && (
         <Link href={postPath(selected.id, selected.title)} className="card absolute inset-x-3 bottom-3 flex items-center gap-3 p-3 shadow-2xl">
