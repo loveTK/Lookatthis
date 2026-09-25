@@ -25,7 +25,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const value = post.value_usd != null ? money(post.value_usd) : tr("post.pending");
   return {
     title: place ? `${post.title} in ${place}` : post.title,
-    description: `${place} · @${post.handle} · ▲${post.votes} · ${tr("post.value")}: ${value}`,
+    description: place
+      ? `A hidden gem in ${place}, shown off by @${post.handle}. ${post.votes} upvotes · ${tr("post.value")}: ${value}.`
+      : `Shown off by @${post.handle}. ${post.votes} upvotes · ${tr("post.value")}: ${value}.`,
     alternates: { canonical: postPath(post.id, post.title) },
     robots: isThin(post) ? { index: false, follow: true } : undefined,
     openGraph: { type: "article", title: post.title, description: `${place} · ▲${post.votes} · ${value}` },
