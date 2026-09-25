@@ -60,11 +60,17 @@ export async function createPost(_: ActionState, formData: FormData): Promise<Ac
   const file = formData.get("photo");
   if (!(file instanceof File) || file.size === 0) return { error: "err.GENERIC" };
   if (file.size > 10 * 1024 * 1024) return { error: "err.TOO_LARGE" };
-  const jpeg = await sharp(Buffer.from(await file.arrayBuffer()))
-    .rotate()
-    .resize({ width: 2000, height: 2000, fit: "inside", withoutEnlargement: true })
-    .jpeg({ quality: 85 })
-    .toBuffer();
+  let jpeg: Buffer;
+  try {
+    jpeg = await sharp(Buffer.from(await file.arrayBuffer()))
+      .rotate()
+      .resize({ width: 2000, height: 2000, fit: "inside", withoutEnlargement: true })
+      .jpeg({ quality: 85 })
+      .toBuffer();
+  } catch (err) {
+    console.error("sharp", err);
+    return { error: "err.GENERIC" };
+  }
   const photo_hash = createHash("sha256").update(jpeg).digest("hex");
 
   // 3) 검열
