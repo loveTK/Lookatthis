@@ -15,10 +15,10 @@ export async function generateMetadata(): Promise<Metadata> {
   const lang = await getLang();
   return {
     metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000"),
-    title: { default: "Neighbrag", template: "%s | Neighbrag" },
+    title: { default: "Look At This", template: "%s | Look At This" },
     description: t(lang)("tagline"),
-    applicationName: "Neighbrag",
-    openGraph: { siteName: "Neighbrag", type: "website" },
+    applicationName: "Look At This",
+    openGraph: { siteName: "Look At This", type: "website" },
     verification: { google: "30oQJpdZWM0glGtzyCxe5CFiHhrqsXlwKJCcz2r2PK0" },
   };
 }

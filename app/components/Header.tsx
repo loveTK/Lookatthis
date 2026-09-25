@@ -20,7 +20,7 @@ export async function Header() {
       <div className="mx-auto flex h-14 max-w-6xl items-center justify-between gap-4 px-4">
         <Link href="/" className="flex items-center gap-2 text-[15px] font-bold tracking-tight text-accent">
           <Logo />
-          <span className="text-ink">Neighbrag</span>
+          <span className="text-ink">Look At This</span>
         </Link>
         <nav className="flex items-center gap-3 text-sm font-semibold text-dim">
           <Link href="/upload" className="btn-accent py-1.5!">{tr("nav.upload")}</Link>

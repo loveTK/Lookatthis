@@ -8,7 +8,7 @@ export default function Privacy() {
   return (
     <article className="prose-lat mx-auto max-w-2xl px-4 py-12">
       <h1>Privacy Policy</h1>
-      <p>Last updated {UPDATED}. Neighbrag (we) runs the website and app at this domain. This page says what we collect and why.</p>
+      <p>Last updated {UPDATED}. Look At This (we) runs the website and app at this domain. This page says what we collect and why.</p>
 
       <h2>What we collect</h2>
       <ul>
@@ -33,7 +33,7 @@ export default function Privacy() {
       <p>Supabase (database, auth, storage), Google Cloud (maps, geocoding, image screening, translation), Lemon Squeezy (payments), Vercel (hosting).</p>
 
       <h2>Your choices</h2>
-      <p>Delete a post at any time. To delete your account and all data, email <a href="mailto:hello@neighbrag.app">hello@neighbrag.app</a> from your account email. We remove it within 30 days.</p>
+      <p>Delete a post at any time. To delete your account and all data, email <a href="mailto:hello@lookatthis.app">hello@lookatthis.app</a> from your account email. We remove it within 30 days.</p>
 
       <h2>Cookies</h2>
       <p>One session cookie for login and one for your language choice. No advertising trackers.</p>
