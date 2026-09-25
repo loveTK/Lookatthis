@@ -4,16 +4,19 @@ import { createClient } from "@/lib/supabase/server";
 import { getLang, t } from "@/lib/i18n";
 import { UploadForm } from "./UploadForm";
 
-export default async function UploadPage() {
+export default async function UploadPage({ searchParams }: { searchParams: Promise<{ lat?: string; lng?: string }> }) {
+  const sp = await searchParams;
+  const next = sp.lat && sp.lng ? `/upload?lat=${sp.lat}&lng=${sp.lng}` : "/upload";
   const supabase = await createClient();
   const { data: { user } } = await supabase.auth.getUser();
-  if (!user) redirect("/login?next=/upload");
+  if (!user) redirect(`/login?next=${encodeURIComponent(next)}`);
   const { data: profile } = await supabase.from("profiles").select("slots").eq("id", user.id).maybeSingle();
   if (!profile) redirect("/onboarding");
   const { count } = await supabase.from("posts").select("id", { count: "exact", head: true }).eq("user_id", user.id).eq("status", "active");
   const used = count ?? 0;
   const lang = await getLang();
   const tr = t(lang);
+  const pin = Number(sp.lat) && Number(sp.lng) ? { lat: Number(sp.lat), lng: Number(sp.lng) } : null;
 
   return (
     <div className="mx-auto max-w-lg px-4 py-10">
@@ -28,6 +31,7 @@ export default async function UploadPage() {
         </div>
       ) : (
         <UploadForm
+          initialPin={pin}
           labels={Object.fromEntries(
             ["upload.locating", "upload.gps", "upload.ip", "upload.useGps", "upload.pickOnMap", "upload.pin", "upload.pinned", "home.noMap",
              "upload.searchPlaceholder", "upload.searchButton", "upload.searchNotFound",

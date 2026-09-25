@@ -19,7 +19,7 @@ export default async function Home({ searchParams }: { searchParams: Promise<{ l
         posts={allPosts}
         apiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_KEY ?? ""}
         mapId={process.env.NEXT_PUBLIC_GOOGLE_MAP_ID ?? "DEMO_MAP_ID"}
-        labels={{ pending: tr("post.pending"), leader: tr("post.leader"), noMap: tr("home.noMap") }}
+        labels={{ pending: tr("post.pending"), leader: tr("post.leader"), noMap: tr("home.noMap"), showOffHere: tr("home.showOffHere") }}
       />
       <section className="mx-auto max-w-6xl px-4 py-8">
         <div className="mb-5 flex items-end justify-between gap-4">

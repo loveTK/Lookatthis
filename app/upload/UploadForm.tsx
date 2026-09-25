@@ -13,12 +13,12 @@ function FlyTo({ target }: { target: Pin | null }) {
   return null;
 }
 
-export function UploadForm({ labels }: { labels: Record<string, string> }) {
+export function UploadForm({ labels, initialPin = null }: { labels: Record<string, string>; initialPin?: Pin | null }) {
   const [state, action, pending] = useActionState<ActionState, FormData>(createPost, {});
   const [gps, setGps] = useState<Gps | null | undefined>(undefined); // undefined = 찾는 중
-  const [mode, setMode] = useState<"gps" | "pin">("gps");
-  const [pin, setPin] = useState<Pin | null>(null);
-  const [flyTarget, setFlyTarget] = useState<Pin | null>(null);
+  const [mode, setMode] = useState<"gps" | "pin">(initialPin ? "pin" : "gps");
+  const [pin, setPin] = useState<Pin | null>(initialPin);
+  const [flyTarget, setFlyTarget] = useState<Pin | null>(initialPin);
   const [preview, setPreview] = useState<string | null>(null);
   const [query, setQuery] = useState("");
   const [searching, setSearching] = useState(false);

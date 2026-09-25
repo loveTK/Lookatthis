@@ -1,6 +1,6 @@
 {
   "0": "package.json",
-  "1": "[slug]/page.tsx",
+  "1": "PostCard.tsx",
   "2": "getLang",
   "3": "compilerOptions",
   "4": "Appendix B - Canonical Sources (read these before reinventing)",
@@ -8,7 +8,7 @@
   "6": "10. REFERENCE VOCABULARY (Pattern Names the Agent Should Know)",
   "7": "payments.test.ts",
   "8": "1. THE THREE DIALS (Core Configuration)",
-  "9": "actions.ts",
+  "9": "createPost",
   "10": "Look At This",
   "11": "9. AI TELLS (Forbidden Patterns)",
   "12": "AGENTS.md",
@@ -28,5 +28,6 @@
   "26": "error.tsx",
   "27": "data.ts",
   "28": "privacy/page.tsx",
-  "29": "terms/page.tsx"
+  "29": "terms/page.tsx",
+  "30": "actions.ts"
 }

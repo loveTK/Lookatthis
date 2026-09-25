@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
-import { APIProvider, AdvancedMarker, Map, useMap } from "@vis.gl/react-google-maps";
+import { APIProvider, AdvancedMarker, Map, useMap, type MapMouseEvent } from "@vis.gl/react-google-maps";
 import type { FeedRow } from "@/lib/types";
 import { money, postPath } from "@/lib/slug";
 
@@ -10,8 +10,10 @@ interface Props {
   posts: FeedRow[];
   apiKey: string;
   mapId: string;
-  labels: Record<"pending" | "leader" | "noMap", string>;
+  labels: Record<"pending" | "leader" | "noMap" | "showOffHere", string>;
 }
+
+type Pin = { lat: number; lng: number };
 
 type Cluster = { lat: number; lng: number; posts: FeedRow[] };
 
@@ -91,6 +93,12 @@ function ClusterMarkers({ posts, onSelect }: { posts: FeedRow[]; onSelect: (p: F
 
 export function MapView({ posts, apiKey, mapId, labels }: Props) {
   const [selected, setSelected] = useState<FeedRow | null>(null);
+  const [clickPin, setClickPin] = useState<Pin | null>(null);
+
+  function selectPost(p: FeedRow) {
+    setClickPin(null);
+    setSelected(p);
+  }
 
   if (!apiKey) {
     return (
@@ -112,12 +120,27 @@ export function MapView({ posts, apiKey, mapId, labels }: Props) {
           gestureHandling="greedy"
           disableDefaultUI
           restriction={{ latLngBounds: { north: 85, south: -85, west: -180, east: 180 }, strictBounds: true }}
-          onClick={() => setSelected(null)}
+          onClick={(e: MapMouseEvent) => {
+            setSelected(null);
+            setClickPin(e.detail.latLng ? { lat: e.detail.latLng.lat, lng: e.detail.latLng.lng } : null);
+          }}
           className="h-full w-full"
         >
-          <ClusterMarkers posts={posts} onSelect={setSelected} />
+          <ClusterMarkers posts={posts} onSelect={selectPost} />
+          {clickPin && (
+            <AdvancedMarker position={clickPin} zIndex={4}>
+              <div className="h-4 w-4 rounded-full border-2 border-bg bg-accent shadow-[0_0_0_6px_rgba(67,255,161,0.25)]" />
+            </AdvancedMarker>
+          )}
         </Map>
       </APIProvider>
+
+      {clickPin && !selected && (
+        <div className="card absolute inset-x-3 bottom-3 flex items-center justify-between gap-3 p-3 shadow-2xl">
+          <span className="truncate text-sm text-dim">{clickPin.lat.toFixed(4)}, {clickPin.lng.toFixed(4)}</span>
+          <Link href={`/upload?lat=${clickPin.lat}&lng=${clickPin.lng}`} className="btn-accent shrink-0 py-1.5!">{labels.showOffHere}</Link>
+        </div>
+      )}
 
       {selected && (
         <Link href={postPath(selected.id, selected.title)} className="card absolute inset-x-3 bottom-3 flex items-center gap-3 p-3 shadow-2xl">
