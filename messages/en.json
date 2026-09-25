@@ -46,6 +46,8 @@
   "post.comment.price": "Your appraisal ($, optional)",
   "post.comment.send": "Post",
   "post.report": "Report",
+  "post.share": "Share",
+  "post.shareCopied": "Caption and link copied. Paste it into Instagram.",
   "post.delete": "Delete post",
   "post.deleteConfirm": "Delete this post? This frees up your slot and cannot be undone.",
   "post.selfPrice": "Owner's asking value",

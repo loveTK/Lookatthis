@@ -1,23 +1,23 @@
 # Graph Report - Lookatthis  (2026-09-25)
 
 ## Corpus Check
-- 71 files · ~37,101 words
+- 71 files · ~37,281 words
 - Verdict: corpus is large enough that graph structure adds value.
 - Unclassified: 2 file(s) not represented in the graph (top: (none) 1, .css 1)
 
 ## Summary
-- 386 nodes · 717 edges · 31 communities (25 shown, 6 thin omitted)
+- 387 nodes · 719 edges · 30 communities (24 shown, 6 thin omitted)
 - Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 5 edges (avg confidence: 0.91)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `1e393868`
+- Built from commit: `d1677223`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
 ## Community Hubs (Navigation)
 - package.json
-- PostCard.tsx
+- [slug]/page.tsx
 - getLang
 - compilerOptions
 - Appendix B - Canonical Sources (read these before reinventing)
@@ -25,7 +25,7 @@
 - 10. REFERENCE VOCABULARY (Pattern Names the Agent Should Know)
 - payments.test.ts
 - 1. THE THREE DIALS (Core Configuration)
-- createPost
+- actions.ts
 - Look At This
 - 9. AI TELLS (Forbidden Patterns)
 - AGENTS.md
@@ -40,12 +40,11 @@
 - 5. CONTEXT-AWARE PROACTIVITY
 - 8. DARK MODE PROTOCOL
 - [category]/page.tsx
-- 7. DIAL DEFINITIONS (Technical Reference)
+- Look At This — Claude Code 작업 지침
 - LoginForm.tsx
-- data.ts
+- app/page.tsx
 - privacy/page.tsx
 - terms/page.tsx
-- actions.ts
 
 ## God Nodes (most connected - your core abstractions)
 1. `getLang()` - 36 edges
@@ -66,27 +65,27 @@
   CLAUDE.md → lib/google.ts
 - `구조` --references--> `translateText()`  [INFERRED]
   CLAUDE.md → lib/google.ts
+- `signOut()` --calls--> `createClient()`  [EXTRACTED]
+  app/actions.ts → lib/supabase/server.ts
 - `createProfile()` --calls--> `getLang()`  [EXTRACTED]
   app/actions.ts → lib/i18n.ts
-- `createPost()` --calls--> `categoryFromLabels()`  [EXTRACTED]
-  app/actions.ts → lib/category.ts
 
 ## Import Cycles
 - None detected.
 
-## Communities (31 total, 6 thin omitted)
+## Communities (30 total, 6 thin omitted)
 
 ### Community 0 - "package.json"
 Cohesion: 0.05
-Nodes (39): eslintConfig, dependencies, next, react, react-dom, sharp, @supabase/ssr, @supabase/supabase-js (+31 more)
+Nodes (40): eslintConfig, dependencies, next, react, react-dom, sharp, @supabase/ssr, @supabase/supabase-js (+32 more)
 
-### Community 1 - "PostCard.tsx"
-Cohesion: 0.18
-Nodes (18): MapView(), PostCard(), contentType, OgImage(), size, generateMetadata(), isThin(), PostPage() (+10 more)
+### Community 1 - "[slug]/page.tsx"
+Cohesion: 0.09
+Nodes (38): HubJsonLd(), bubbleSize(), Cluster, ClusterMarkers(), clusterPosts(), gridSizeDeg(), MapView(), Pin (+30 more)
 
 ### Community 2 - "getLang"
 Cohesion: 0.09
-Nodes (34): CityPage(), generateMetadata(), Props, generateMetadata(), Props, RegionPage(), HubJsonLd(), Footer() (+26 more)
+Nodes (35): GET(), CityPage(), generateMetadata(), generateMetadata(), Props, RegionPage(), Footer(), Header() (+27 more)
 
 ### Community 3 - "compilerOptions"
 Cohesion: 0.10
@@ -105,16 +104,16 @@ Cohesion: 0.20
 Nodes (10): 10. REFERENCE VOCABULARY (Pattern Names the Agent Should Know), Animation Library Choice, Cards & Containers, Galleries & Media, Hero Paradigms, Layout & Grids, Micro-Interactions & Effects, Navigation & Menus (+2 more)
 
 ### Community 7 - "payments.test.ts"
-Cohesion: 0.24
-Nodes (11): POST(), categoryFromLabels(), Order, parseOrder(), variantSlotsFromEnv(), verifySignature(), ref_node_assert, ref_node_crypto (+3 more)
+Cohesion: 0.26
+Nodes (10): POST(), Order, parseOrder(), variantSlotsFromEnv(), verifySignature(), ref_node_assert, ref_node_crypto, ref_node_test (+2 more)
 
 ### Community 8 - "1. THE THREE DIALS (Core Configuration)"
 Cohesion: 0.50
 Nodes (4): 1.A Dial Inference (design read → dial values), 1.B Use-Case Presets, 1.C How the Dials Drive Output, 1. THE THREE DIALS (Core Configuration)
 
-### Community 9 - "createPost"
-Cohesion: 0.08
-Nodes (28): createPost(), searchLocation(), Gps, Pin, UploadForm(), runSearch(), graphify, Look At This — Claude Code 작업 지침 (+20 more)
+### Community 9 - "actions.ts"
+Cohesion: 0.11
+Nodes (27): ActionState, addComment(), createPost(), createProfile(), deletePost(), report(), searchLocation(), setLang() (+19 more)
 
 ### Community 10 - "Look At This"
 Cohesion: 0.22
@@ -137,8 +136,8 @@ Cohesion: 0.29
 Nodes (7): 6.A Hardware Acceleration, 6.B Reduced Motion (mandatory), 6.C Dark Mode (mandatory for any consumer-facing page), 6.D Core Web Vitals Targets, 6.E DOM Cost, 6.F Z-Index Restraint, 6. PERFORMANCE & ACCESSIBILITY GUARDRAILS
 
 ### Community 18 - "tasteskill: Anti-Slop Frontend Skill"
-Cohesion: 0.33
-Nodes (6): 13. OUT OF SCOPE, 14. FINAL PRE-FLIGHT CHECK, 2.A When to reach for a real design system (use official packages), 2.B When the brief is an aesthetic, not a system, 2. BRIEF → DESIGN SYSTEM MAP, tasteskill: Anti-Slop Frontend Skill
+Cohesion: 0.20
+Nodes (10): 13. OUT OF SCOPE, 14. FINAL PRE-FLIGHT CHECK, 2.A When to reach for a real design system (use official packages), 2.B When the brief is an aesthetic, not a system, 2. BRIEF → DESIGN SYSTEM MAP, 7. DIAL DEFINITIONS (Technical Reference), DESIGN_VARIANCE (Level 1-10), MOTION_INTENSITY (Level 1-10) (+2 more)
 
 ### Community 19 - "0. BRIEF INFERENCE (Read the Room Before Anything Else)"
 Cohesion: 0.40
@@ -157,24 +156,20 @@ Cohesion: 0.40
 Nodes (5): 8.A Token Strategy (pick one, stick to it), 8.B Do Not Prescribe Specific Colors Here, 8.C Default Mode, 8.D Test in Both Modes Before Finishing, 8. DARK MODE PROTOCOL
 
 ### Community 23 - "[category]/page.tsx"
-Cohesion: 0.29
-Nodes (9): CategoryPage(), generateMetadata(), Props, CATEGORIES, Category, CATEGORY_NAME, isCategory(), RULES (+1 more)
+Cohesion: 0.26
+Nodes (10): CategoryPage(), generateMetadata(), Props, Props, CATEGORIES, Category, CATEGORY_NAME, isCategory() (+2 more)
 
-### Community 24 - "7. DIAL DEFINITIONS (Technical Reference)"
-Cohesion: 0.50
-Nodes (4): 7. DIAL DEFINITIONS (Technical Reference), DESIGN_VARIANCE (Level 1-10), MOTION_INTENSITY (Level 1-10), VISUAL_DENSITY (Level 1-10)
+### Community 24 - "Look At This — Claude Code 작업 지침"
+Cohesion: 0.17
+Nodes (11): graphify, Look At This — Claude Code 작업 지침, 규칙 위치, 만들지 말 것 (백로그, 추가 시점), 명령, 스택 (바꾸지 말 것), 아직 검증 안 된 것 (키 없이 만들었음), 업로드 파이프라인 (순서 바꾸지 말 것) (+3 more)
 
 ### Community 25 - "LoginForm.tsx"
 Cohesion: 0.29
 Nodes (6): LoginForm(), google(), magic(), supabaseBrowser(), config, @supabase/ssr
 
-### Community 27 - "data.ts"
-Cohesion: 0.16
-Nodes (17): bubbleSize(), Cluster, ClusterMarkers(), clusterPosts(), gridSizeDeg(), Pin, Props, Home() (+9 more)
-
-### Community 30 - "actions.ts"
-Cohesion: 0.14
-Nodes (19): ActionState, addComment(), createProfile(), deletePost(), report(), setLang(), signOut(), toggleVote() (+11 more)
+### Community 27 - "app/page.tsx"
+Cohesion: 0.52
+Nodes (5): Home(), feedAll(), feedInBox(), ipLocation(), SEOUL
 
 ## Knowledge Gaps
 - **192 isolated node(s):** `Props`, `Props`, `Props`, `Pin`, `Cluster` (+187 more)
@@ -184,17 +179,17 @@ Nodes (19): ActionState, addComment(), createProfile(), deletePost(), report(), 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `next` connect `getLang` to `package.json`, `PostCard.tsx`, `[category]/page.tsx`, `LoginForm.tsx`, `data.ts`, `privacy/page.tsx`, `terms/page.tsx`, `actions.ts`?**
+- **Why does `next` connect `getLang` to `package.json`, `[slug]/page.tsx`, `actions.ts`, `[category]/page.tsx`, `LoginForm.tsx`, `app/page.tsx`, `privacy/page.tsx`, `terms/page.tsx`?**
   _High betweenness centrality (0.132) - this node is a cross-community bridge._
-- **Why does `tasteskill: Anti-Slop Frontend Skill` connect `tasteskill: Anti-Slop Frontend Skill` to `Appendix B - Canonical Sources (read these before reinventing)`, `4. DESIGN ENGINEERING DIRECTIVES (Bias Correction)`, `10. REFERENCE VOCABULARY (Pattern Names the Agent Should Know)`, `1. THE THREE DIALS (Core Configuration)`, `9. AI TELLS (Forbidden Patterns)`, `11. REDESIGN PROTOCOL`, `3. DEFAULT ARCHITECTURE & CONVENTIONS`, `6. PERFORMANCE & ACCESSIBILITY GUARDRAILS`, `0. BRIEF INFERENCE (Read the Room Before Anything Else)`, `12. THE BLOCK LIBRARY (Contract - Implementations Land Here Iteratively)`, `5. CONTEXT-AWARE PROACTIVITY`, `8. DARK MODE PROTOCOL`, `7. DIAL DEFINITIONS (Technical Reference)`?**
-  _High betweenness centrality (0.069) - this node is a cross-community bridge._
-- **Why does `getLang()` connect `getLang` to `PostCard.tsx`, `createPost`, `[category]/page.tsx`, `data.ts`, `actions.ts`?**
+- **Why does `tasteskill: Anti-Slop Frontend Skill` connect `tasteskill: Anti-Slop Frontend Skill` to `Appendix B - Canonical Sources (read these before reinventing)`, `4. DESIGN ENGINEERING DIRECTIVES (Bias Correction)`, `10. REFERENCE VOCABULARY (Pattern Names the Agent Should Know)`, `1. THE THREE DIALS (Core Configuration)`, `9. AI TELLS (Forbidden Patterns)`, `11. REDESIGN PROTOCOL`, `3. DEFAULT ARCHITECTURE & CONVENTIONS`, `6. PERFORMANCE & ACCESSIBILITY GUARDRAILS`, `0. BRIEF INFERENCE (Read the Room Before Anything Else)`, `12. THE BLOCK LIBRARY (Contract - Implementations Land Here Iteratively)`, `5. CONTEXT-AWARE PROACTIVITY`, `8. DARK MODE PROTOCOL`?**
+  _High betweenness centrality (0.068) - this node is a cross-community bridge._
+- **Why does `getLang()` connect `getLang` to `actions.ts`, `app/page.tsx`, `[slug]/page.tsx`, `[category]/page.tsx`?**
   _High betweenness centrality (0.033) - this node is a cross-community bridge._
 - **What connects `Props`, `Props`, `Props` to the rest of the system?**
   _192 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `package.json` be split into smaller, more focused modules?**
-  _Cohesion score 0.05 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.04878048780487805 - nodes in this community are weakly interconnected._
+- **Should `[slug]/page.tsx` be split into smaller, more focused modules?**
+  _Cohesion score 0.08974358974358974 - nodes in this community are weakly interconnected._
 - **Should `getLang` be split into smaller, more focused modules?**
-  _Cohesion score 0.08925979680696662 - nodes in this community are weakly interconnected._
-- **Should `compilerOptions` be split into smaller, more focused modules?**
-  _Cohesion score 0.1 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.09433962264150944 - nodes in this community are weakly interconnected._

@@ -12,6 +12,7 @@ import { CATEGORY_NAME } from "@/lib/category";
 import { addComment, report, toggleVote } from "@/app/actions";
 import { ToggleOriginal } from "./ToggleOriginal";
 import { DeleteButton } from "./DeleteButton";
+import { ShareButton } from "./ShareButton";
 
 type Props = { params: Promise<{ slug: string }>; searchParams: Promise<{ voteError?: string }> };
 
@@ -110,15 +111,23 @@ export default async function PostPage({ params, searchParams }: Props) {
           </p>
         </div>
 
-        <div className="flex flex-col items-end gap-1">
-          <form action={toggleVote}>
-            <input type="hidden" name="post_id" value={post.id} />
-            <input type="hidden" name="path" value={path} />
-            <button className={voted ? "btn-accent" : "btn-ghost"} aria-pressed={voted}>
-              ▲ {post.votes} <span className="font-normal">{voted ? tr("post.unvote") : tr("post.upvote")}</span>
-            </button>
-          </form>
-          {voteError && <p className="text-xs text-pink">{tr("post.voteError")}</p>}
+        <div className="flex items-start gap-2">
+          <ShareButton
+            url={`${site}${path}`}
+            photoUrl={photoUrl(post.photo_path)}
+            caption={[post.title, place, `${site}${path}`, `#lookatthis #hiddengems${post.city_slug ? ` #${post.city_slug.replace(/-/g, "")}` : ""}`].filter(Boolean).join("\n")}
+            labels={{ share: tr("post.share"), copied: tr("post.shareCopied"), shareFail: tr("err.GENERIC") }}
+          />
+          <div className="flex flex-col items-end gap-1">
+            <form action={toggleVote}>
+              <input type="hidden" name="post_id" value={post.id} />
+              <input type="hidden" name="path" value={path} />
+              <button className={voted ? "btn-accent" : "btn-ghost"} aria-pressed={voted}>
+                ▲ {post.votes} <span className="font-normal">{voted ? tr("post.unvote") : tr("post.upvote")}</span>
+              </button>
+            </form>
+            {voteError && <p className="text-xs text-pink">{tr("post.voteError")}</p>}
+          </div>
         </div>
       </div>
 

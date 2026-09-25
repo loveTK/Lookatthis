@@ -1,6 +1,6 @@
 {
   "0": "package.json",
-  "1": "PostCard.tsx",
+  "1": "[slug]/page.tsx",
   "2": "getLang",
   "3": "compilerOptions",
   "4": "Appendix B - Canonical Sources (read these before reinventing)",
@@ -8,7 +8,7 @@
   "6": "10. REFERENCE VOCABULARY (Pattern Names the Agent Should Know)",
   "7": "payments.test.ts",
   "8": "1. THE THREE DIALS (Core Configuration)",
-  "9": "createPost",
+  "9": "actions.ts",
   "10": "Look At This",
   "11": "9. AI TELLS (Forbidden Patterns)",
   "12": "AGENTS.md",
@@ -23,11 +23,10 @@
   "21": "5. CONTEXT-AWARE PROACTIVITY",
   "22": "8. DARK MODE PROTOCOL",
   "23": "[category]/page.tsx",
-  "24": "7. DIAL DEFINITIONS (Technical Reference)",
+  "24": "Look At This — Claude Code 작업 지침",
   "25": "LoginForm.tsx",
   "26": "error.tsx",
-  "27": "data.ts",
+  "27": "app/page.tsx",
   "28": "privacy/page.tsx",
-  "29": "terms/page.tsx",
-  "30": "actions.ts"
+  "29": "terms/page.tsx"
 }
