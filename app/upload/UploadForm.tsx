@@ -13,6 +13,28 @@ function FlyTo({ target }: { target: Pin | null }) {
   return null;
 }
 
+// Vercel 서버 함수는 요청 본문이 4.5MB 넘으면 서버 코드가 실행되기도 전에 413으로 거부한다.
+// 폰 카메라 원본은 보통 그보다 크므로, 서버가 리사이즈하기 전에 브라우저에서 먼저 줄여 보낸다.
+// EXIF 방향은 여기서 굽고(canvas는 픽셀만 남기고 EXIF를 버림), 서버의 sharp().rotate()는 안전망으로 남긴다.
+async function shrinkForUpload(file: File, maxDim = 1600, quality = 0.85): Promise<File> {
+  try {
+    const bitmap = await createImageBitmap(file, { imageOrientation: "from-image" });
+    const scale = Math.min(1, maxDim / Math.max(bitmap.width, bitmap.height));
+    const w = Math.round(bitmap.width * scale), h = Math.round(bitmap.height * scale);
+    const canvas = document.createElement("canvas");
+    canvas.width = w;
+    canvas.height = h;
+    const ctx = canvas.getContext("2d");
+    if (!ctx) return file;
+    ctx.drawImage(bitmap, 0, 0, w, h);
+    const blob = await new Promise<Blob | null>((resolve) => canvas.toBlob(resolve, "image/jpeg", quality));
+    if (!blob) return file;
+    return new File([blob], file.name.replace(/\.\w+$/, "") + ".jpg", { type: "image/jpeg" });
+  } catch {
+    return file; // 못 줄이면 원본 그대로 (서버 쪽 10MB/413 처리에 맡김)
+  }
+}
+
 export function UploadForm({ labels, initialPin = null }: { labels: Record<string, string>; initialPin?: Pin | null }) {
   const [state, action, pending] = useActionState<ActionState, FormData>(createPost, {});
   const [gps, setGps] = useState<Gps | null | undefined>(undefined); // undefined = 찾는 중
@@ -20,6 +42,7 @@ export function UploadForm({ labels, initialPin = null }: { labels: Record<strin
   const [pin, setPin] = useState<Pin | null>(initialPin);
   const [flyTarget, setFlyTarget] = useState<Pin | null>(initialPin);
   const [preview, setPreview] = useState<string | null>(null);
+  const [shrinking, setShrinking] = useState(false);
   const [query, setQuery] = useState("");
   const [searching, setSearching] = useState(false);
   const [searchError, setSearchError] = useState(false);
@@ -132,7 +155,18 @@ export function UploadForm({ labels, initialPin = null }: { labels: Record<strin
         )}
         <input
           type="file" name="photo" accept="image/*" capture="environment" required className="hidden"
-          onChange={(e) => { const f = e.target.files?.[0]; setPreview(f ? URL.createObjectURL(f) : null); }}
+          onChange={async (e) => {
+            const input = e.target;
+            const f = input.files?.[0];
+            if (!f) { setPreview(null); return; }
+            setShrinking(true);
+            const small = await shrinkForUpload(f);
+            setShrinking(false);
+            const dt = new DataTransfer();
+            dt.items.add(small);
+            input.files = dt.files;
+            setPreview(URL.createObjectURL(small));
+          }}
         />
       </label>
 
@@ -140,7 +174,7 @@ export function UploadForm({ labels, initialPin = null }: { labels: Record<strin
       <textarea className="input" name="body" rows={3} maxLength={1000} placeholder={labels["upload.body"]} />
       <input className="input" name="self_price" inputMode="decimal" placeholder={labels["upload.price"]} />
 
-      <button className="btn-accent" disabled={pending || locating || (mode === "pin" && !pin)}>{labels["upload.submit"]}</button>
+      <button className="btn-accent" disabled={pending || shrinking || locating || (mode === "pin" && !pin)}>{labels["upload.submit"]}</button>
       {state.error && <p className="text-sm text-pink">{labels[state.error] ?? labels["err.GENERIC"]}</p>}
     </form>
   );
