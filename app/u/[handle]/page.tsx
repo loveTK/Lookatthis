@@ -1,10 +1,24 @@
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { feedWhere } from "@/lib/data";
 import { getLang, t } from "@/lib/i18n";
 import { createClient } from "@/lib/supabase/server";
 import { PostCard } from "@/app/components/PostCard";
 
-export default async function ProfilePage({ params }: { params: Promise<{ handle: string }> }) {
+type Props = { params: Promise<{ handle: string }> };
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { handle } = await params;
+  const posts = await feedWhere("handle", handle);
+  if (posts.length === 0) return {};
+  return {
+    title: `@${handle}'s finds`,
+    description: `What @${handle} has put on the map: ${posts.length} post${posts.length === 1 ? "" : "s"}, upvoted and appraised by the community.`,
+    alternates: { canonical: `/u/${handle}` },
+  };
+}
+
+export default async function ProfilePage({ params }: Props) {
   const { handle } = await params;
   const supabase = await createClient();
   const { data: profile } = await supabase.from("profiles").select("id, handle, slots, created_at").eq("handle", handle).maybeSingle();
