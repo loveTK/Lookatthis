@@ -48,6 +48,19 @@ export async function reverseGeocode(lat: number, lng: number, lang = "en"): Pro
   };
 }
 
+/** Geocoding API 정방향 검색(장소명 → 좌표). 업로드 핀 검색용. 못 찾으면 null. */
+export async function geocodeSearch(query: string, lang = "en"): Promise<{ lat: number; lng: number; label: string } | null> {
+  if (!KEY() || !query.trim()) return null;
+  const res = await fetch(
+    `https://maps.googleapis.com/maps/api/geocode/json?address=${encodeURIComponent(query)}&language=${lang}&key=${KEY()}`,
+  );
+  if (!res.ok) return null;
+  const json = await res.json();
+  const top = json.results?.[0];
+  if (!top) return null;
+  return { lat: top.geometry.location.lat, lng: top.geometry.location.lng, label: top.formatted_address };
+}
+
 /** Cloud Translation v2. 키 없으면 원문 그대로. */
 export async function translateText(q: string[], target: string, source?: string): Promise<string[]> {
   if (!KEY() || q.length === 0) return q;

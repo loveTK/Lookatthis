@@ -30,6 +30,7 @@ export default async function UploadPage() {
         <UploadForm
           labels={Object.fromEntries(
             ["upload.locating", "upload.gps", "upload.ip", "upload.useGps", "upload.pickOnMap", "upload.pin", "upload.pinned", "home.noMap",
+             "upload.searchPlaceholder", "upload.searchButton", "upload.searchNotFound",
              "upload.photo", "upload.name", "upload.body", "upload.price", "upload.submit",
              "err.NO_LOCATION", "err.INVENTORY_FULL", "err.DUPLICATE", "err.REJECTED", "err.TOO_LARGE", "err.BANNED", "err.GENERIC"]
               .map((k) => [k, tr(k)]),

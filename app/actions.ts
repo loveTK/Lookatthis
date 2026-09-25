@@ -7,7 +7,7 @@ import { revalidatePath } from "next/cache";
 import sharp from "sharp";
 import { createClient } from "@/lib/supabase/server";
 import { supabaseAdmin } from "@/lib/supabase/admin";
-import { analyzeImage, reverseGeocode } from "@/lib/google";
+import { analyzeImage, geocodeSearch, reverseGeocode } from "@/lib/google";
 import { categoryFromLabels } from "@/lib/category";
 import { ipLocation } from "@/lib/geo";
 import { getLang } from "@/lib/i18n";
@@ -136,6 +136,10 @@ export async function addComment(formData: FormData) {
     price_usd: priceRaw ? Number(priceRaw) : null,
   });
   revalidatePath(path);
+}
+
+export async function searchLocation(query: string) {
+  return geocodeSearch(query, await getLang());
 }
 
 export async function deletePost(formData: FormData) {
