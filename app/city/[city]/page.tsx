@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { feedWhere } from "@/lib/data";
 import { getLang, t } from "@/lib/i18n";
 import { PostCard } from "@/app/components/PostCard";
+import { CATEGORIES, CATEGORY_NAME } from "@/lib/category";
 import { HubJsonLd } from "../HubJsonLd";
 
 type Props = { params: Promise<{ city: string }> };
@@ -27,12 +28,26 @@ export default async function CityPage({ params }: Props) {
   const tr = t(lang);
   const city = posts[0].city!;
   const leaders = posts.filter((p) => p.is_leader && p.neighborhood);
+  const categories = CATEGORIES.filter((c) => posts.some((p) => p.category === c));
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-8">
       <HubJsonLd name={`${tr("city.top")} ${city}`} url={`/city/${slug}`} posts={posts} />
       <h1 className="text-2xl font-bold">{tr("city.top")} {city}</h1>
       <p className="text-sm text-dim">{posts[0].country}</p>
+
+      {categories.length > 0 && (
+        <section className="mt-6">
+          <h2 className="mb-2 text-sm font-bold text-dim">{tr("city.categories")}</h2>
+          <div className="flex flex-wrap gap-2">
+            {categories.map((c) => (
+              <Link key={c} href={`/city/${slug}/c/${c}`} className="chip border border-white/15 hover:border-accent">
+                {CATEGORY_NAME[c][lang]}
+              </Link>
+            ))}
+          </div>
+        </section>
+      )}
 
       {leaders.length > 0 && (
         <section className="mt-6">

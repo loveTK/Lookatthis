@@ -1,22 +1,28 @@
 // Google Cloud REST 래퍼 3개. SDK 없음.
 const KEY = () => process.env.GOOGLE_CLOUD_API_KEY;
 
-/** Cloud Vision SafeSearch. 위반 카테고리 이름 또는 null. 키 없으면 검사 생략(개발용). */
-export async function safeSearch(jpeg: Buffer): Promise<string | null> {
-  if (!KEY()) return null;
+/** Cloud Vision: SafeSearch 위반(adult/racy/violence 또는 null) + 라벨(신뢰도순). 한 번의 호출. 키 없으면 둘 다 빈 값. */
+export async function analyzeImage(jpeg: Buffer): Promise<{ violation: string | null; labels: string[] }> {
+  if (!KEY()) return { violation: null, labels: [] };
   const res = await fetch(`https://vision.googleapis.com/v1/images:annotate?key=${KEY()}`, {
     method: "POST",
     headers: { "content-type": "application/json" },
     body: JSON.stringify({
-      requests: [{ image: { content: jpeg.toString("base64") }, features: [{ type: "SAFE_SEARCH_DETECTION" }] }],
+      requests: [{
+        image: { content: jpeg.toString("base64") },
+        features: [{ type: "SAFE_SEARCH_DETECTION" }, { type: "LABEL_DETECTION", maxResults: 10 }],
+      }],
     }),
   });
   if (!res.ok) throw new Error(`vision ${res.status}`);
   const json = await res.json();
-  const s = json.responses?.[0]?.safeSearchAnnotation ?? {};
+  const r = json.responses?.[0] ?? {};
+  const s = r.safeSearchAnnotation ?? {};
   const bad = new Set(["LIKELY", "VERY_LIKELY"]);
-  for (const k of ["adult", "racy", "violence"]) if (bad.has(s[k])) return k;
-  return null;
+  let violation: string | null = null;
+  for (const k of ["adult", "racy", "violence"]) if (bad.has(s[k])) { violation = k; break; }
+  const labels: string[] = (r.labelAnnotations ?? []).map((l: { description: string }) => l.description);
+  return { violation, labels };
 }
 
 export interface Place { country: string | null; countryCode: string | null; city: string | null; neighborhood: string | null }

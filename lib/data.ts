@@ -56,6 +56,20 @@ export async function feedWhere(col: "city_slug" | "region_key" | "handle", valu
   return data ?? [];
 }
 
+export async function feedCityCategory(city_slug: string, category: string, limit = 100): Promise<FeedRow[]> {
+  const supabase = await createClient();
+  const { data } = await supabase
+    .from("feed")
+    .select("*")
+    .eq("status", "active")
+    .eq("city_slug", city_slug)
+    .eq("category", category)
+    .order("votes", { ascending: false })
+    .order("created_at", { ascending: true })
+    .limit(limit);
+  return data ?? [];
+}
+
 /** 커뮤니티 감정가 분포 (본인 값 포함) */
 export function appraisalRange(post: FeedRow, comments: CommentRow[]) {
   const prices = comments.map((c) => c.price_usd).filter((p): p is number => p != null).map(Number);

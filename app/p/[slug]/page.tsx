@@ -8,6 +8,7 @@ import { idFromSlug, money, postPath } from "@/lib/slug";
 import { photoUrl } from "@/lib/supabase/admin";
 import { createClient } from "@/lib/supabase/server";
 import { translateMany } from "@/lib/translate";
+import { CATEGORY_NAME } from "@/lib/category";
 import { addComment, report, toggleVote } from "@/app/actions";
 import { ToggleOriginal } from "./ToggleOriginal";
 
@@ -26,7 +27,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: place ? `${post.title} in ${place}` : post.title,
     description: place
-      ? `A hidden gem in ${place}, shown off by @${post.handle}. ${post.votes} upvotes · ${tr("post.value")}: ${value}.`
+      ? `A hidden gem ${post.category === "other" ? "" : CATEGORY_NAME[post.category].en.replace(/s$/, "") + " "}in ${place}, shown off by @${post.handle}. ${post.votes} upvotes · ${tr("post.value")}: ${value}.`
       : `Shown off by @${post.handle}. ${post.votes} upvotes · ${tr("post.value")}: ${value}.`,
     alternates: { canonical: postPath(post.id, post.title) },
     robots: isThin(post) ? { index: false, follow: true } : undefined,

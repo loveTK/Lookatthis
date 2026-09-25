@@ -24,6 +24,7 @@ export interface FeedRow {
   appraisals: number;
   value_usd: number | null;
   is_leader: boolean;
+  category: "park" | "food" | "beach" | "art" | "landmark" | "other";
 }
 
 export interface CommentRow {

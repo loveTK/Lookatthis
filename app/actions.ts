@@ -7,7 +7,8 @@ import { revalidatePath } from "next/cache";
 import sharp from "sharp";
 import { createClient } from "@/lib/supabase/server";
 import { supabaseAdmin } from "@/lib/supabase/admin";
-import { reverseGeocode, safeSearch } from "@/lib/google";
+import { analyzeImage, reverseGeocode } from "@/lib/google";
+import { categoryFromLabels } from "@/lib/category";
 import { ipLocation } from "@/lib/geo";
 import { getLang } from "@/lib/i18n";
 import { postPath, slugify } from "@/lib/slug";
@@ -67,7 +68,9 @@ export async function createPost(_: ActionState, formData: FormData): Promise<Ac
   const photo_hash = createHash("sha256").update(jpeg).digest("hex");
 
   // 3) 검열
-  if (await safeSearch(jpeg)) return { error: "err.REJECTED" };
+  const { violation, labels } = await analyzeImage(jpeg);
+  if (violation) return { error: "err.REJECTED" };
+  const category = categoryFromLabels(labels);
 
   // 4) 역지오코딩 → region_key / city_slug
   const place = await reverseGeocode(lat, lng);
@@ -92,7 +95,7 @@ export async function createPost(_: ActionState, formData: FormData): Promise<Ac
       user_id: user.id, title, body, lang: await getLang(), photo_path, photo_hash,
       geog: `SRID=4326;POINT(${lng} ${lat})`, accuracy_m, loc_source,
       country: place.country, city: place.city, city_slug, neighborhood: place.neighborhood,
-      region_key, self_price_usd,
+      region_key, self_price_usd, category,
     })
     .select("id")
     .single();
