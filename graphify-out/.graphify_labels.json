@@ -8,7 +8,7 @@
   "6": "10. REFERENCE VOCABULARY (Pattern Names the Agent Should Know)",
   "7": "payments.test.ts",
   "8": "LoginForm.tsx",
-  "9": "actions.ts",
+  "9": "[city]/page.tsx",
   "10": "Look At This",
   "11": "9. AI TELLS (Forbidden Patterns)",
   "12": "AGENTS.md",
@@ -22,10 +22,9 @@
   "20": "12. THE BLOCK LIBRARY (Contract - Implementations Land Here Iteratively)",
   "21": "5. CONTEXT-AWARE PROACTIVITY",
   "22": "8. DARK MODE PROTOCOL",
-  "23": "1. THE THREE DIALS (Core Configuration)",
   "24": "7. DIAL DEFINITIONS (Technical Reference)",
   "25": "privacy/page.tsx",
   "26": "error.tsx",
-  "27": "MapView.tsx",
+  "27": "app/page.tsx",
   "28": "Look At This — Claude Code 작업 지침"
 }

@@ -10,7 +10,7 @@ export interface FeedRow {
   photo_path: string;
   lat: number;
   lng: number;
-  loc_source: "gps" | "ip";
+  loc_source: "gps" | "ip" | "pin";
   accuracy_m: number | null;
   country: string | null;
   city: string | null;

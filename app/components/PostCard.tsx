@@ -20,7 +20,7 @@ export function PostCard({ post, lang, rank }: { post: FeedRow; lang: Lang; rank
       <div className="p-4">
         <h3 className="truncate font-bold">{post.title}</h3>
         <p className="truncate text-xs text-dim">
-          {place || post.region_key}{post.loc_source === "ip" && ` · ${tr("post.approx")}`}
+          {place || post.region_key}{post.loc_source === "ip" && ` · ${tr("post.approx")}`}{post.loc_source === "pin" && ` · ${tr("post.pinned")}`}
         </p>
         <div className="mt-3 flex justify-between text-sm">
           <span>▲ {post.votes} <span className="text-dim">{tr("post.votes")}</span></span>

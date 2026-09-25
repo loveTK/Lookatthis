@@ -43,11 +43,12 @@ export async function createPost(_: ActionState, formData: FormData): Promise<Ac
   const { data: { user } } = await supabase.auth.getUser();
   if (!user) redirect("/login?next=/upload");
 
-  // 1) 위치: GPS(폼) 우선, 아니면 IP 헤더
+  // 1) 위치: GPS(폼) → 지도에서 찍은 핀(폼) → IP 헤더. 핀은 GPS 인증이 아니라 동네 1등 후보 아님(DB 뷰가 gps만 봄)
   let lat = Number(formData.get("lat")), lng = Number(formData.get("lng"));
-  let loc_source: "gps" | "ip" = "gps";
-  const accuracy_m = Number(formData.get("accuracy")) || null;
-  if (formData.get("source") !== "gps" || !lat || !lng) {
+  const source = formData.get("source");
+  let loc_source: "gps" | "ip" | "pin" = source === "pin" ? "pin" : "gps";
+  const accuracy_m = loc_source === "gps" ? Number(formData.get("accuracy")) || null : null;
+  if ((source !== "gps" && source !== "pin") || !lat || !lng) {
     const ip = await ipLocation();
     if (!ip) return { error: "err.NO_LOCATION" };
     ({ lat, lng } = ip);

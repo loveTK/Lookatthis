@@ -89,6 +89,7 @@ export default async function PostPage({ params, searchParams }: Props) {
         <div className="absolute left-3 top-3 flex gap-2">
           {post.is_leader && <span className="chip bg-accent text-accent-ink">{tr("post.leader")}</span>}
           {post.loc_source === "ip" && <span className="chip bg-black/60 text-dim">{tr("post.approx")}</span>}
+          {post.loc_source === "pin" && <span className="chip bg-black/60 text-dim">{tr("post.pinned")}</span>}
         </div>
       </div>
 

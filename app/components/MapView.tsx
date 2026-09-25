@@ -61,7 +61,7 @@ function ClusterMarkers({ posts, onSelect }: { posts: FeedRow[]; onSelect: (p: F
           return (
             <AdvancedMarker key={p.id} position={{ lat: p.lat, lng: p.lng }} onClick={() => onSelect(p)} zIndex={p.is_leader ? 2 : 1}>
               <div
-                className={`h-4 w-4 rounded-full border-2 border-bg ${p.is_leader ? "bg-accent shadow-[0_0_0_6px_rgba(67,255,161,0.25)]" : p.loc_source === "ip" ? "bg-dim" : "bg-violet"}`}
+                className={`h-4 w-4 rounded-full border-2 border-bg ${p.is_leader ? "bg-accent shadow-[0_0_0_6px_rgba(67,255,161,0.25)]" : p.loc_source !== "gps" ? "bg-dim" : "bg-violet"}`}
                 title={p.title}
               />
             </AdvancedMarker>
