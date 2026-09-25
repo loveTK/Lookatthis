@@ -51,8 +51,8 @@ export function ShareButton({ url, title, photoUrl, caption, labels }: Props) {
 
   return (
     <details className="relative">
-      <summary className="btn-ghost cursor-pointer list-none">{labels.share}</summary>
-      <div className="card absolute right-0 z-10 mt-2 flex w-64 flex-col gap-2 p-3 text-sm shadow-2xl">
+      <summary className="btn-ghost cursor-pointer list-none [&::-webkit-details-marker]:hidden">{labels.share}</summary>
+      <div className="card absolute left-0 z-10 mt-2 flex w-[min(16rem,calc(100vw-2rem))] flex-col gap-2 p-3 text-sm shadow-2xl">
         <button type="button" onClick={native} className="btn-accent w-full">{labels.instagram}</button>
         <div className="grid grid-cols-2 gap-2">
           {links.map(([name, href]) => (
