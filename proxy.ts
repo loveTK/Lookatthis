@@ -2,6 +2,7 @@ import { createServerClient } from "@supabase/ssr";
 import { NextResponse, type NextRequest } from "next/server";
 
 // 1) Supabase 세션 쿠키 갱신  2) 현재 경로를 x-pathname 헤더로 전달(언어 토글 후 복귀용)
+// (빌드 캐시 무효화용 터치: anon key 교체 후 강제 재컴파일)
 export async function proxy(request: NextRequest) {
   const next = () => {
     const h = new Headers(request.headers);
