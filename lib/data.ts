@@ -1,6 +1,15 @@
+import { createClient as createSupabaseClient } from "@supabase/supabase-js";
+import { unstable_cache } from "next/cache";
 import { cache } from "react";
 import { createClient } from "./supabase/server";
 import type { CommentRow, FeedRow } from "./types";
+
+// 로그인 여부와 무관한 공개 데이터(세계 지도)라 쿠키가 필요 없다.
+// unstable_cache 안에서는 cookies()를 못 쓰므로(=createClient() 불가) 익명 키로 직접 연결.
+const publicClient = () =>
+  createSupabaseClient(process.env.NEXT_PUBLIC_SUPABASE_URL!, process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!, {
+    auth: { persistSession: false },
+  });
 
 export const getPost = cache(async (id: number): Promise<FeedRow | null> => {
   const supabase = await createClient();
@@ -19,16 +28,21 @@ export async function getComments(postId: number): Promise<CommentRow[]> {
   return (data ?? []) as unknown as CommentRow[];
 }
 
-export async function feedAll(limit = 3000): Promise<FeedRow[]> {
-  const supabase = await createClient();
-  const { data } = await supabase
-    .from("feed")
-    .select("*")
-    .eq("status", "active")
-    .order("votes", { ascending: false })
-    .limit(limit);
-  return data ?? [];
-}
+// 전 세계 지도용 피드. 누가 봐도 같은 데이터라 60초 캐시 — 홈 방문마다 3000행 재조회하던 걸 없앤다.
+export const feedAll = unstable_cache(
+  async (limit = 3000): Promise<FeedRow[]> => {
+    const supabase = publicClient();
+    const { data } = await supabase
+      .from("feed")
+      .select("*")
+      .eq("status", "active")
+      .order("votes", { ascending: false })
+      .limit(limit);
+    return data ?? [];
+  },
+  ["feed-all"],
+  { revalidate: 60 },
+);
 
 export async function feedInBox(lat: number, lng: number, dLat = 0.15, dLng = 0.2, limit = 200): Promise<FeedRow[]> {
   const supabase = await createClient();
