@@ -1,17 +1,17 @@
 # Graph Report - Lookatthis  (2026-09-25)
 
 ## Corpus Check
-- 72 files · ~37,510 words
+- 72 files · ~37,650 words
 - Verdict: corpus is large enough that graph structure adds value.
 - Unclassified: 2 file(s) not represented in the graph (top: (none) 1, .css 1)
 
 ## Summary
-- 391 nodes · 727 edges · 29 communities (24 shown, 5 thin omitted)
+- 392 nodes · 727 edges · 29 communities (24 shown, 5 thin omitted)
 - Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 6 edges (avg confidence: 0.9)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `8b6d0490`
+- Built from commit: `e514cfa0`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -23,7 +23,7 @@
 - Appendix B - Canonical Sources (read these before reinventing)
 - 4. DESIGN ENGINEERING DIRECTIVES (Bias Correction)
 - 10. REFERENCE VOCABULARY (Pattern Names the Agent Should Know)
-- payments.test.ts
+- admin.ts
 - 1. THE THREE DIALS (Core Configuration)
 - actions.ts
 - Look At This
@@ -41,9 +41,9 @@
 - 8. DARK MODE PROTOCOL
 - [category]/page.tsx
 - Look At This — Claude Code 작업 지침
-- login/page.tsx
+- LoginForm.tsx
 - 7. DIAL DEFINITIONS (Technical Reference)
-- terms/page.tsx
+- privacy/page.tsx
 
 ## God Nodes (most connected - your core abstractions)
 1. `getLang()` - 36 edges
@@ -58,16 +58,16 @@
 10. `PostPage()` - 12 edges
 
 ## Surprising Connections (you probably didn't know these)
-- `구조` --references--> `reverseGeocode()`  [INFERRED]
-  CLAUDE.md → lib/google.ts
 - `절대 규칙` --references--> `supabaseAdmin()`  [INFERRED]
   CLAUDE.md → lib/supabase/admin.ts
+- `구조` --references--> `reverseGeocode()`  [INFERRED]
+  CLAUDE.md → lib/google.ts
 - `구조` --references--> `translateText()`  [INFERRED]
   CLAUDE.md → lib/google.ts
 - `generateMetadata()` --calls--> `feedWhere()`  [EXTRACTED]
-  app/city/[city]/[region]/page.tsx → lib/data.ts
-- `signOut()` --calls--> `createClient()`  [EXTRACTED]
-  app/actions.ts → lib/supabase/server.ts
+  app/city/[city]/page.tsx → lib/data.ts
+- `native()` --indirect_call--> `photoUrl()`  [INFERRED]
+  app/p/[slug]/ShareButton.tsx → lib/supabase/admin.ts
 
 ## Import Cycles
 - None detected.
@@ -80,11 +80,11 @@ Nodes (39): eslintConfig, dependencies, next, react, react-dom, sharp, @supabase
 
 ### Community 1 - "[slug]/page.tsx"
 Cohesion: 0.09
-Nodes (38): addComment(), report(), toggleVote(), generateMetadata(), Props, HubJsonLd(), bubbleSize(), Cluster (+30 more)
+Nodes (34): addComment(), report(), toggleVote(), bubbleSize(), Cluster, ClusterMarkers(), clusterPosts(), gridSizeDeg() (+26 more)
 
 ### Community 2 - "getLang"
 Cohesion: 0.08
-Nodes (37): createProfile(), GET(), CityPage(), generateMetadata(), Props, RegionPage(), Footer(), Header() (+29 more)
+Nodes (43): GET(), CityPage(), generateMetadata(), Props, RegionPage(), Footer(), Header(), Logo() (+35 more)
 
 ### Community 3 - "compilerOptions"
 Cohesion: 0.10
@@ -102,17 +102,17 @@ Nodes (12): 4.10 Quotes & Testimonials, 4.11 Page Theme Lock (Light / Dark Mode 
 Cohesion: 0.20
 Nodes (10): 10. REFERENCE VOCABULARY (Pattern Names the Agent Should Know), Animation Library Choice, Cards & Containers, Galleries & Media, Hero Paradigms, Layout & Grids, Micro-Interactions & Effects, Navigation & Menus (+2 more)
 
-### Community 7 - "payments.test.ts"
-Cohesion: 0.26
-Nodes (10): POST(), Order, parseOrder(), variantSlotsFromEnv(), verifySignature(), ref_node_assert, ref_node_crypto, ref_node_test (+2 more)
+### Community 7 - "admin.ts"
+Cohesion: 0.14
+Nodes (18): POST(), dynamic, sitemap(), Order, parseOrder(), variantSlotsFromEnv(), verifySignature(), supabaseAdmin() (+10 more)
 
 ### Community 8 - "1. THE THREE DIALS (Core Configuration)"
 Cohesion: 0.50
 Nodes (4): 1.A Dial Inference (design read → dial values), 1.B Use-Case Presets, 1.C How the Dials Drive Output, 1. THE THREE DIALS (Core Configuration)
 
 ### Community 9 - "actions.ts"
-Cohesion: 0.11
-Nodes (25): ActionState, createPost(), deletePost(), searchLocation(), setLang(), signOut(), DeleteButton(), Home() (+17 more)
+Cohesion: 0.13
+Nodes (23): ActionState, createPost(), createProfile(), deletePost(), searchLocation(), setLang(), signOut(), HandleForm() (+15 more)
 
 ### Community 10 - "Look At This"
 Cohesion: 0.22
@@ -155,16 +155,16 @@ Cohesion: 0.40
 Nodes (5): 8.A Token Strategy (pick one, stick to it), 8.B Do Not Prescribe Specific Colors Here, 8.C Default Mode, 8.D Test in Both Modes Before Finishing, 8. DARK MODE PROTOCOL
 
 ### Community 23 - "[category]/page.tsx"
-Cohesion: 0.29
-Nodes (9): CategoryPage(), generateMetadata(), Props, CATEGORIES, Category, CATEGORY_NAME, isCategory(), RULES (+1 more)
+Cohesion: 0.22
+Nodes (12): CategoryPage(), generateMetadata(), Props, generateMetadata(), Props, HubJsonLd(), CATEGORIES, Category (+4 more)
 
 ### Community 24 - "Look At This — Claude Code 작업 지침"
-Cohesion: 0.10
-Nodes (21): dynamic, sitemap(), graphify, Look At This — Claude Code 작업 지침, 구조, 규칙 위치, 만들지 말 것 (백로그, 추가 시점), 명령 (+13 more)
+Cohesion: 0.17
+Nodes (11): graphify, Look At This — Claude Code 작업 지침, 규칙 위치, 만들지 말 것 (백로그, 추가 시점), 명령, 스택 (바꾸지 말 것), 아직 검증 안 된 것 (키 없이 만들었음), 업로드 파이프라인 (순서 바꾸지 말 것) (+3 more)
 
-### Community 25 - "login/page.tsx"
-Cohesion: 0.24
-Nodes (7): LoginForm(), google(), magic(), LoginPage(), supabaseBrowser(), config, @supabase/ssr
+### Community 25 - "LoginForm.tsx"
+Cohesion: 0.29
+Nodes (6): LoginForm(), google(), magic(), supabaseBrowser(), config, @supabase/ssr
 
 ### Community 27 - "7. DIAL DEFINITIONS (Technical Reference)"
 Cohesion: 0.50
@@ -172,23 +172,23 @@ Nodes (4): 7. DIAL DEFINITIONS (Technical Reference), DESIGN_VARIANCE (Level 1-1
 
 ## Knowledge Gaps
 - **193 isolated node(s):** `Props`, `Props`, `Props`, `Pin`, `Cluster` (+188 more)
-  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 211 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
+  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 212 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
 - **5 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `next` connect `getLang` to `package.json`, `[slug]/page.tsx`, `actions.ts`, `[category]/page.tsx`, `Look At This — Claude Code 작업 지침`, `login/page.tsx`, `terms/page.tsx`?**
+- **Why does `next` connect `getLang` to `package.json`, `[slug]/page.tsx`, `admin.ts`, `actions.ts`, `[category]/page.tsx`, `LoginForm.tsx`, `privacy/page.tsx`?**
   _High betweenness centrality (0.131) - this node is a cross-community bridge._
 - **Why does `tasteskill: Anti-Slop Frontend Skill` connect `tasteskill: Anti-Slop Frontend Skill` to `Appendix B - Canonical Sources (read these before reinventing)`, `4. DESIGN ENGINEERING DIRECTIVES (Bias Correction)`, `10. REFERENCE VOCABULARY (Pattern Names the Agent Should Know)`, `1. THE THREE DIALS (Core Configuration)`, `9. AI TELLS (Forbidden Patterns)`, `11. REDESIGN PROTOCOL`, `3. DEFAULT ARCHITECTURE & CONVENTIONS`, `6. PERFORMANCE & ACCESSIBILITY GUARDRAILS`, `0. BRIEF INFERENCE (Read the Room Before Anything Else)`, `12. THE BLOCK LIBRARY (Contract - Implementations Land Here Iteratively)`, `5. CONTEXT-AWARE PROACTIVITY`, `8. DARK MODE PROTOCOL`, `7. DIAL DEFINITIONS (Technical Reference)`?**
   _High betweenness centrality (0.067) - this node is a cross-community bridge._
-- **Why does `getLang()` connect `getLang` to `actions.ts`, `login/page.tsx`, `[slug]/page.tsx`, `[category]/page.tsx`?**
+- **Why does `getLang()` connect `getLang` to `actions.ts`, `[slug]/page.tsx`, `[category]/page.tsx`?**
   _High betweenness centrality (0.033) - this node is a cross-community bridge._
 - **What connects `Props`, `Props`, `Props` to the rest of the system?**
   _193 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `package.json` be split into smaller, more focused modules?**
   _Cohesion score 0.05 - nodes in this community are weakly interconnected._
 - **Should `[slug]/page.tsx` be split into smaller, more focused modules?**
-  _Cohesion score 0.08705882352941176 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.08970099667774087 - nodes in this community are weakly interconnected._
 - **Should `getLang` be split into smaller, more focused modules?**
-  _Cohesion score 0.08408953418027829 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.07672634271099744 - nodes in this community are weakly interconnected._

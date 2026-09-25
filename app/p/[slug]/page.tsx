@@ -114,9 +114,10 @@ export default async function PostPage({ params, searchParams }: Props) {
         <div className="flex items-start gap-2">
           <ShareButton
             url={`${site}${path}`}
+            title={place ? `${post.title} in ${place}` : post.title}
             photoUrl={photoUrl(post.photo_path)}
             caption={[post.title, place, `${site}${path}`, `#lookatthis #hiddengems${post.city_slug ? ` #${post.city_slug.replace(/-/g, "")}` : ""}`].filter(Boolean).join("\n")}
-            labels={{ share: tr("post.share"), copied: tr("post.shareCopied"), shareFail: tr("err.GENERIC") }}
+            labels={{ share: tr("post.share"), copied: tr("post.shareCopied"), shareFail: tr("err.GENERIC"), instagram: tr("post.shareInstagram"), copyLink: tr("post.copyLink") }}
           />
           <div className="flex flex-col items-end gap-1">
             <form action={toggleVote}>

@@ -6,7 +6,7 @@
   "4": "Appendix B - Canonical Sources (read these before reinventing)",
   "5": "4. DESIGN ENGINEERING DIRECTIVES (Bias Correction)",
   "6": "10. REFERENCE VOCABULARY (Pattern Names the Agent Should Know)",
-  "7": "payments.test.ts",
+  "7": "admin.ts",
   "8": "1. THE THREE DIALS (Core Configuration)",
   "9": "actions.ts",
   "10": "Look At This",
@@ -24,8 +24,8 @@
   "22": "8. DARK MODE PROTOCOL",
   "23": "[category]/page.tsx",
   "24": "Look At This — Claude Code 작업 지침",
-  "25": "login/page.tsx",
+  "25": "LoginForm.tsx",
   "26": "error.tsx",
   "27": "7. DIAL DEFINITIONS (Technical Reference)",
-  "29": "terms/page.tsx"
+  "28": "privacy/page.tsx"
 }
