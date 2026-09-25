@@ -11,6 +11,7 @@ import { translateMany } from "@/lib/translate";
 import { CATEGORY_NAME } from "@/lib/category";
 import { addComment, report, toggleVote } from "@/app/actions";
 import { ToggleOriginal } from "./ToggleOriginal";
+import { DeleteButton } from "./DeleteButton";
 
 type Props = { params: Promise<{ slug: string }>; searchParams: Promise<{ voteError?: string }> };
 
@@ -174,6 +175,11 @@ export default async function PostPage({ params, searchParams }: Props) {
           </select>
           <button className="btn-ghost px-3! py-1! text-xs">{tr("post.report")}</button>
         </form>
+        {user?.id === post.user_id && (
+          <div className="mt-3 flex justify-end">
+            <DeleteButton postId={post.id} label={tr("post.delete")} confirmText={tr("post.deleteConfirm")} />
+          </div>
+        )}
       </section>
     </article>
   );

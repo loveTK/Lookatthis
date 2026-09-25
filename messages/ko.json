@@ -42,6 +42,8 @@
   "post.comment.price": "내 감정가 ($, 선택)",
   "post.comment.send": "등록",
   "post.report": "신고",
+  "post.delete": "게시물 삭제",
+  "post.deleteConfirm": "이 게시물을 삭제할까요? 칸이 비워지고 되돌릴 수 없어요.",
   "post.selfPrice": "주인이 매긴 값",
   "post.low": "최저",
   "post.median": "중앙",

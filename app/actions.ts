@@ -138,6 +138,17 @@ export async function addComment(formData: FormData) {
   revalidatePath(path);
 }
 
+export async function deletePost(formData: FormData) {
+  const supabase = await createClient();
+  const { data: { user } } = await supabase.auth.getUser();
+  if (!user) redirect("/login");
+  const id = Number(formData.get("post_id"));
+  // RLS posts_update_own: 본인 글만, status는 active/deleted만 허용
+  await supabase.from("posts").update({ status: "deleted" }).eq("id", id).eq("user_id", user.id);
+  revalidatePath("/");
+  redirect("/upload");
+}
+
 export async function report(formData: FormData) {
   const supabase = await createClient();
   const { data: { user } } = await supabase.auth.getUser();

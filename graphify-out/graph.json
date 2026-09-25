@@ -4,43 +4,108 @@
   "graph": {},
   "nodes": [
     {
+      "id": "app_components_mapview_cluster",
+      "label": "Cluster",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "[slug]/page.tsx",
+      "file_type": "code",
+      "norm_label": "cluster",
+      "source_file": "app/components/MapView.tsx",
+      "source_location": "L16"
+    },
+    {
+      "id": "app_components_mapview_props",
+      "label": "Props",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "[slug]/page.tsx",
+      "file_type": "code",
+      "norm_label": "props",
+      "source_file": "app/components/MapView.tsx",
+      "source_location": "L9"
+    },
+    {
       "id": "app_p_slug_page_props",
       "label": "Props",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
       "community": 1,
-      "community_name": "actions.ts",
+      "community_name": "[slug]/page.tsx",
       "file_type": "code",
       "norm_label": "props",
       "source_file": "app/p/[slug]/page.tsx",
-      "source_location": "L15"
+      "source_location": "L16"
     },
     {
-      "id": "app_city_city_page_props",
-      "label": "Props",
+      "id": "app_p_slug_toggleoriginal_text",
+      "label": "Text",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
-      "community": 2,
-      "community_name": "getLang",
+      "community": 1,
+      "community_name": "[slug]/page.tsx",
       "file_type": "code",
-      "norm_label": "props",
-      "source_file": "app/city/[city]/page.tsx",
-      "source_location": "L10"
+      "norm_label": "text",
+      "source_file": "app/p/[slug]/ToggleOriginal.tsx",
+      "source_location": "L5"
     },
     {
-      "id": "app_city_city_region_page_props",
-      "label": "Props",
+      "id": "lib_translate_item",
+      "label": "Item",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
-      "community": 2,
-      "community_name": "getLang",
+      "community": 1,
+      "community_name": "[slug]/page.tsx",
       "file_type": "code",
-      "norm_label": "props",
-      "source_file": "app/city/[city]/[region]/page.tsx",
-      "source_location": "L9"
+      "norm_label": "item",
+      "source_file": "lib/translate.ts",
+      "source_location": "L5"
+    },
+    {
+      "id": "lib_translate_kind",
+      "label": "Kind",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "[slug]/page.tsx",
+      "file_type": "code",
+      "norm_label": "kind",
+      "source_file": "lib/translate.ts",
+      "source_location": "L4"
+    },
+    {
+      "id": "lib_translate_translated",
+      "label": "Translated",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "[slug]/page.tsx",
+      "file_type": "code",
+      "norm_label": "translated",
+      "source_file": "lib/translate.ts",
+      "source_location": "L6"
+    },
+    {
+      "id": "lib_types_feedrow",
+      "label": "FeedRow",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "[slug]/page.tsx",
+      "file_type": "code",
+      "norm_label": "feedrow",
+      "source_file": "lib/types.ts",
+      "source_location": "L3"
     },
     {
       "id": "app_u_handle_page_props",
@@ -56,6 +121,45 @@
       "source_location": "L8"
     },
     {
+      "id": "lib_types_commentrow",
+      "label": "CommentRow",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "getLang",
+      "file_type": "code",
+      "norm_label": "commentrow",
+      "source_file": "lib/types.ts",
+      "source_location": "L30"
+    },
+    {
+      "id": "lib_types_lang",
+      "label": "Lang",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "getLang",
+      "file_type": "code",
+      "norm_label": "lang",
+      "source_file": "lib/types.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "lib_types_profile",
+      "label": "Profile",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "getLang",
+      "file_type": "code",
+      "norm_label": "profile",
+      "source_file": "lib/types.ts",
+      "source_location": "L41"
+    },
+    {
       "id": "app_city_city_c_category_page_props",
       "label": "Props",
       "_callable": true,
@@ -69,6 +173,32 @@
       "source_location": "L10"
     },
     {
+      "id": "app_city_city_page_props",
+      "label": "Props",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 23,
+      "community_name": "[category]/page.tsx",
+      "file_type": "code",
+      "norm_label": "props",
+      "source_file": "app/city/[city]/page.tsx",
+      "source_location": "L10"
+    },
+    {
+      "id": "app_city_city_region_page_props",
+      "label": "Props",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 23,
+      "community_name": "[category]/page.tsx",
+      "file_type": "code",
+      "norm_label": "props",
+      "source_file": "app/city/[city]/[region]/page.tsx",
+      "source_location": "L9"
+    },
+    {
       "id": "lib_category_category",
       "label": "Category",
       "_callable": true,
@@ -80,58 +210,6 @@
       "norm_label": "category",
       "source_file": "lib/category.ts",
       "source_location": "L2"
-    },
-    {
-      "id": "lib_google_place",
-      "label": "Place",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 28,
-      "community_name": "Look At This \u2014 Claude Code \uc791\uc5c5 \uc9c0\uce68",
-      "file_type": "code",
-      "norm_label": "place",
-      "source_file": "lib/google.ts",
-      "source_location": "L28"
-    },
-    {
-      "id": "lib_translate_item",
-      "label": "Item",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 28,
-      "community_name": "Look At This \u2014 Claude Code \uc791\uc5c5 \uc9c0\uce68",
-      "file_type": "code",
-      "norm_label": "item",
-      "source_file": "lib/translate.ts",
-      "source_location": "L5"
-    },
-    {
-      "id": "lib_translate_kind",
-      "label": "Kind",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 28,
-      "community_name": "Look At This \u2014 Claude Code \uc791\uc5c5 \uc9c0\uce68",
-      "file_type": "code",
-      "norm_label": "kind",
-      "source_file": "lib/translate.ts",
-      "source_location": "L4"
-    },
-    {
-      "id": "lib_translate_translated",
-      "label": "Translated",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 28,
-      "community_name": "Look At This \u2014 Claude Code \uc791\uc5c5 \uc9c0\uce68",
-      "file_type": "code",
-      "norm_label": "translated",
-      "source_file": "lib/translate.ts",
-      "source_location": "L6"
     },
     {
       "id": "lib_payments_order",
@@ -153,50 +231,11 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 9,
-      "community_name": "MapView.tsx",
+      "community_name": "actions.ts",
       "file_type": "code",
       "norm_label": "actionstate",
       "source_file": "app/actions.ts",
       "source_location": "L16"
-    },
-    {
-      "id": "app_components_mapview_cluster",
-      "label": "Cluster",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 9,
-      "community_name": "MapView.tsx",
-      "file_type": "code",
-      "norm_label": "cluster",
-      "source_file": "app/components/MapView.tsx",
-      "source_location": "L16"
-    },
-    {
-      "id": "app_components_mapview_props",
-      "label": "Props",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 9,
-      "community_name": "MapView.tsx",
-      "file_type": "code",
-      "norm_label": "props",
-      "source_file": "app/components/MapView.tsx",
-      "source_location": "L9"
-    },
-    {
-      "id": "app_p_slug_toggleoriginal_text",
-      "label": "Text",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 9,
-      "community_name": "MapView.tsx",
-      "file_type": "code",
-      "norm_label": "text",
-      "source_file": "app/p/[slug]/ToggleOriginal.tsx",
-      "source_location": "L5"
     },
     {
       "id": "app_upload_uploadform_gps",
@@ -205,7 +244,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 9,
-      "community_name": "MapView.tsx",
+      "community_name": "actions.ts",
       "file_type": "code",
       "norm_label": "gps",
       "source_file": "app/upload/UploadForm.tsx",
@@ -218,135 +257,96 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 9,
-      "community_name": "MapView.tsx",
+      "community_name": "actions.ts",
       "file_type": "code",
       "norm_label": "pin",
       "source_file": "app/upload/UploadForm.tsx",
       "source_location": "L8"
     },
     {
-      "id": "lib_types_commentrow",
-      "label": "CommentRow",
+      "id": "lib_google_place",
+      "label": "Place",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
       "community": 9,
-      "community_name": "MapView.tsx",
+      "community_name": "actions.ts",
       "file_type": "code",
-      "norm_label": "commentrow",
-      "source_file": "lib/types.ts",
-      "source_location": "L30"
+      "norm_label": "place",
+      "source_file": "lib/google.ts",
+      "source_location": "L28"
     },
     {
-      "id": "lib_types_feedrow",
-      "label": "FeedRow",
+      "id": "proxy_proxy",
+      "label": "proxy()",
       "_callable": true,
-      "_callable_class": true,
       "_origin": "ast",
-      "community": 9,
-      "community_name": "MapView.tsx",
+      "community": 0,
+      "community_name": "package.json",
       "file_type": "code",
-      "norm_label": "feedrow",
-      "source_file": "lib/types.ts",
-      "source_location": "L3"
+      "norm_label": "proxy()",
+      "source_file": "proxy.ts",
+      "source_location": "L5"
     },
     {
-      "id": "lib_types_lang",
-      "label": "Lang",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 9,
-      "community_name": "MapView.tsx",
-      "file_type": "code",
-      "norm_label": "lang",
-      "source_file": "lib/types.ts",
-      "source_location": "L1"
-    },
-    {
-      "id": "lib_types_profile",
-      "label": "Profile",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 9,
-      "community_name": "MapView.tsx",
-      "file_type": "code",
-      "norm_label": "profile",
-      "source_file": "lib/types.ts",
-      "source_location": "L41"
-    },
-    {
-      "id": "app_actions_addcomment",
-      "label": "addComment()",
+      "id": "app_components_mapview_bubblesize",
+      "label": "bubbleSize()",
       "_callable": true,
       "_origin": "ast",
       "community": 1,
-      "community_name": "actions.ts",
+      "community_name": "[slug]/page.tsx",
       "file_type": "code",
-      "norm_label": "addcomment()",
-      "source_file": "app/actions.ts",
-      "source_location": "L125"
-    },
-    {
-      "id": "app_actions_createpost",
-      "label": "createPost()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "actions.ts",
-      "file_type": "code",
-      "norm_label": "createpost()",
-      "source_file": "app/actions.ts",
+      "norm_label": "bubblesize()",
+      "source_file": "app/components/MapView.tsx",
       "source_location": "L42"
     },
     {
-      "id": "app_actions_report",
-      "label": "report()",
+      "id": "app_components_mapview_clustermarkers",
+      "label": "ClusterMarkers()",
       "_callable": true,
       "_origin": "ast",
       "community": 1,
-      "community_name": "actions.ts",
+      "community_name": "[slug]/page.tsx",
       "file_type": "code",
-      "norm_label": "report()",
-      "source_file": "app/actions.ts",
-      "source_location": "L141"
+      "norm_label": "clustermarkers()",
+      "source_file": "app/components/MapView.tsx",
+      "source_location": "L44"
     },
     {
-      "id": "app_actions_togglevote",
-      "label": "toggleVote()",
+      "id": "app_components_mapview_clusterposts",
+      "label": "clusterPosts()",
       "_callable": true,
       "_origin": "ast",
       "community": 1,
-      "community_name": "actions.ts",
+      "community_name": "[slug]/page.tsx",
       "file_type": "code",
-      "norm_label": "togglevote()",
-      "source_file": "app/actions.ts",
-      "source_location": "L111"
+      "norm_label": "clusterposts()",
+      "source_file": "app/components/MapView.tsx",
+      "source_location": "L27"
     },
     {
-      "id": "app_auth_callback_route_get",
-      "label": "GET()",
+      "id": "app_components_mapview_gridsizedeg",
+      "label": "gridSizeDeg()",
       "_callable": true,
       "_origin": "ast",
       "community": 1,
-      "community_name": "actions.ts",
+      "community_name": "[slug]/page.tsx",
       "file_type": "code",
-      "norm_label": "get()",
-      "source_file": "app/auth/callback/route.ts",
-      "source_location": "L6"
+      "norm_label": "gridsizedeg()",
+      "source_file": "app/components/MapView.tsx",
+      "source_location": "L19"
     },
     {
-      "id": "app_city_hubjsonld_hubjsonld",
-      "label": "HubJsonLd()",
+      "id": "app_components_mapview_mapview",
+      "label": "MapView()",
       "_callable": true,
       "_origin": "ast",
       "community": 1,
-      "community_name": "actions.ts",
+      "community_name": "[slug]/page.tsx",
       "file_type": "code",
-      "norm_label": "hubjsonld()",
-      "source_file": "app/city/HubJsonLd.tsx",
-      "source_location": "L4"
+      "norm_label": "mapview()",
+      "source_file": "app/components/MapView.tsx",
+      "source_location": "L92"
     },
     {
       "id": "app_components_postcard_postcard",
@@ -354,7 +354,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 1,
-      "community_name": "actions.ts",
+      "community_name": "[slug]/page.tsx",
       "file_type": "code",
       "norm_label": "postcard()",
       "source_file": "app/components/PostCard.tsx",
@@ -366,7 +366,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 1,
-      "community_name": "actions.ts",
+      "community_name": "[slug]/page.tsx",
       "file_type": "code",
       "norm_label": "ogimage()",
       "source_file": "app/p/[slug]/opengraph-image.tsx",
@@ -378,11 +378,11 @@
       "_callable": true,
       "_origin": "ast",
       "community": 1,
-      "community_name": "actions.ts",
+      "community_name": "[slug]/page.tsx",
       "file_type": "code",
       "norm_label": "generatemetadata()",
       "source_file": "app/p/[slug]/page.tsx",
-      "source_location": "L19"
+      "source_location": "L20"
     },
     {
       "id": "app_p_slug_page_isthin",
@@ -390,11 +390,11 @@
       "_callable": true,
       "_origin": "ast",
       "community": 1,
-      "community_name": "actions.ts",
+      "community_name": "[slug]/page.tsx",
       "file_type": "code",
       "norm_label": "isthin()",
       "source_file": "app/p/[slug]/page.tsx",
-      "source_location": "L17"
+      "source_location": "L18"
     },
     {
       "id": "app_p_slug_page_postpage",
@@ -402,11 +402,11 @@
       "_callable": true,
       "_origin": "ast",
       "community": 1,
-      "community_name": "actions.ts",
+      "community_name": "[slug]/page.tsx",
       "file_type": "code",
       "norm_label": "postpage()",
       "source_file": "app/p/[slug]/page.tsx",
-      "source_location": "L38"
+      "source_location": "L39"
     },
     {
       "id": "app_p_slug_page_stat",
@@ -414,11 +414,23 @@
       "_callable": true,
       "_origin": "ast",
       "community": 1,
-      "community_name": "actions.ts",
+      "community_name": "[slug]/page.tsx",
       "file_type": "code",
       "norm_label": "stat()",
       "source_file": "app/p/[slug]/page.tsx",
-      "source_location": "L182"
+      "source_location": "L188"
+    },
+    {
+      "id": "app_p_slug_toggleoriginal_toggleoriginal",
+      "label": "ToggleOriginal()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "[slug]/page.tsx",
+      "file_type": "code",
+      "norm_label": "toggleoriginal()",
+      "source_file": "app/p/[slug]/ToggleOriginal.tsx",
+      "source_location": "L8"
     },
     {
       "id": "app_sitemap_sitemap",
@@ -426,23 +438,11 @@
       "_callable": true,
       "_origin": "ast",
       "community": 1,
-      "community_name": "actions.ts",
+      "community_name": "[slug]/page.tsx",
       "file_type": "code",
       "norm_label": "sitemap()",
       "source_file": "app/sitemap.ts",
       "source_location": "L7"
-    },
-    {
-      "id": "lib_category_categoryfromlabels",
-      "label": "categoryFromLabels()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "actions.ts",
-      "file_type": "code",
-      "norm_label": "categoryfromlabels()",
-      "source_file": "lib/category.ts",
-      "source_location": "L23"
     },
     {
       "id": "lib_data_appraisalrange",
@@ -450,7 +450,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 1,
-      "community_name": "actions.ts",
+      "community_name": "[slug]/page.tsx",
       "file_type": "code",
       "norm_label": "appraisalrange()",
       "source_file": "lib/data.ts",
@@ -462,7 +462,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 1,
-      "community_name": "actions.ts",
+      "community_name": "[slug]/page.tsx",
       "file_type": "code",
       "norm_label": "getcomments()",
       "source_file": "lib/data.ts",
@@ -474,7 +474,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 1,
-      "community_name": "actions.ts",
+      "community_name": "[slug]/page.tsx",
       "file_type": "code",
       "norm_label": "idfromslug()",
       "source_file": "lib/slug.ts",
@@ -486,7 +486,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 1,
-      "community_name": "actions.ts",
+      "community_name": "[slug]/page.tsx",
       "file_type": "code",
       "norm_label": "money()",
       "source_file": "lib/slug.ts",
@@ -498,7 +498,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 1,
-      "community_name": "actions.ts",
+      "community_name": "[slug]/page.tsx",
       "file_type": "code",
       "norm_label": "postpath()",
       "source_file": "lib/slug.ts",
@@ -510,7 +510,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 1,
-      "community_name": "actions.ts",
+      "community_name": "[slug]/page.tsx",
       "file_type": "code",
       "norm_label": "slugify()",
       "source_file": "lib/slug.ts",
@@ -522,7 +522,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 1,
-      "community_name": "actions.ts",
+      "community_name": "[slug]/page.tsx",
       "file_type": "code",
       "norm_label": "photourl()",
       "source_file": "lib/supabase/admin.ts",
@@ -534,35 +534,11 @@
       "_callable": true,
       "_origin": "ast",
       "community": 1,
-      "community_name": "actions.ts",
+      "community_name": "[slug]/page.tsx",
       "file_type": "code",
       "norm_label": "supabaseadmin()",
       "source_file": "lib/supabase/admin.ts",
       "source_location": "L4"
-    },
-    {
-      "id": "lib_supabase_server_createclient",
-      "label": "createClient()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "actions.ts",
-      "file_type": "code",
-      "norm_label": "createclient()",
-      "source_file": "lib/supabase/server.ts",
-      "source_location": "L4"
-    },
-    {
-      "id": "lib_supabase_server_currentuser",
-      "label": "currentUser()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "actions.ts",
-      "file_type": "code",
-      "norm_label": "currentuser()",
-      "source_file": "lib/supabase/server.ts",
-      "source_location": "L24"
     },
     {
       "id": "lib_translate_translatemany",
@@ -570,95 +546,11 @@
       "_callable": true,
       "_origin": "ast",
       "community": 1,
-      "community_name": "actions.ts",
+      "community_name": "[slug]/page.tsx",
       "file_type": "code",
       "norm_label": "translatemany()",
       "source_file": "lib/translate.ts",
       "source_location": "L9"
-    },
-    {
-      "id": "app_actions_createprofile",
-      "label": "createProfile()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "getLang",
-      "file_type": "code",
-      "norm_label": "createprofile()",
-      "source_file": "app/actions.ts",
-      "source_location": "L30"
-    },
-    {
-      "id": "app_actions_setlang",
-      "label": "setLang()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "getLang",
-      "file_type": "code",
-      "norm_label": "setlang()",
-      "source_file": "app/actions.ts",
-      "source_location": "L18"
-    },
-    {
-      "id": "app_actions_signout",
-      "label": "signOut()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "getLang",
-      "file_type": "code",
-      "norm_label": "signout()",
-      "source_file": "app/actions.ts",
-      "source_location": "L24"
-    },
-    {
-      "id": "app_city_city_page_citypage",
-      "label": "CityPage()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "getLang",
-      "file_type": "code",
-      "norm_label": "citypage()",
-      "source_file": "app/city/[city]/page.tsx",
-      "source_location": "L23"
-    },
-    {
-      "id": "app_city_city_page_generatemetadata",
-      "label": "generateMetadata()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "getLang",
-      "file_type": "code",
-      "norm_label": "generatemetadata()",
-      "source_file": "app/city/[city]/page.tsx",
-      "source_location": "L12"
-    },
-    {
-      "id": "app_city_city_region_page_generatemetadata",
-      "label": "generateMetadata()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "getLang",
-      "file_type": "code",
-      "norm_label": "generatemetadata()",
-      "source_file": "app/city/[city]/[region]/page.tsx",
-      "source_location": "L11"
-    },
-    {
-      "id": "app_city_city_region_page_regionpage",
-      "label": "RegionPage()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "getLang",
-      "file_type": "code",
-      "norm_label": "regionpage()",
-      "source_file": "app/city/[city]/[region]/page.tsx",
-      "source_location": "L24"
     },
     {
       "id": "app_components_footer_footer",
@@ -721,6 +613,54 @@
       "source_location": "L28"
     },
     {
+      "id": "app_login_loginform_loginform",
+      "label": "LoginForm()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "getLang",
+      "file_type": "code",
+      "norm_label": "loginform()",
+      "source_file": "app/login/LoginForm.tsx",
+      "source_location": "L6"
+    },
+    {
+      "id": "app_login_loginform_loginform_google",
+      "label": "google()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "getLang",
+      "file_type": "code",
+      "norm_label": "google()",
+      "source_file": "app/login/LoginForm.tsx",
+      "source_location": "L17"
+    },
+    {
+      "id": "app_login_loginform_loginform_magic",
+      "label": "magic()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "getLang",
+      "file_type": "code",
+      "norm_label": "magic()",
+      "source_file": "app/login/LoginForm.tsx",
+      "source_location": "L12"
+    },
+    {
+      "id": "app_login_page_loginpage",
+      "label": "LoginPage()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "getLang",
+      "file_type": "code",
+      "norm_label": "loginpage()",
+      "source_file": "app/login/page.tsx",
+      "source_location": "L4"
+    },
+    {
       "id": "app_not_found_notfound",
       "label": "NotFound()",
       "_callable": true,
@@ -731,30 +671,6 @@
       "norm_label": "notfound()",
       "source_file": "app/not-found.tsx",
       "source_location": "L4"
-    },
-    {
-      "id": "app_onboarding_handleform_handleform",
-      "label": "HandleForm()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "getLang",
-      "file_type": "code",
-      "norm_label": "handleform()",
-      "source_file": "app/onboarding/HandleForm.tsx",
-      "source_location": "L6"
-    },
-    {
-      "id": "app_onboarding_page_onboarding",
-      "label": "Onboarding()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "getLang",
-      "file_type": "code",
-      "norm_label": "onboarding()",
-      "source_file": "app/onboarding/page.tsx",
-      "source_location": "L6"
     },
     {
       "id": "app_pricing_page_pricingpage",
@@ -793,42 +709,6 @@
       "source_location": "L21"
     },
     {
-      "id": "app_upload_page_uploadpage",
-      "label": "UploadPage()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "getLang",
-      "file_type": "code",
-      "norm_label": "uploadpage()",
-      "source_file": "app/upload/page.tsx",
-      "source_location": "L7"
-    },
-    {
-      "id": "app_upload_uploadform_uploadform",
-      "label": "UploadForm()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "getLang",
-      "file_type": "code",
-      "norm_label": "uploadform()",
-      "source_file": "app/upload/UploadForm.tsx",
-      "source_location": "L10"
-    },
-    {
-      "id": "lib_data_feedwhere",
-      "label": "feedWhere()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "getLang",
-      "file_type": "code",
-      "norm_label": "feedwhere()",
-      "source_file": "lib/data.ts",
-      "source_location": "L46"
-    },
-    {
       "id": "lib_i18n_getlang",
       "label": "getLang()",
       "_callable": true,
@@ -851,6 +731,18 @@
       "norm_label": "t()",
       "source_file": "lib/i18n.ts",
       "source_location": "L16"
+    },
+    {
+      "id": "lib_supabase_browser_supabasebrowser",
+      "label": "supabaseBrowser()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "getLang",
+      "file_type": "code",
+      "norm_label": "supabasebrowser()",
+      "source_file": "lib/supabase/browser.ts",
+      "source_location": "L3"
     },
     {
       "id": "app_city_city_c_category_page_categorypage",
@@ -877,6 +769,66 @@
       "source_location": "L12"
     },
     {
+      "id": "app_city_city_page_citypage",
+      "label": "CityPage()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 23,
+      "community_name": "[category]/page.tsx",
+      "file_type": "code",
+      "norm_label": "citypage()",
+      "source_file": "app/city/[city]/page.tsx",
+      "source_location": "L23"
+    },
+    {
+      "id": "app_city_city_page_generatemetadata",
+      "label": "generateMetadata()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 23,
+      "community_name": "[category]/page.tsx",
+      "file_type": "code",
+      "norm_label": "generatemetadata()",
+      "source_file": "app/city/[city]/page.tsx",
+      "source_location": "L12"
+    },
+    {
+      "id": "app_city_city_region_page_generatemetadata",
+      "label": "generateMetadata()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 23,
+      "community_name": "[category]/page.tsx",
+      "file_type": "code",
+      "norm_label": "generatemetadata()",
+      "source_file": "app/city/[city]/[region]/page.tsx",
+      "source_location": "L11"
+    },
+    {
+      "id": "app_city_city_region_page_regionpage",
+      "label": "RegionPage()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 23,
+      "community_name": "[category]/page.tsx",
+      "file_type": "code",
+      "norm_label": "regionpage()",
+      "source_file": "app/city/[city]/[region]/page.tsx",
+      "source_location": "L24"
+    },
+    {
+      "id": "app_city_hubjsonld_hubjsonld",
+      "label": "HubJsonLd()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 23,
+      "community_name": "[category]/page.tsx",
+      "file_type": "code",
+      "norm_label": "hubjsonld()",
+      "source_file": "app/city/HubJsonLd.tsx",
+      "source_location": "L4"
+    },
+    {
       "id": "lib_category_iscategory",
       "label": "isCategory()",
       "_callable": true,
@@ -899,6 +851,18 @@
       "norm_label": "feedcitycategory()",
       "source_file": "lib/data.ts",
       "source_location": "L59"
+    },
+    {
+      "id": "lib_data_feedwhere",
+      "label": "feedWhere()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 23,
+      "community_name": "[category]/page.tsx",
+      "file_type": "code",
+      "norm_label": "feedwhere()",
+      "source_file": "lib/data.ts",
+      "source_location": "L46"
     },
     {
       "id": "app_error_error",
@@ -1009,54 +973,6 @@
       "source_location": "L4"
     },
     {
-      "id": "lib_google_analyzeimage",
-      "label": "analyzeImage()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 28,
-      "community_name": "Look At This \u2014 Claude Code \uc791\uc5c5 \uc9c0\uce68",
-      "file_type": "code",
-      "norm_label": "analyzeimage()",
-      "source_file": "lib/google.ts",
-      "source_location": "L5"
-    },
-    {
-      "id": "lib_google_key",
-      "label": "KEY()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 28,
-      "community_name": "Look At This \u2014 Claude Code \uc791\uc5c5 \uc9c0\uce68",
-      "file_type": "code",
-      "norm_label": "key()",
-      "source_file": "lib/google.ts",
-      "source_location": "L2"
-    },
-    {
-      "id": "lib_google_reversegeocode",
-      "label": "reverseGeocode()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 28,
-      "community_name": "Look At This \u2014 Claude Code \uc791\uc5c5 \uc9c0\uce68",
-      "file_type": "code",
-      "norm_label": "reversegeocode()",
-      "source_file": "lib/google.ts",
-      "source_location": "L31"
-    },
-    {
-      "id": "lib_google_translatetext",
-      "label": "translateText()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 28,
-      "community_name": "Look At This \u2014 Claude Code \uc791\uc5c5 \uc9c0\uce68",
-      "file_type": "code",
-      "norm_label": "translatetext()",
-      "source_file": "lib/google.ts",
-      "source_location": "L52"
-    },
-    {
       "id": "app_api_webhooks_payments_route_post",
       "label": "POST()",
       "_callable": true,
@@ -1067,6 +983,18 @@
       "norm_label": "post()",
       "source_file": "app/api/webhooks/payments/route.ts",
       "source_location": "L5"
+    },
+    {
+      "id": "lib_category_categoryfromlabels",
+      "label": "categoryFromLabels()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 7,
+      "community_name": "payments.test.ts",
+      "file_type": "code",
+      "norm_label": "categoryfromlabels()",
+      "source_file": "lib/category.ts",
+      "source_location": "L23"
     },
     {
       "id": "lib_payments_parseorder",
@@ -1105,148 +1033,244 @@
       "source_location": "L3"
     },
     {
-      "id": "app_login_loginform_loginform",
-      "label": "LoginForm()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 8,
-      "community_name": "login/page.tsx",
-      "file_type": "code",
-      "norm_label": "loginform()",
-      "source_file": "app/login/LoginForm.tsx",
-      "source_location": "L6"
-    },
-    {
-      "id": "app_login_loginform_loginform_google",
-      "label": "google()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 8,
-      "community_name": "login/page.tsx",
-      "file_type": "code",
-      "norm_label": "google()",
-      "source_file": "app/login/LoginForm.tsx",
-      "source_location": "L17"
-    },
-    {
-      "id": "app_login_loginform_loginform_magic",
-      "label": "magic()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 8,
-      "community_name": "login/page.tsx",
-      "file_type": "code",
-      "norm_label": "magic()",
-      "source_file": "app/login/LoginForm.tsx",
-      "source_location": "L12"
-    },
-    {
-      "id": "app_login_page_loginpage",
-      "label": "LoginPage()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 8,
-      "community_name": "login/page.tsx",
-      "file_type": "code",
-      "norm_label": "loginpage()",
-      "source_file": "app/login/page.tsx",
-      "source_location": "L4"
-    },
-    {
-      "id": "lib_supabase_browser_supabasebrowser",
-      "label": "supabaseBrowser()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 8,
-      "community_name": "login/page.tsx",
-      "file_type": "code",
-      "norm_label": "supabasebrowser()",
-      "source_file": "lib/supabase/browser.ts",
-      "source_location": "L3"
-    },
-    {
-      "id": "proxy_proxy",
-      "label": "proxy()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 8,
-      "community_name": "login/page.tsx",
-      "file_type": "code",
-      "norm_label": "proxy()",
-      "source_file": "proxy.ts",
-      "source_location": "L5"
-    },
-    {
-      "id": "app_components_mapview_bubblesize",
-      "label": "bubbleSize()",
+      "id": "app_actions_addcomment",
+      "label": "addComment()",
       "_callable": true,
       "_origin": "ast",
       "community": 9,
-      "community_name": "MapView.tsx",
+      "community_name": "actions.ts",
       "file_type": "code",
-      "norm_label": "bubblesize()",
-      "source_file": "app/components/MapView.tsx",
+      "norm_label": "addcomment()",
+      "source_file": "app/actions.ts",
+      "source_location": "L125"
+    },
+    {
+      "id": "app_actions_createpost",
+      "label": "createPost()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "actions.ts",
+      "file_type": "code",
+      "norm_label": "createpost()",
+      "source_file": "app/actions.ts",
       "source_location": "L42"
     },
     {
-      "id": "app_components_mapview_clustermarkers",
-      "label": "ClusterMarkers()",
+      "id": "app_actions_createprofile",
+      "label": "createProfile()",
       "_callable": true,
       "_origin": "ast",
       "community": 9,
-      "community_name": "MapView.tsx",
+      "community_name": "actions.ts",
       "file_type": "code",
-      "norm_label": "clustermarkers()",
-      "source_file": "app/components/MapView.tsx",
-      "source_location": "L44"
+      "norm_label": "createprofile()",
+      "source_file": "app/actions.ts",
+      "source_location": "L30"
     },
     {
-      "id": "app_components_mapview_clusterposts",
-      "label": "clusterPosts()",
+      "id": "app_actions_deletepost",
+      "label": "deletePost()",
       "_callable": true,
       "_origin": "ast",
       "community": 9,
-      "community_name": "MapView.tsx",
+      "community_name": "actions.ts",
       "file_type": "code",
-      "norm_label": "clusterposts()",
-      "source_file": "app/components/MapView.tsx",
-      "source_location": "L27"
+      "norm_label": "deletepost()",
+      "source_file": "app/actions.ts",
+      "source_location": "L141"
     },
     {
-      "id": "app_components_mapview_gridsizedeg",
-      "label": "gridSizeDeg()",
+      "id": "app_actions_report",
+      "label": "report()",
       "_callable": true,
       "_origin": "ast",
       "community": 9,
-      "community_name": "MapView.tsx",
+      "community_name": "actions.ts",
       "file_type": "code",
-      "norm_label": "gridsizedeg()",
-      "source_file": "app/components/MapView.tsx",
-      "source_location": "L19"
+      "norm_label": "report()",
+      "source_file": "app/actions.ts",
+      "source_location": "L152"
     },
     {
-      "id": "app_components_mapview_mapview",
-      "label": "MapView()",
+      "id": "app_actions_setlang",
+      "label": "setLang()",
       "_callable": true,
       "_origin": "ast",
       "community": 9,
-      "community_name": "MapView.tsx",
+      "community_name": "actions.ts",
       "file_type": "code",
-      "norm_label": "mapview()",
-      "source_file": "app/components/MapView.tsx",
-      "source_location": "L92"
+      "norm_label": "setlang()",
+      "source_file": "app/actions.ts",
+      "source_location": "L18"
     },
     {
-      "id": "app_p_slug_toggleoriginal_toggleoriginal",
-      "label": "ToggleOriginal()",
+      "id": "app_actions_signout",
+      "label": "signOut()",
       "_callable": true,
       "_origin": "ast",
       "community": 9,
-      "community_name": "MapView.tsx",
+      "community_name": "actions.ts",
       "file_type": "code",
-      "norm_label": "toggleoriginal()",
-      "source_file": "app/p/[slug]/ToggleOriginal.tsx",
-      "source_location": "L8"
+      "norm_label": "signout()",
+      "source_file": "app/actions.ts",
+      "source_location": "L24"
+    },
+    {
+      "id": "app_actions_togglevote",
+      "label": "toggleVote()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "actions.ts",
+      "file_type": "code",
+      "norm_label": "togglevote()",
+      "source_file": "app/actions.ts",
+      "source_location": "L111"
+    },
+    {
+      "id": "app_auth_callback_route_get",
+      "label": "GET()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "actions.ts",
+      "file_type": "code",
+      "norm_label": "get()",
+      "source_file": "app/auth/callback/route.ts",
+      "source_location": "L6"
+    },
+    {
+      "id": "app_onboarding_handleform_handleform",
+      "label": "HandleForm()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "actions.ts",
+      "file_type": "code",
+      "norm_label": "handleform()",
+      "source_file": "app/onboarding/HandleForm.tsx",
+      "source_location": "L6"
+    },
+    {
+      "id": "app_onboarding_page_onboarding",
+      "label": "Onboarding()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "actions.ts",
+      "file_type": "code",
+      "norm_label": "onboarding()",
+      "source_file": "app/onboarding/page.tsx",
+      "source_location": "L6"
+    },
+    {
+      "id": "app_p_slug_deletebutton_deletebutton",
+      "label": "DeleteButton()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "actions.ts",
+      "file_type": "code",
+      "norm_label": "deletebutton()",
+      "source_file": "app/p/[slug]/DeleteButton.tsx",
+      "source_location": "L5"
+    },
+    {
+      "id": "app_upload_page_uploadpage",
+      "label": "UploadPage()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "actions.ts",
+      "file_type": "code",
+      "norm_label": "uploadpage()",
+      "source_file": "app/upload/page.tsx",
+      "source_location": "L7"
+    },
+    {
+      "id": "app_upload_uploadform_uploadform",
+      "label": "UploadForm()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "actions.ts",
+      "file_type": "code",
+      "norm_label": "uploadform()",
+      "source_file": "app/upload/UploadForm.tsx",
+      "source_location": "L10"
+    },
+    {
+      "id": "lib_google_analyzeimage",
+      "label": "analyzeImage()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "actions.ts",
+      "file_type": "code",
+      "norm_label": "analyzeimage()",
+      "source_file": "lib/google.ts",
+      "source_location": "L5"
+    },
+    {
+      "id": "lib_google_key",
+      "label": "KEY()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "actions.ts",
+      "file_type": "code",
+      "norm_label": "key()",
+      "source_file": "lib/google.ts",
+      "source_location": "L2"
+    },
+    {
+      "id": "lib_google_reversegeocode",
+      "label": "reverseGeocode()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "actions.ts",
+      "file_type": "code",
+      "norm_label": "reversegeocode()",
+      "source_file": "lib/google.ts",
+      "source_location": "L31"
+    },
+    {
+      "id": "lib_google_translatetext",
+      "label": "translateText()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "actions.ts",
+      "file_type": "code",
+      "norm_label": "translatetext()",
+      "source_file": "lib/google.ts",
+      "source_location": "L52"
+    },
+    {
+      "id": "lib_supabase_server_createclient",
+      "label": "createClient()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "actions.ts",
+      "file_type": "code",
+      "norm_label": "createclient()",
+      "source_file": "lib/supabase/server.ts",
+      "source_location": "L4"
+    },
+    {
+      "id": "lib_supabase_server_currentuser",
+      "label": "currentUser()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "actions.ts",
+      "file_type": "code",
+      "norm_label": "currentuser()",
+      "source_file": "lib/supabase/server.ts",
+      "source_location": "L24"
     },
     {
       "id": "eslint_config",
@@ -1590,6 +1614,28 @@
       "source_location": "L3"
     },
     {
+      "id": "proxy",
+      "label": "proxy.ts",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "package.json",
+      "file_type": "code",
+      "norm_label": "proxy.ts",
+      "source_file": "proxy.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "proxy_config",
+      "label": "config",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "package.json",
+      "file_type": "code",
+      "norm_label": "config",
+      "source_file": "proxy.ts",
+      "source_location": "L30"
+    },
+    {
       "id": "ref_eslint",
       "label": "eslint",
       "_origin": "ast",
@@ -1632,6 +1678,17 @@
       "norm_label": "sharp",
       "source_file": "package.json",
       "source_location": "L21"
+    },
+    {
+      "id": "ref_supabase_ssr",
+      "label": "@supabase/ssr",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "package.json",
+      "file_type": "concept",
+      "norm_label": "@supabase/ssr",
+      "source_file": "package.json",
+      "source_location": "L15"
     },
     {
       "id": "ref_tailwindcss",
@@ -1700,36 +1757,14 @@
       "source_location": "L31"
     },
     {
-      "id": "app_actions",
-      "label": "actions.ts",
+      "id": "app_components_mapview",
+      "label": "MapView.tsx",
       "_origin": "ast",
       "community": 1,
-      "community_name": "actions.ts",
+      "community_name": "[slug]/page.tsx",
       "file_type": "code",
-      "norm_label": "actions.ts",
-      "source_file": "app/actions.ts",
-      "source_location": "L1"
-    },
-    {
-      "id": "app_auth_callback_route",
-      "label": "callback/route.ts",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "actions.ts",
-      "file_type": "code",
-      "norm_label": "callback/route.ts",
-      "source_file": "app/auth/callback/route.ts",
-      "source_location": "L1"
-    },
-    {
-      "id": "app_city_hubjsonld",
-      "label": "HubJsonLd.tsx",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "actions.ts",
-      "file_type": "code",
-      "norm_label": "hubjsonld.tsx",
-      "source_file": "app/city/HubJsonLd.tsx",
+      "norm_label": "mapview.tsx",
+      "source_file": "app/components/MapView.tsx",
       "source_location": "L1"
     },
     {
@@ -1737,7 +1772,7 @@
       "label": "PostCard.tsx",
       "_origin": "ast",
       "community": 1,
-      "community_name": "actions.ts",
+      "community_name": "[slug]/page.tsx",
       "file_type": "code",
       "norm_label": "postcard.tsx",
       "source_file": "app/components/PostCard.tsx",
@@ -1748,7 +1783,7 @@
       "label": "opengraph-image.tsx",
       "_origin": "ast",
       "community": 1,
-      "community_name": "actions.ts",
+      "community_name": "[slug]/page.tsx",
       "file_type": "code",
       "norm_label": "opengraph-image.tsx",
       "source_file": "app/p/[slug]/opengraph-image.tsx",
@@ -1759,7 +1794,7 @@
       "label": "contentType",
       "_origin": "ast",
       "community": 1,
-      "community_name": "actions.ts",
+      "community_name": "[slug]/page.tsx",
       "file_type": "code",
       "norm_label": "contenttype",
       "source_file": "app/p/[slug]/opengraph-image.tsx",
@@ -1770,7 +1805,7 @@
       "label": "size",
       "_origin": "ast",
       "community": 1,
-      "community_name": "actions.ts",
+      "community_name": "[slug]/page.tsx",
       "file_type": "code",
       "norm_label": "size",
       "source_file": "app/p/[slug]/opengraph-image.tsx",
@@ -1781,10 +1816,21 @@
       "label": "[slug]/page.tsx",
       "_origin": "ast",
       "community": 1,
-      "community_name": "actions.ts",
+      "community_name": "[slug]/page.tsx",
       "file_type": "code",
       "norm_label": "[slug]/page.tsx",
       "source_file": "app/p/[slug]/page.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "app_p_slug_toggleoriginal",
+      "label": "ToggleOriginal.tsx",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "[slug]/page.tsx",
+      "file_type": "code",
+      "norm_label": "toggleoriginal.tsx",
+      "source_file": "app/p/[slug]/ToggleOriginal.tsx",
       "source_location": "L1"
     },
     {
@@ -1792,7 +1838,7 @@
       "label": "sitemap.ts",
       "_origin": "ast",
       "community": 1,
-      "community_name": "actions.ts",
+      "community_name": "[slug]/page.tsx",
       "file_type": "code",
       "norm_label": "sitemap.ts",
       "source_file": "app/sitemap.ts",
@@ -1803,7 +1849,7 @@
       "label": "dynamic",
       "_origin": "ast",
       "community": 1,
-      "community_name": "actions.ts",
+      "community_name": "[slug]/page.tsx",
       "file_type": "code",
       "norm_label": "dynamic",
       "source_file": "app/sitemap.ts",
@@ -1814,7 +1860,7 @@
       "label": "data.ts",
       "_origin": "ast",
       "community": 1,
-      "community_name": "actions.ts",
+      "community_name": "[slug]/page.tsx",
       "file_type": "code",
       "norm_label": "data.ts",
       "source_file": "lib/data.ts",
@@ -1825,7 +1871,7 @@
       "label": "getPost",
       "_origin": "ast",
       "community": 1,
-      "community_name": "actions.ts",
+      "community_name": "[slug]/page.tsx",
       "file_type": "code",
       "norm_label": "getpost",
       "source_file": "lib/data.ts",
@@ -1836,7 +1882,7 @@
       "label": "slug.ts",
       "_origin": "ast",
       "community": 1,
-      "community_name": "actions.ts",
+      "community_name": "[slug]/page.tsx",
       "file_type": "code",
       "norm_label": "slug.ts",
       "source_file": "lib/slug.ts",
@@ -1847,33 +1893,45 @@
       "label": "admin.ts",
       "_origin": "ast",
       "community": 1,
-      "community_name": "actions.ts",
+      "community_name": "[slug]/page.tsx",
       "file_type": "code",
       "norm_label": "admin.ts",
       "source_file": "lib/supabase/admin.ts",
       "source_location": "L1"
     },
     {
-      "id": "lib_supabase_server",
-      "label": "server.ts",
+      "id": "lib_translate",
+      "label": "translate.ts",
       "_origin": "ast",
       "community": 1,
-      "community_name": "actions.ts",
+      "community_name": "[slug]/page.tsx",
       "file_type": "code",
-      "norm_label": "server.ts",
-      "source_file": "lib/supabase/server.ts",
+      "norm_label": "translate.ts",
+      "source_file": "lib/translate.ts",
       "source_location": "L1"
     },
     {
-      "id": "ref_supabase_supabase_js",
-      "label": "@supabase/supabase-js",
+      "id": "ref_react",
+      "label": "react",
       "_origin": "ast",
       "community": 1,
-      "community_name": "actions.ts",
+      "community_name": "[slug]/page.tsx",
       "file_type": "concept",
-      "norm_label": "@supabase/supabase-js",
+      "norm_label": "react",
       "source_file": "package.json",
-      "source_location": "L16"
+      "source_location": "L19"
+    },
+    {
+      "id": "claude_\uc808\ub300_\uaddc\uce59",
+      "label": "\uc808\ub300 \uaddc\uce59",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "[slug]/page.tsx",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "\u110c\u1165\u11af\u1103\u1162 \u1100\u1172\u110e\u1175\u11a8",
+      "source_file": "CLAUDE.md",
+      "source_location": "L24"
     },
     {
       "id": "readme",
@@ -2432,54 +2490,6 @@
       "source_location": "L910"
     },
     {
-      "id": "agents_skills_design_taste_frontend_skill_1_a_dial_inference_design_read_dial_values",
-      "label": "1.A Dial Inference (design read \u2192 dial values)",
-      "_origin": "ast",
-      "community": 18,
-      "community_name": "tasteskill: Anti-Slop Frontend Skill",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "1.a dial inference (design read \u2192 dial values)",
-      "source_file": ".agents/skills/design-taste-frontend/SKILL.md",
-      "source_location": "L53"
-    },
-    {
-      "id": "agents_skills_design_taste_frontend_skill_1_b_use_case_presets",
-      "label": "1.B Use-Case Presets",
-      "_origin": "ast",
-      "community": 18,
-      "community_name": "tasteskill: Anti-Slop Frontend Skill",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "1.b use-case presets",
-      "source_file": ".agents/skills/design-taste-frontend/SKILL.md",
-      "source_location": "L64"
-    },
-    {
-      "id": "agents_skills_design_taste_frontend_skill_1_c_how_the_dials_drive_output",
-      "label": "1.C How the Dials Drive Output",
-      "_origin": "ast",
-      "community": 18,
-      "community_name": "tasteskill: Anti-Slop Frontend Skill",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "1.c how the dials drive output",
-      "source_file": ".agents/skills/design-taste-frontend/SKILL.md",
-      "source_location": "L77"
-    },
-    {
-      "id": "agents_skills_design_taste_frontend_skill_1_the_three_dials_core_configuration",
-      "label": "1. THE THREE DIALS (Core Configuration)",
-      "_origin": "ast",
-      "community": 18,
-      "community_name": "tasteskill: Anti-Slop Frontend Skill",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "1. the three dials (core configuration)",
-      "source_file": ".agents/skills/design-taste-frontend/SKILL.md",
-      "source_location": "L43"
-    },
-    {
       "id": "agents_skills_design_taste_frontend_skill_2_a_when_to_reach_for_a_real_design_system_use_official_packages",
       "label": "2.A When to reach for a real design system (use official packages)",
       "_origin": "ast",
@@ -2588,28 +2598,6 @@
       "source_location": "L38"
     },
     {
-      "id": "app_city_city_page",
-      "label": "[city]/page.tsx",
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "getLang",
-      "file_type": "code",
-      "norm_label": "[city]/page.tsx",
-      "source_file": "app/city/[city]/page.tsx",
-      "source_location": "L1"
-    },
-    {
-      "id": "app_city_city_region_page",
-      "label": "[region]/page.tsx",
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "getLang",
-      "file_type": "code",
-      "norm_label": "[region]/page.tsx",
-      "source_file": "app/city/[city]/[region]/page.tsx",
-      "source_location": "L1"
-    },
-    {
       "id": "app_components_footer",
       "label": "Footer.tsx",
       "_origin": "ast",
@@ -2618,17 +2606,6 @@
       "file_type": "code",
       "norm_label": "footer.tsx",
       "source_file": "app/components/Footer.tsx",
-      "source_location": "L1"
-    },
-    {
-      "id": "app_components_header",
-      "label": "Header.tsx",
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "getLang",
-      "file_type": "code",
-      "norm_label": "header.tsx",
-      "source_file": "app/components/Header.tsx",
       "source_location": "L1"
     },
     {
@@ -2687,6 +2664,28 @@
       "source_location": "L12"
     },
     {
+      "id": "app_login_loginform",
+      "label": "LoginForm.tsx",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "getLang",
+      "file_type": "code",
+      "norm_label": "loginform.tsx",
+      "source_file": "app/login/LoginForm.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "app_login_page",
+      "label": "login/page.tsx",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "getLang",
+      "file_type": "code",
+      "norm_label": "login/page.tsx",
+      "source_file": "app/login/page.tsx",
+      "source_location": "L1"
+    },
+    {
       "id": "app_not_found",
       "label": "not-found.tsx",
       "_origin": "ast",
@@ -2695,28 +2694,6 @@
       "file_type": "code",
       "norm_label": "not-found.tsx",
       "source_file": "app/not-found.tsx",
-      "source_location": "L1"
-    },
-    {
-      "id": "app_onboarding_handleform",
-      "label": "HandleForm.tsx",
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "getLang",
-      "file_type": "code",
-      "norm_label": "handleform.tsx",
-      "source_file": "app/onboarding/HandleForm.tsx",
-      "source_location": "L1"
-    },
-    {
-      "id": "app_onboarding_page",
-      "label": "onboarding/page.tsx",
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "getLang",
-      "file_type": "code",
-      "norm_label": "onboarding/page.tsx",
-      "source_file": "app/onboarding/page.tsx",
       "source_location": "L1"
     },
     {
@@ -2753,17 +2730,6 @@
       "source_location": "L1"
     },
     {
-      "id": "app_upload_page",
-      "label": "upload/page.tsx",
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "getLang",
-      "file_type": "code",
-      "norm_label": "upload/page.tsx",
-      "source_file": "app/upload/page.tsx",
-      "source_location": "L1"
-    },
-    {
       "id": "lib_i18n",
       "label": "i18n.ts",
       "_origin": "ast",
@@ -2795,6 +2761,28 @@
       "norm_label": "langs",
       "source_file": "lib/i18n.ts",
       "source_location": "L7"
+    },
+    {
+      "id": "lib_supabase_browser",
+      "label": "browser.ts",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "getLang",
+      "file_type": "code",
+      "norm_label": "browser.ts",
+      "source_file": "lib/supabase/browser.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "lib_types",
+      "label": "types.ts",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "getLang",
+      "file_type": "code",
+      "norm_label": "types.ts",
+      "source_file": "lib/types.ts",
+      "source_location": "L1"
     },
     {
       "id": "agents_skills_design_taste_frontend_skill_12_a_file_location",
@@ -2985,6 +2973,39 @@
       "file_type": "code",
       "norm_label": "[category]/page.tsx",
       "source_file": "app/city/[city]/c/[category]/page.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "app_city_city_page",
+      "label": "[city]/page.tsx",
+      "_origin": "ast",
+      "community": 23,
+      "community_name": "[category]/page.tsx",
+      "file_type": "code",
+      "norm_label": "[city]/page.tsx",
+      "source_file": "app/city/[city]/page.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "app_city_city_region_page",
+      "label": "[region]/page.tsx",
+      "_origin": "ast",
+      "community": 23,
+      "community_name": "[category]/page.tsx",
+      "file_type": "code",
+      "norm_label": "[region]/page.tsx",
+      "source_file": "app/city/[city]/[region]/page.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "app_city_hubjsonld",
+      "label": "HubJsonLd.tsx",
+      "_origin": "ast",
+      "community": 23,
+      "community_name": "[category]/page.tsx",
+      "file_type": "code",
+      "norm_label": "hubjsonld.tsx",
+      "source_file": "app/city/HubJsonLd.tsx",
       "source_location": "L1"
     },
     {
@@ -3223,28 +3244,6 @@
       "source_location": "L18"
     },
     {
-      "id": "lib_google",
-      "label": "google.ts",
-      "_origin": "ast",
-      "community": 28,
-      "community_name": "Look At This \u2014 Claude Code \uc791\uc5c5 \uc9c0\uce68",
-      "file_type": "code",
-      "norm_label": "google.ts",
-      "source_file": "lib/google.ts",
-      "source_location": "L1"
-    },
-    {
-      "id": "lib_translate",
-      "label": "translate.ts",
-      "_origin": "ast",
-      "community": 28,
-      "community_name": "Look At This \u2014 Claude Code \uc791\uc5c5 \uc9c0\uce68",
-      "file_type": "code",
-      "norm_label": "translate.ts",
-      "source_file": "lib/translate.ts",
-      "source_location": "L1"
-    },
-    {
       "id": "claude",
       "label": "CLAUDE.md",
       "_origin": "ast",
@@ -3279,18 +3278,6 @@
       "norm_label": "look at this \u2014 claude code \u110c\u1161\u11a8\u110b\u1165\u11b8 \u110c\u1175\u110e\u1175\u11b7",
       "source_file": "CLAUDE.md",
       "source_location": "L3"
-    },
-    {
-      "id": "claude_\uad6c\uc870",
-      "label": "\uad6c\uc870",
-      "_origin": "ast",
-      "community": 28,
-      "community_name": "Look At This \u2014 Claude Code \uc791\uc5c5 \uc9c0\uce68",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "\u1100\u116e\u110c\u1169",
-      "source_file": "CLAUDE.md",
-      "source_location": "L47"
     },
     {
       "id": "claude_\uaddc\uce59_\uc704\uce58",
@@ -3387,18 +3374,6 @@
       "norm_label": "\u110c\u1161\u11a8\u110b\u1165\u11b8 \u1107\u1161\u11bc\u1109\u1175\u11a8",
       "source_file": "CLAUDE.md",
       "source_location": "L79"
-    },
-    {
-      "id": "claude_\uc808\ub300_\uaddc\uce59",
-      "label": "\uc808\ub300 \uaddc\uce59",
-      "_origin": "ast",
-      "community": 28,
-      "community_name": "Look At This \u2014 Claude Code \uc791\uc5c5 \uc9c0\uce68",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "\u110c\u1165\u11af\u1103\u1162 \u1100\u1172\u110e\u1175\u11a8",
-      "source_file": "CLAUDE.md",
-      "source_location": "L24"
     },
     {
       "id": "tsconfig",
@@ -4219,91 +4194,128 @@
       "source_location": "L11"
     },
     {
-      "id": "app_login_loginform",
-      "label": "LoginForm.tsx",
+      "id": "agents_skills_design_taste_frontend_skill_1_a_dial_inference_design_read_dial_values",
+      "label": "1.A Dial Inference (design read \u2192 dial values)",
       "_origin": "ast",
       "community": 8,
-      "community_name": "login/page.tsx",
-      "file_type": "code",
-      "norm_label": "loginform.tsx",
-      "source_file": "app/login/LoginForm.tsx",
-      "source_location": "L1"
+      "community_name": "1. THE THREE DIALS (Core Configuration)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "1.a dial inference (design read \u2192 dial values)",
+      "source_file": ".agents/skills/design-taste-frontend/SKILL.md",
+      "source_location": "L53"
     },
     {
-      "id": "app_login_page",
-      "label": "login/page.tsx",
+      "id": "agents_skills_design_taste_frontend_skill_1_b_use_case_presets",
+      "label": "1.B Use-Case Presets",
       "_origin": "ast",
       "community": 8,
-      "community_name": "login/page.tsx",
-      "file_type": "code",
-      "norm_label": "login/page.tsx",
-      "source_file": "app/login/page.tsx",
-      "source_location": "L1"
+      "community_name": "1. THE THREE DIALS (Core Configuration)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "1.b use-case presets",
+      "source_file": ".agents/skills/design-taste-frontend/SKILL.md",
+      "source_location": "L64"
     },
     {
-      "id": "lib_supabase_browser",
-      "label": "browser.ts",
+      "id": "agents_skills_design_taste_frontend_skill_1_c_how_the_dials_drive_output",
+      "label": "1.C How the Dials Drive Output",
       "_origin": "ast",
       "community": 8,
-      "community_name": "login/page.tsx",
-      "file_type": "code",
-      "norm_label": "browser.ts",
-      "source_file": "lib/supabase/browser.ts",
-      "source_location": "L1"
+      "community_name": "1. THE THREE DIALS (Core Configuration)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "1.c how the dials drive output",
+      "source_file": ".agents/skills/design-taste-frontend/SKILL.md",
+      "source_location": "L77"
     },
     {
-      "id": "proxy",
-      "label": "proxy.ts",
+      "id": "agents_skills_design_taste_frontend_skill_1_the_three_dials_core_configuration",
+      "label": "1. THE THREE DIALS (Core Configuration)",
       "_origin": "ast",
       "community": 8,
-      "community_name": "login/page.tsx",
-      "file_type": "code",
-      "norm_label": "proxy.ts",
-      "source_file": "proxy.ts",
-      "source_location": "L1"
+      "community_name": "1. THE THREE DIALS (Core Configuration)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "1. the three dials (core configuration)",
+      "source_file": ".agents/skills/design-taste-frontend/SKILL.md",
+      "source_location": "L43"
     },
     {
-      "id": "proxy_config",
-      "label": "config",
-      "_origin": "ast",
-      "community": 8,
-      "community_name": "login/page.tsx",
-      "file_type": "code",
-      "norm_label": "config",
-      "source_file": "proxy.ts",
-      "source_location": "L30"
-    },
-    {
-      "id": "ref_supabase_ssr",
-      "label": "@supabase/ssr",
-      "_origin": "ast",
-      "community": 8,
-      "community_name": "login/page.tsx",
-      "file_type": "concept",
-      "norm_label": "@supabase/ssr",
-      "source_file": "package.json",
-      "source_location": "L15"
-    },
-    {
-      "id": "app_components_mapview",
-      "label": "MapView.tsx",
+      "id": "app_actions",
+      "label": "actions.ts",
       "_origin": "ast",
       "community": 9,
-      "community_name": "MapView.tsx",
+      "community_name": "actions.ts",
       "file_type": "code",
-      "norm_label": "mapview.tsx",
-      "source_file": "app/components/MapView.tsx",
+      "norm_label": "actions.ts",
+      "source_file": "app/actions.ts",
       "source_location": "L1"
     },
     {
-      "id": "app_p_slug_toggleoriginal",
-      "label": "ToggleOriginal.tsx",
+      "id": "app_auth_callback_route",
+      "label": "callback/route.ts",
       "_origin": "ast",
       "community": 9,
-      "community_name": "MapView.tsx",
+      "community_name": "actions.ts",
       "file_type": "code",
-      "norm_label": "toggleoriginal.tsx",
-      "source_file": "app/p/[slug]/ToggleOriginal.tsx",
+      "norm_label": "callback/route.ts",
+      "source_file": "app/auth/callback/route.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "app_components_header",
+      "label": "Header.tsx",
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "actions.ts",
+      "file_type": "code",
+      "norm_label": "header.tsx",
+      "source_file": "app/components/Header.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "app_onboarding_handleform",
+      "label": "HandleForm.tsx",
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "actions.ts",
+      "file_type": "code",
+      "norm_label": "handleform.tsx",
+      "source_file": "app/onboarding/HandleForm.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "app_onboarding_page",
+      "label": "onboarding/page.tsx",
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "actions.ts",
+      "file_type": "code",
+      "norm_label": "onboarding/page.tsx",
+      "source_file": "app/onboarding/page.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "app_p_slug_deletebutton",
+      "label": "DeleteButton.tsx",
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "actions.ts",
+      "file_type": "code",
+      "norm_label": "deletebutton.tsx",
+      "source_file": "app/p/[slug]/DeleteButton.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "app_upload_page",
+      "label": "upload/page.tsx",
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "actions.ts",
+      "file_type": "code",
+      "norm_label": "upload/page.tsx",
+      "source_file": "app/upload/page.tsx",
       "source_location": "L1"
     },
     {
@@ -4311,44 +4323,67 @@
       "label": "UploadForm.tsx",
       "_origin": "ast",
       "community": 9,
-      "community_name": "MapView.tsx",
+      "community_name": "actions.ts",
       "file_type": "code",
       "norm_label": "uploadform.tsx",
       "source_file": "app/upload/UploadForm.tsx",
       "source_location": "L1"
     },
     {
-      "id": "lib_types",
-      "label": "types.ts",
+      "id": "lib_google",
+      "label": "google.ts",
       "_origin": "ast",
       "community": 9,
-      "community_name": "MapView.tsx",
+      "community_name": "actions.ts",
       "file_type": "code",
-      "norm_label": "types.ts",
-      "source_file": "lib/types.ts",
+      "norm_label": "google.ts",
+      "source_file": "lib/google.ts",
       "source_location": "L1"
     },
     {
-      "id": "ref_react",
-      "label": "react",
+      "id": "lib_supabase_server",
+      "label": "server.ts",
       "_origin": "ast",
       "community": 9,
-      "community_name": "MapView.tsx",
+      "community_name": "actions.ts",
+      "file_type": "code",
+      "norm_label": "server.ts",
+      "source_file": "lib/supabase/server.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "ref_supabase_supabase_js",
+      "label": "@supabase/supabase-js",
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "actions.ts",
       "file_type": "concept",
-      "norm_label": "react",
+      "norm_label": "@supabase/supabase-js",
       "source_file": "package.json",
-      "source_location": "L19"
+      "source_location": "L16"
     },
     {
       "id": "ref_vis_gl_react_google_maps",
       "label": "@vis.gl/react-google-maps",
       "_origin": "ast",
       "community": 9,
-      "community_name": "MapView.tsx",
+      "community_name": "actions.ts",
       "file_type": "concept",
       "norm_label": "@vis.gl/react-google-maps",
       "source_file": "package.json",
       "source_location": "L17"
+    },
+    {
+      "id": "claude_\uad6c\uc870",
+      "label": "\uad6c\uc870",
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "actions.ts",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "\u1100\u116e\u110c\u1169",
+      "source_file": "CLAUDE.md",
+      "source_location": "L47"
     },
     {
       "id": "app_globals",
@@ -4581,7 +4616,7 @@
       "weight": 1.0
     },
     {
-      "source": "app_actions_report",
+      "source": "app_actions_deletepost",
       "target": "lib_supabase_server_createclient",
       "relation": "calls",
       "_origin": "ast",
@@ -4590,6 +4625,18 @@
       "context": "call",
       "source_file": "app/actions.ts",
       "source_location": "L142",
+      "weight": 1.0
+    },
+    {
+      "source": "app_actions_report",
+      "target": "lib_supabase_server_createclient",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "app/actions.ts",
+      "source_location": "L153",
       "weight": 1.0
     },
     {
@@ -5237,7 +5284,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "app/p/[slug]/page.tsx",
-      "source_location": "L20",
+      "source_location": "L21",
       "weight": 1.0
     },
     {
@@ -5249,24 +5296,12 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "app/p/[slug]/page.tsx",
-      "source_location": "L21",
+      "source_location": "L22",
       "weight": 1.0
     },
     {
       "source": "app_p_slug_page_generatemetadata",
       "target": "lib_i18n_getlang",
-      "relation": "calls",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "call",
-      "source_file": "app/p/[slug]/page.tsx",
-      "source_location": "L23",
-      "weight": 1.0
-    },
-    {
-      "source": "app_p_slug_page_generatemetadata",
-      "target": "lib_i18n_t",
       "relation": "calls",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -5278,6 +5313,18 @@
     },
     {
       "source": "app_p_slug_page_generatemetadata",
+      "target": "lib_i18n_t",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "app/p/[slug]/page.tsx",
+      "source_location": "L25",
+      "weight": 1.0
+    },
+    {
+      "source": "app_p_slug_page_generatemetadata",
       "target": "lib_slug_money",
       "relation": "calls",
       "_origin": "ast",
@@ -5285,7 +5332,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "app/p/[slug]/page.tsx",
-      "source_location": "L26",
+      "source_location": "L27",
       "weight": 1.0
     },
     {
@@ -5297,7 +5344,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "app/p/[slug]/page.tsx",
-      "source_location": "L32",
+      "source_location": "L33",
       "weight": 1.0
     },
     {
@@ -5309,7 +5356,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "app/p/[slug]/page.tsx",
-      "source_location": "L33",
+      "source_location": "L34",
       "weight": 1.0
     },
     {
@@ -5321,7 +5368,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "app/p/[slug]/page.tsx",
-      "source_location": "L126",
+      "source_location": "L127",
       "weight": 1.0
     },
     {
@@ -5333,7 +5380,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "app/p/[slug]/page.tsx",
-      "source_location": "L41",
+      "source_location": "L42",
       "weight": 1.0
     },
     {
@@ -5345,7 +5392,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "app/p/[slug]/page.tsx",
-      "source_location": "L42",
+      "source_location": "L43",
       "weight": 1.0
     },
     {
@@ -5357,7 +5404,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "app/p/[slug]/page.tsx",
-      "source_location": "L44",
+      "source_location": "L45",
       "weight": 1.0
     },
     {
@@ -5369,7 +5416,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "app/p/[slug]/page.tsx",
-      "source_location": "L47",
+      "source_location": "L48",
       "weight": 1.0
     },
     {
@@ -5381,7 +5428,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "app/p/[slug]/page.tsx",
-      "source_location": "L48",
+      "source_location": "L49",
       "weight": 1.0
     },
     {
@@ -5393,7 +5440,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "app/p/[slug]/page.tsx",
-      "source_location": "L49",
+      "source_location": "L50",
       "weight": 1.0
     },
     {
@@ -5405,7 +5452,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "app/p/[slug]/page.tsx",
-      "source_location": "L50",
+      "source_location": "L51",
       "weight": 1.0
     },
     {
@@ -5417,7 +5464,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "app/p/[slug]/page.tsx",
-      "source_location": "L56",
+      "source_location": "L57",
       "weight": 1.0
     },
     {
@@ -5429,7 +5476,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "app/p/[slug]/page.tsx",
-      "source_location": "L60",
+      "source_location": "L61",
       "weight": 1.0
     },
     {
@@ -5441,7 +5488,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "app/p/[slug]/page.tsx",
-      "source_location": "L69",
+      "source_location": "L70",
       "weight": 1.0
     },
     {
@@ -6645,6 +6692,18 @@
       "weight": 1.0
     },
     {
+      "source": "app_p_slug_deletebutton",
+      "target": "app_actions_deletepost",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "app/p/[slug]/DeleteButton.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
       "source": "app_p_slug_opengraph_image",
       "target": "lib_data_getpost",
       "relation": "imports",
@@ -6762,6 +6821,18 @@
       "context": "import",
       "source_file": "app/p/[slug]/page.tsx",
       "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "app_p_slug_page",
+      "target": "app_p_slug_deletebutton_deletebutton",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "app/p/[slug]/page.tsx",
+      "source_location": "L14",
       "weight": 1.0
     },
     {
@@ -8322,6 +8393,18 @@
       "weight": 1.0
     },
     {
+      "source": "app_p_slug_deletebutton",
+      "target": "app_actions",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "app/p/[slug]/DeleteButton.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
       "source": "app_p_slug_opengraph_image",
       "target": "ref_next",
       "relation": "imports_from",
@@ -8415,6 +8498,18 @@
       "context": "import",
       "source_file": "app/p/[slug]/page.tsx",
       "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "app_p_slug_page",
+      "target": "app_p_slug_deletebutton",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "app/p/[slug]/page.tsx",
+      "source_location": "L14",
       "weight": 1.0
     },
     {
@@ -10359,13 +10454,24 @@
     },
     {
       "source": "app_actions",
-      "target": "app_actions_report",
+      "target": "app_actions_deletepost",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "app/actions.ts",
       "source_location": "L141",
+      "weight": 1.0
+    },
+    {
+      "source": "app_actions",
+      "target": "app_actions_report",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "app/actions.ts",
+      "source_location": "L152",
       "weight": 1.0
     },
     {
@@ -10831,6 +10937,17 @@
       "weight": 1.0
     },
     {
+      "source": "app_p_slug_deletebutton",
+      "target": "app_p_slug_deletebutton_deletebutton",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "app/p/[slug]/DeleteButton.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
       "source": "app_p_slug_opengraph_image",
       "target": "app_p_slug_opengraph_image_size",
       "relation": "contains",
@@ -10871,7 +10988,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "app/p/[slug]/page.tsx",
-      "source_location": "L15",
+      "source_location": "L16",
       "weight": 1.0
     },
     {
@@ -10882,7 +10999,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "app/p/[slug]/page.tsx",
-      "source_location": "L17",
+      "source_location": "L18",
       "weight": 1.0
     },
     {
@@ -10893,7 +11010,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "app/p/[slug]/page.tsx",
-      "source_location": "L182",
+      "source_location": "L188",
       "weight": 1.0
     },
     {
@@ -10904,7 +11021,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "app/p/[slug]/page.tsx",
-      "source_location": "L19",
+      "source_location": "L20",
       "weight": 1.0
     },
     {
@@ -10915,7 +11032,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "app/p/[slug]/page.tsx",
-      "source_location": "L38",
+      "source_location": "L39",
       "weight": 1.0
     },
     {
@@ -12509,5 +12626,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "3fb138f125e50ca9aaee8eaa30a667fe7a7b6750"
+  "built_at_commit": "a050b92c856df9774ce5b9d297ae12f51414d462"
 }
