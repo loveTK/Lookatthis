@@ -2,6 +2,7 @@ import Link from "next/link";
 import { feedAll, feedInBox } from "@/lib/data";
 import { ipLocation, SEOUL } from "@/lib/geo";
 import { getLang, t } from "@/lib/i18n";
+import { CityHero } from "./components/CityHero";
 import { MapView } from "./components/MapView";
 import { PostCard } from "./components/PostCard";
 
@@ -15,6 +16,18 @@ export default async function Home({ searchParams }: { searchParams: Promise<{ l
 
   return (
     <>
+      <CityHero posts={allPosts} labels={{ next: tr("home.hero.next"), posts: tr("home.hero.posts"), topPost: tr("home.hero.topPost"), value: tr("post.value"), pending: tr("post.pending") }} />
+
+      <section className="mx-auto max-w-6xl px-4 pt-10">
+        <h2 className="text-2xl font-bold tracking-tight text-balance">{tr("home.map.title")}</h2>
+        <p className="mt-2 max-w-2xl text-sm text-dim">{tr("home.map.body")}</p>
+        <div className="mt-4 flex flex-wrap gap-x-5 gap-y-2 text-xs text-dim">
+          <span className="flex items-center gap-1.5"><i className="h-2.5 w-2.5 rounded-full bg-accent" />{tr("home.map.legend.leader")}</span>
+          <span className="flex items-center gap-1.5"><i className="h-2.5 w-2.5 rounded-full bg-violet" />{tr("home.map.legend.gps")}</span>
+          <span className="flex items-center gap-1.5"><i className="h-2.5 w-2.5 rounded-full bg-dim" />{tr("home.map.legend.pin")}</span>
+        </div>
+      </section>
+
       <MapView
         posts={allPosts}
         apiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_KEY ?? ""}
