@@ -914,7 +914,7 @@
       "file_type": "code",
       "norm_label": "fact()",
       "source_file": "app/components/CityHero.tsx",
-      "source_location": "L110"
+      "source_location": "L111"
     },
     {
       "id": "app_components_cityhero_photourl",
@@ -5200,7 +5200,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "app/components/CityHero.tsx",
-      "source_location": "L101",
+      "source_location": "L102",
       "weight": 1.0
     },
     {
@@ -5212,7 +5212,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "app/components/CityHero.tsx",
-      "source_location": "L103",
+      "source_location": "L104",
       "weight": 1.0
     },
     {
@@ -11268,7 +11268,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "app/components/CityHero.tsx",
-      "source_location": "L110",
+      "source_location": "L111",
       "weight": 1.0
     },
     {
@@ -13413,5 +13413,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "daeb32a81a3a0e2031a8adc61fd85595064e9e67"
+  "built_at_commit": "e153bd9a0872728f19e7493bc56d9335dbfe094b"
 }

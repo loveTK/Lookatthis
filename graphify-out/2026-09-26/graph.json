@@ -914,7 +914,7 @@
       "file_type": "code",
       "norm_label": "fact()",
       "source_file": "app/components/CityHero.tsx",
-      "source_location": "L95"
+      "source_location": "L110"
     },
     {
       "id": "app_components_cityhero_photourl",
@@ -5193,6 +5193,30 @@
     },
     {
       "source": "app_components_cityhero_cityhero",
+      "target": "lib_slug_postpath",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "app/components/CityHero.tsx",
+      "source_location": "L101",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_cityhero_cityhero",
+      "target": "lib_slug_money",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "app/components/CityHero.tsx",
+      "source_location": "L103",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_cityhero_cityhero",
       "target": "app_components_cityhero_topcities",
       "relation": "calls",
       "_origin": "ast",
@@ -5212,31 +5236,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "app/components/CityHero.tsx",
-      "source_location": "L44",
-      "weight": 1.0
-    },
-    {
-      "source": "app_components_cityhero_cityhero",
-      "target": "lib_slug_postpath",
-      "relation": "calls",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "call",
-      "source_file": "app/components/CityHero.tsx",
-      "source_location": "L86",
-      "weight": 1.0
-    },
-    {
-      "source": "app_components_cityhero_cityhero",
-      "target": "lib_slug_money",
-      "relation": "calls",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "call",
-      "source_file": "app/components/CityHero.tsx",
-      "source_location": "L88",
+      "source_location": "L47",
       "weight": 1.0
     },
     {
@@ -11262,6 +11262,17 @@
     },
     {
       "source": "app_components_cityhero",
+      "target": "app_components_cityhero_fact",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "app/components/CityHero.tsx",
+      "source_location": "L110",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_cityhero",
       "target": "app_components_cityhero_photourl",
       "relation": "contains",
       "_origin": "ast",
@@ -11313,17 +11324,6 @@
       "confidence_score": 1.0,
       "source_file": "app/components/CityHero.tsx",
       "source_location": "L32",
-      "weight": 1.0
-    },
-    {
-      "source": "app_components_cityhero",
-      "target": "app_components_cityhero_fact",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "app/components/CityHero.tsx",
-      "source_location": "L95",
       "weight": 1.0
     },
     {
@@ -13413,5 +13413,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "417bc9c68d99fc93f2b8924cc7b642ae4b0f2cf2"
+  "built_at_commit": "daeb32a81a3a0e2031a8adc61fd85595064e9e67"
 }

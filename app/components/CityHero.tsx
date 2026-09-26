@@ -65,35 +65,36 @@ export function CityHero({ posts, labels }: { posts: FeedRow[]; labels: Labels }
         </aside>
       )}
 
-      {/* 포탈 */}
-      {many && (
-        <div className="absolute left-1/2 top-[44%] w-[min(260px,66vw)] -translate-x-1/2 -translate-y-[54%] sm:top-1/2 sm:w-[min(320px,31vw)]">
-          <div key={`${city.slug}-cap`} className="mb-3 flex animate-[hero-fade_0.6s_ease-out] items-center justify-between text-sm sm:text-base">
+      {/* 포탈 + 도시 타이틀 */}
+      <div className="absolute left-1/2 top-[40%] flex w-[min(130px,33vw)] -translate-x-1/2 -translate-y-1/2 flex-col items-center sm:top-[46%] sm:w-[min(160px,16vw)]">
+        {many && (<>
+          <div key={`${city.slug}-cap`} className="mb-2 flex w-full animate-[hero-fade_0.6s_ease-out] items-center justify-between text-xs sm:text-sm">
             <span>{labels.next}:</span>
             <span>
               <span className="text-white/70">[{String(nextIdx + 1).padStart(2, "0")}]</span>{" "}
-              <strong className="text-base sm:text-lg">{next.city}</strong>
+              <strong>{next.city}</strong>
             </span>
           </div>
           <button
             type="button"
             onClick={() => setIdx(nextIdx)}
             aria-label={`${labels.next}: ${next.city}`}
-            className="relative block aspect-[320/350] w-full overflow-hidden rounded-[70px] shadow-2xl transition hover:scale-[1.02] sm:rounded-[90px]"
+            className="relative block aspect-[320/350] w-full overflow-hidden rounded-[36px] shadow-2xl transition hover:scale-[1.03] sm:rounded-[45px]"
           >
-            <Image src={photoUrl(next.top.photo_path)} alt="" fill sizes="(max-width: 640px) 66vw, 320px" className="object-cover" />
+            <Image src={photoUrl(next.top.photo_path)} alt="" fill sizes="(max-width: 640px) 33vw, 160px" className="object-cover" />
           </button>
-        </div>
-      )}
-
-      {/* 도시 타이틀 + 팩트 */}
-      <div className="absolute inset-x-[18px] bottom-[18px] sm:inset-x-10 sm:bottom-8 sm:flex sm:items-end sm:justify-between sm:gap-10">
+        </>)}
+        {/* 도시 타이틀: 포탈 바로 아래 */}
         <h1
           key={`${city.slug}-t`}
-          className={`${bebas.className} mb-5 animate-[hero-fade_0.9s_ease-out] text-[clamp(98px,30vw,160px)] leading-[0.78] -translate-x-1 sm:mb-0 sm:text-[clamp(128px,18vw,314px)]`}
+          className={`${bebas.className} mt-4 animate-[hero-fade_0.9s_ease-out] whitespace-nowrap text-[clamp(64px,18vw,110px)] leading-[0.8] sm:text-[clamp(96px,11vw,180px)]`}
         >
           {city.city.toUpperCase()}
         </h1>
+      </div>
+
+      {/* 팩트 */}
+      <div className="absolute inset-x-[18px] bottom-[18px] sm:inset-x-10 sm:bottom-8 sm:flex sm:justify-end">
         <dl key={`${city.slug}-f`} className="w-full animate-[hero-fade_0.7s_ease-out_0.2s_both] text-[13px] sm:w-[min(447px,34vw)] sm:text-base">
           <Fact label={labels.posts} value={<><b className="text-accent">{city.count}</b> {labels.postsTail}</>} />
           <Fact
