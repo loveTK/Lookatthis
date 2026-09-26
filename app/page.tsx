@@ -16,7 +16,7 @@ export default async function Home({ searchParams }: { searchParams: Promise<{ l
 
   return (
     <>
-      <CityHero posts={allPosts} labels={{ next: tr("home.hero.next"), posts: tr("home.hero.posts"), topPost: tr("home.hero.topPost"), value: tr("post.value"), pending: tr("post.pending") }} />
+      <CityHero posts={allPosts} labels={{ next: tr("home.hero.next"), posts: tr("home.hero.posts"), postsTail: tr("home.hero.postsTail"), topPost: tr("home.hero.topPost"), value: tr("post.value"), pending: tr("post.pending") }} />
 
       <section className="mx-auto max-w-6xl px-4 pt-10">
         <h2 className="text-2xl font-bold tracking-tight text-balance">{tr("home.map.title")}</h2>

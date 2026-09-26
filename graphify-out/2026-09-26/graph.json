@@ -4,45 +4,6 @@
   "graph": {},
   "nodes": [
     {
-      "id": "app_components_mapview_cluster",
-      "label": "Cluster",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "[slug]/page.tsx",
-      "file_type": "code",
-      "norm_label": "cluster",
-      "source_file": "app/components/MapView.tsx",
-      "source_location": "L18"
-    },
-    {
-      "id": "app_components_mapview_pin",
-      "label": "Pin",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "[slug]/page.tsx",
-      "file_type": "code",
-      "norm_label": "pin",
-      "source_file": "app/components/MapView.tsx",
-      "source_location": "L16"
-    },
-    {
-      "id": "app_components_mapview_props",
-      "label": "Props",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "[slug]/page.tsx",
-      "file_type": "code",
-      "norm_label": "props",
-      "source_file": "app/components/MapView.tsx",
-      "source_location": "L9"
-    },
-    {
       "id": "app_p_slug_page_props",
       "label": "Props",
       "_callable": true,
@@ -56,19 +17,6 @@
       "source_location": "L17"
     },
     {
-      "id": "app_p_slug_sharebutton_props",
-      "label": "Props",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "[slug]/page.tsx",
-      "file_type": "code",
-      "norm_label": "props",
-      "source_file": "app/p/[slug]/ShareButton.tsx",
-      "source_location": "L5"
-    },
-    {
       "id": "app_p_slug_toggleoriginal_text",
       "label": "Text",
       "_callable": true,
@@ -80,19 +28,6 @@
       "norm_label": "text",
       "source_file": "app/p/[slug]/ToggleOriginal.tsx",
       "source_location": "L5"
-    },
-    {
-      "id": "lib_types_feedrow",
-      "label": "FeedRow",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "[slug]/page.tsx",
-      "file_type": "code",
-      "norm_label": "feedrow",
-      "source_file": "lib/types.ts",
-      "source_location": "L3"
     },
     {
       "id": "app_city_city_region_page_props",
@@ -119,45 +54,6 @@
       "norm_label": "props",
       "source_file": "app/u/[handle]/page.tsx",
       "source_location": "L8"
-    },
-    {
-      "id": "lib_types_commentrow",
-      "label": "CommentRow",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "getLang",
-      "file_type": "code",
-      "norm_label": "commentrow",
-      "source_file": "lib/types.ts",
-      "source_location": "L30"
-    },
-    {
-      "id": "lib_types_lang",
-      "label": "Lang",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "getLang",
-      "file_type": "code",
-      "norm_label": "lang",
-      "source_file": "lib/types.ts",
-      "source_location": "L1"
-    },
-    {
-      "id": "lib_types_profile",
-      "label": "Profile",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "getLang",
-      "file_type": "code",
-      "norm_label": "profile",
-      "source_file": "lib/types.ts",
-      "source_location": "L41"
     },
     {
       "id": "app_city_city_c_category_page_props",
@@ -199,56 +95,147 @@
       "source_location": "L2"
     },
     {
+      "id": "app_components_cityhero_citystat",
+      "label": "CityStat",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 24,
+      "community_name": "data.ts",
+      "file_type": "code",
+      "norm_label": "citystat",
+      "source_file": "app/components/CityHero.tsx",
+      "source_location": "L16"
+    },
+    {
+      "id": "app_components_cityhero_labels",
+      "label": "Labels",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 24,
+      "community_name": "data.ts",
+      "file_type": "code",
+      "norm_label": "labels",
+      "source_file": "app/components/CityHero.tsx",
+      "source_location": "L30"
+    },
+    {
+      "id": "app_components_mapview_cluster",
+      "label": "Cluster",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 24,
+      "community_name": "data.ts",
+      "file_type": "code",
+      "norm_label": "cluster",
+      "source_file": "app/components/MapView.tsx",
+      "source_location": "L18"
+    },
+    {
+      "id": "app_components_mapview_pin",
+      "label": "Pin",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 24,
+      "community_name": "data.ts",
+      "file_type": "code",
+      "norm_label": "pin",
+      "source_file": "app/components/MapView.tsx",
+      "source_location": "L16"
+    },
+    {
+      "id": "app_components_mapview_props",
+      "label": "Props",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 24,
+      "community_name": "data.ts",
+      "file_type": "code",
+      "norm_label": "props",
+      "source_file": "app/components/MapView.tsx",
+      "source_location": "L9"
+    },
+    {
+      "id": "app_p_slug_sharebutton_props",
+      "label": "Props",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 24,
+      "community_name": "data.ts",
+      "file_type": "code",
+      "norm_label": "props",
+      "source_file": "app/p/[slug]/ShareButton.tsx",
+      "source_location": "L5"
+    },
+    {
+      "id": "lib_types_commentrow",
+      "label": "CommentRow",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 24,
+      "community_name": "data.ts",
+      "file_type": "code",
+      "norm_label": "commentrow",
+      "source_file": "lib/types.ts",
+      "source_location": "L30"
+    },
+    {
+      "id": "lib_types_feedrow",
+      "label": "FeedRow",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 24,
+      "community_name": "data.ts",
+      "file_type": "code",
+      "norm_label": "feedrow",
+      "source_file": "lib/types.ts",
+      "source_location": "L3"
+    },
+    {
+      "id": "lib_types_lang",
+      "label": "Lang",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 24,
+      "community_name": "data.ts",
+      "file_type": "code",
+      "norm_label": "lang",
+      "source_file": "lib/types.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "lib_types_profile",
+      "label": "Profile",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 24,
+      "community_name": "data.ts",
+      "file_type": "code",
+      "norm_label": "profile",
+      "source_file": "lib/types.ts",
+      "source_location": "L41"
+    },
+    {
       "id": "lib_payments_order",
       "label": "Order",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
       "community": 7,
-      "community_name": "admin.ts",
+      "community_name": "payments.test.ts",
       "file_type": "code",
       "norm_label": "order",
       "source_file": "lib/payments.ts",
       "source_location": "L10"
-    },
-    {
-      "id": "lib_translate_item",
-      "label": "Item",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "admin.ts",
-      "file_type": "code",
-      "norm_label": "item",
-      "source_file": "lib/translate.ts",
-      "source_location": "L5"
-    },
-    {
-      "id": "lib_translate_kind",
-      "label": "Kind",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "admin.ts",
-      "file_type": "code",
-      "norm_label": "kind",
-      "source_file": "lib/translate.ts",
-      "source_location": "L4"
-    },
-    {
-      "id": "lib_translate_translated",
-      "label": "Translated",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "admin.ts",
-      "file_type": "code",
-      "norm_label": "translated",
-      "source_file": "lib/translate.ts",
-      "source_location": "L6"
     },
     {
       "id": "app_actions_actionstate",
@@ -303,16 +290,43 @@
       "source_location": "L35"
     },
     {
-      "id": "app_actions_addcomment",
-      "label": "addComment()",
+      "id": "lib_translate_item",
+      "label": "Item",
       "_callable": true,
+      "_callable_class": true,
       "_origin": "ast",
-      "community": 1,
-      "community_name": "[slug]/page.tsx",
+      "community": 9,
+      "community_name": "actions.ts",
       "file_type": "code",
-      "norm_label": "addcomment()",
-      "source_file": "app/actions.ts",
-      "source_location": "L131"
+      "norm_label": "item",
+      "source_file": "lib/translate.ts",
+      "source_location": "L5"
+    },
+    {
+      "id": "lib_translate_kind",
+      "label": "Kind",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "actions.ts",
+      "file_type": "code",
+      "norm_label": "kind",
+      "source_file": "lib/translate.ts",
+      "source_location": "L4"
+    },
+    {
+      "id": "lib_translate_translated",
+      "label": "Translated",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "actions.ts",
+      "file_type": "code",
+      "norm_label": "translated",
+      "source_file": "lib/translate.ts",
+      "source_location": "L6"
     },
     {
       "id": "app_actions_report",
@@ -339,76 +353,16 @@
       "source_location": "L117"
     },
     {
-      "id": "app_components_mapview_bubblesize",
-      "label": "bubbleSize()",
+      "id": "app_city_hubjsonld_hubjsonld",
+      "label": "HubJsonLd()",
       "_callable": true,
       "_origin": "ast",
       "community": 1,
       "community_name": "[slug]/page.tsx",
       "file_type": "code",
-      "norm_label": "bubblesize()",
-      "source_file": "app/components/MapView.tsx",
-      "source_location": "L44"
-    },
-    {
-      "id": "app_components_mapview_clustermarkers",
-      "label": "ClusterMarkers()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "[slug]/page.tsx",
-      "file_type": "code",
-      "norm_label": "clustermarkers()",
-      "source_file": "app/components/MapView.tsx",
-      "source_location": "L46"
-    },
-    {
-      "id": "app_components_mapview_clusterposts",
-      "label": "clusterPosts()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "[slug]/page.tsx",
-      "file_type": "code",
-      "norm_label": "clusterposts()",
-      "source_file": "app/components/MapView.tsx",
-      "source_location": "L29"
-    },
-    {
-      "id": "app_components_mapview_gridsizedeg",
-      "label": "gridSizeDeg()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "[slug]/page.tsx",
-      "file_type": "code",
-      "norm_label": "gridsizedeg()",
-      "source_file": "app/components/MapView.tsx",
-      "source_location": "L21"
-    },
-    {
-      "id": "app_components_mapview_mapview",
-      "label": "MapView()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "[slug]/page.tsx",
-      "file_type": "code",
-      "norm_label": "mapview()",
-      "source_file": "app/components/MapView.tsx",
-      "source_location": "L94"
-    },
-    {
-      "id": "app_components_mapview_mapview_selectpost",
-      "label": "selectPost()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "[slug]/page.tsx",
-      "file_type": "code",
-      "norm_label": "selectpost()",
-      "source_file": "app/components/MapView.tsx",
-      "source_location": "L98"
+      "norm_label": "hubjsonld()",
+      "source_file": "app/city/HubJsonLd.tsx",
+      "source_location": "L4"
     },
     {
       "id": "app_components_postcard_postcard",
@@ -483,42 +437,6 @@
       "source_location": "L198"
     },
     {
-      "id": "app_p_slug_sharebutton_sharebutton",
-      "label": "ShareButton()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "[slug]/page.tsx",
-      "file_type": "code",
-      "norm_label": "sharebutton()",
-      "source_file": "app/p/[slug]/ShareButton.tsx",
-      "source_location": "L16"
-    },
-    {
-      "id": "app_p_slug_sharebutton_sharebutton_copy",
-      "label": "copy()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "[slug]/page.tsx",
-      "file_type": "code",
-      "norm_label": "copy()",
-      "source_file": "app/p/[slug]/ShareButton.tsx",
-      "source_location": "L30"
-    },
-    {
-      "id": "app_p_slug_sharebutton_sharebutton_native",
-      "label": "native()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "[slug]/page.tsx",
-      "file_type": "code",
-      "norm_label": "native()",
-      "source_file": "app/p/[slug]/ShareButton.tsx",
-      "source_location": "L34"
-    },
-    {
       "id": "app_p_slug_toggleoriginal_toggleoriginal",
       "label": "ToggleOriginal()",
       "_callable": true,
@@ -531,6 +449,18 @@
       "source_location": "L8"
     },
     {
+      "id": "app_sitemap_sitemap",
+      "label": "sitemap()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "[slug]/page.tsx",
+      "file_type": "code",
+      "norm_label": "sitemap()",
+      "source_file": "app/sitemap.ts",
+      "source_location": "L7"
+    },
+    {
       "id": "lib_data_appraisalrange",
       "label": "appraisalRange()",
       "_callable": true,
@@ -540,19 +470,7 @@
       "file_type": "code",
       "norm_label": "appraisalrange()",
       "source_file": "lib/data.ts",
-      "source_location": "L74"
-    },
-    {
-      "id": "lib_data_getcomments",
-      "label": "getComments()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "[slug]/page.tsx",
-      "file_type": "code",
-      "norm_label": "getcomments()",
-      "source_file": "lib/data.ts",
-      "source_location": "L11"
+      "source_location": "L88"
     },
     {
       "id": "lib_slug_idfromslug",
@@ -612,7 +530,31 @@
       "file_type": "code",
       "norm_label": "photourl()",
       "source_file": "lib/supabase/admin.ts",
-      "source_location": "L9"
+      "source_location": "L10"
+    },
+    {
+      "id": "app_actions_addcomment",
+      "label": "addComment()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "getLang",
+      "file_type": "code",
+      "norm_label": "addcomment()",
+      "source_file": "app/actions.ts",
+      "source_location": "L131"
+    },
+    {
+      "id": "app_actions_signout",
+      "label": "signOut()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "getLang",
+      "file_type": "code",
+      "norm_label": "signout()",
+      "source_file": "app/actions.ts",
+      "source_location": "L24"
     },
     {
       "id": "app_auth_callback_route_get",
@@ -637,6 +579,18 @@
       "norm_label": "citypage()",
       "source_file": "app/city/[city]/page.tsx",
       "source_location": "L23"
+    },
+    {
+      "id": "app_city_city_page_generatemetadata",
+      "label": "generateMetadata()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "getLang",
+      "file_type": "code",
+      "norm_label": "generatemetadata()",
+      "source_file": "app/city/[city]/page.tsx",
+      "source_location": "L12"
     },
     {
       "id": "app_city_city_region_page_generatemetadata",
@@ -771,18 +725,6 @@
       "source_location": "L6"
     },
     {
-      "id": "app_page_home",
-      "label": "Home()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "getLang",
-      "file_type": "code",
-      "norm_label": "home()",
-      "source_file": "app/page.tsx",
-      "source_location": "L8"
-    },
-    {
       "id": "app_pricing_page_pricingpage",
       "label": "PricingPage()",
       "_callable": true,
@@ -805,18 +747,6 @@
       "norm_label": "robots()",
       "source_file": "app/robots.ts",
       "source_location": "L3"
-    },
-    {
-      "id": "app_terms_page_terms",
-      "label": "Terms()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "getLang",
-      "file_type": "code",
-      "norm_label": "terms()",
-      "source_file": "app/terms/page.tsx",
-      "source_location": "L7"
     },
     {
       "id": "app_u_handle_page_generatemetadata",
@@ -855,30 +785,6 @@
       "source_location": "L7"
     },
     {
-      "id": "lib_data_feedall",
-      "label": "feedAll()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "getLang",
-      "file_type": "code",
-      "norm_label": "feedall()",
-      "source_file": "lib/data.ts",
-      "source_location": "L22"
-    },
-    {
-      "id": "lib_data_feedinbox",
-      "label": "feedInBox()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "getLang",
-      "file_type": "code",
-      "norm_label": "feedinbox()",
-      "source_file": "lib/data.ts",
-      "source_location": "L33"
-    },
-    {
       "id": "lib_data_feedwhere",
       "label": "feedWhere()",
       "_callable": true,
@@ -888,19 +794,7 @@
       "file_type": "code",
       "norm_label": "feedwhere()",
       "source_file": "lib/data.ts",
-      "source_location": "L46"
-    },
-    {
-      "id": "lib_geo_iplocation",
-      "label": "ipLocation()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "getLang",
-      "file_type": "code",
-      "norm_label": "iplocation()",
-      "source_file": "lib/geo.ts",
-      "source_location": "L4"
+      "source_location": "L60"
     },
     {
       "id": "lib_i18n_getlang",
@@ -936,7 +830,7 @@
       "file_type": "code",
       "norm_label": "createclient()",
       "source_file": "lib/supabase/server.ts",
-      "source_location": "L4"
+      "source_location": "L5"
     },
     {
       "id": "lib_supabase_server_currentuser",
@@ -948,7 +842,7 @@
       "file_type": "code",
       "norm_label": "currentuser()",
       "source_file": "lib/supabase/server.ts",
-      "source_location": "L24"
+      "source_location": "L25"
     },
     {
       "id": "app_city_city_c_category_page_categorypage",
@@ -975,30 +869,6 @@
       "source_location": "L12"
     },
     {
-      "id": "app_city_city_page_generatemetadata",
-      "label": "generateMetadata()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 23,
-      "community_name": "[category]/page.tsx",
-      "file_type": "code",
-      "norm_label": "generatemetadata()",
-      "source_file": "app/city/[city]/page.tsx",
-      "source_location": "L12"
-    },
-    {
-      "id": "app_city_hubjsonld_hubjsonld",
-      "label": "HubJsonLd()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 23,
-      "community_name": "[category]/page.tsx",
-      "file_type": "code",
-      "norm_label": "hubjsonld()",
-      "source_file": "app/city/HubJsonLd.tsx",
-      "source_location": "L4"
-    },
-    {
       "id": "lib_category_iscategory",
       "label": "isCategory()",
       "_callable": true,
@@ -1020,7 +890,223 @@
       "file_type": "code",
       "norm_label": "feedcitycategory()",
       "source_file": "lib/data.ts",
-      "source_location": "L59"
+      "source_location": "L73"
+    },
+    {
+      "id": "app_components_cityhero_cityhero",
+      "label": "CityHero()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 24,
+      "community_name": "data.ts",
+      "file_type": "code",
+      "norm_label": "cityhero()",
+      "source_file": "app/components/CityHero.tsx",
+      "source_location": "L32"
+    },
+    {
+      "id": "app_components_cityhero_fact",
+      "label": "Fact()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 24,
+      "community_name": "data.ts",
+      "file_type": "code",
+      "norm_label": "fact()",
+      "source_file": "app/components/CityHero.tsx",
+      "source_location": "L95"
+    },
+    {
+      "id": "app_components_cityhero_photourl",
+      "label": "photoUrl()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 24,
+      "community_name": "data.ts",
+      "file_type": "code",
+      "norm_label": "photourl()",
+      "source_file": "app/components/CityHero.tsx",
+      "source_location": "L13"
+    },
+    {
+      "id": "app_components_cityhero_topcities",
+      "label": "topCities()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 24,
+      "community_name": "data.ts",
+      "file_type": "code",
+      "norm_label": "topcities()",
+      "source_file": "app/components/CityHero.tsx",
+      "source_location": "L18"
+    },
+    {
+      "id": "app_components_mapview_bubblesize",
+      "label": "bubbleSize()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 24,
+      "community_name": "data.ts",
+      "file_type": "code",
+      "norm_label": "bubblesize()",
+      "source_file": "app/components/MapView.tsx",
+      "source_location": "L44"
+    },
+    {
+      "id": "app_components_mapview_clustermarkers",
+      "label": "ClusterMarkers()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 24,
+      "community_name": "data.ts",
+      "file_type": "code",
+      "norm_label": "clustermarkers()",
+      "source_file": "app/components/MapView.tsx",
+      "source_location": "L46"
+    },
+    {
+      "id": "app_components_mapview_clusterposts",
+      "label": "clusterPosts()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 24,
+      "community_name": "data.ts",
+      "file_type": "code",
+      "norm_label": "clusterposts()",
+      "source_file": "app/components/MapView.tsx",
+      "source_location": "L29"
+    },
+    {
+      "id": "app_components_mapview_gridsizedeg",
+      "label": "gridSizeDeg()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 24,
+      "community_name": "data.ts",
+      "file_type": "code",
+      "norm_label": "gridsizedeg()",
+      "source_file": "app/components/MapView.tsx",
+      "source_location": "L21"
+    },
+    {
+      "id": "app_components_mapview_mapview",
+      "label": "MapView()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 24,
+      "community_name": "data.ts",
+      "file_type": "code",
+      "norm_label": "mapview()",
+      "source_file": "app/components/MapView.tsx",
+      "source_location": "L94"
+    },
+    {
+      "id": "app_components_mapview_mapview_selectpost",
+      "label": "selectPost()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 24,
+      "community_name": "data.ts",
+      "file_type": "code",
+      "norm_label": "selectpost()",
+      "source_file": "app/components/MapView.tsx",
+      "source_location": "L98"
+    },
+    {
+      "id": "app_p_slug_sharebutton_sharebutton",
+      "label": "ShareButton()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 24,
+      "community_name": "data.ts",
+      "file_type": "code",
+      "norm_label": "sharebutton()",
+      "source_file": "app/p/[slug]/ShareButton.tsx",
+      "source_location": "L16"
+    },
+    {
+      "id": "app_p_slug_sharebutton_sharebutton_copy",
+      "label": "copy()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 24,
+      "community_name": "data.ts",
+      "file_type": "code",
+      "norm_label": "copy()",
+      "source_file": "app/p/[slug]/ShareButton.tsx",
+      "source_location": "L30"
+    },
+    {
+      "id": "app_p_slug_sharebutton_sharebutton_native",
+      "label": "native()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 24,
+      "community_name": "data.ts",
+      "file_type": "code",
+      "norm_label": "native()",
+      "source_file": "app/p/[slug]/ShareButton.tsx",
+      "source_location": "L34"
+    },
+    {
+      "id": "app_page_home",
+      "label": "Home()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 24,
+      "community_name": "data.ts",
+      "file_type": "code",
+      "norm_label": "home()",
+      "source_file": "app/page.tsx",
+      "source_location": "L9"
+    },
+    {
+      "id": "lib_data_feedinbox",
+      "label": "feedInBox()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 24,
+      "community_name": "data.ts",
+      "file_type": "code",
+      "norm_label": "feedinbox()",
+      "source_file": "lib/data.ts",
+      "source_location": "L47"
+    },
+    {
+      "id": "lib_data_getcomments",
+      "label": "getComments()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 24,
+      "community_name": "data.ts",
+      "file_type": "code",
+      "norm_label": "getcomments()",
+      "source_file": "lib/data.ts",
+      "source_location": "L20"
+    },
+    {
+      "id": "lib_data_publicclient",
+      "label": "publicClient()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 24,
+      "community_name": "data.ts",
+      "file_type": "code",
+      "norm_label": "publicclient()",
+      "source_file": "lib/data.ts",
+      "source_location": "L9"
+    },
+    {
+      "id": "lib_geo_iplocation",
+      "label": "ipLocation()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 24,
+      "community_name": "data.ts",
+      "file_type": "code",
+      "norm_label": "iplocation()",
+      "source_file": "lib/geo.ts",
+      "source_location": "L4"
     },
     {
       "id": "app_login_loginform_loginform",
@@ -1068,7 +1154,7 @@
       "file_type": "code",
       "norm_label": "supabasebrowser()",
       "source_file": "lib/supabase/browser.ts",
-      "source_location": "L3"
+      "source_location": "L4"
     },
     {
       "id": "proxy_proxy",
@@ -1080,7 +1166,7 @@
       "file_type": "code",
       "norm_label": "proxy()",
       "source_file": "proxy.ts",
-      "source_location": "L5"
+      "source_location": "L6"
     },
     {
       "id": "app_error_error",
@@ -1107,28 +1193,28 @@
       "source_location": "L7"
     },
     {
+      "id": "app_terms_page_terms",
+      "label": "Terms()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 29,
+      "community_name": "terms/page.tsx",
+      "file_type": "code",
+      "norm_label": "terms()",
+      "source_file": "app/terms/page.tsx",
+      "source_location": "L7"
+    },
+    {
       "id": "app_api_webhooks_payments_route_post",
       "label": "POST()",
       "_callable": true,
       "_origin": "ast",
       "community": 7,
-      "community_name": "admin.ts",
+      "community_name": "payments.test.ts",
       "file_type": "code",
       "norm_label": "post()",
       "source_file": "app/api/webhooks/payments/route.ts",
       "source_location": "L5"
-    },
-    {
-      "id": "app_sitemap_sitemap",
-      "label": "sitemap()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "admin.ts",
-      "file_type": "code",
-      "norm_label": "sitemap()",
-      "source_file": "app/sitemap.ts",
-      "source_location": "L7"
     },
     {
       "id": "lib_payments_parseorder",
@@ -1136,7 +1222,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 7,
-      "community_name": "admin.ts",
+      "community_name": "payments.test.ts",
       "file_type": "code",
       "norm_label": "parseorder()",
       "source_file": "lib/payments.ts",
@@ -1148,7 +1234,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 7,
-      "community_name": "admin.ts",
+      "community_name": "payments.test.ts",
       "file_type": "code",
       "norm_label": "variantslotsfromenv()",
       "source_file": "lib/payments.ts",
@@ -1160,35 +1246,11 @@
       "_callable": true,
       "_origin": "ast",
       "community": 7,
-      "community_name": "admin.ts",
+      "community_name": "payments.test.ts",
       "file_type": "code",
       "norm_label": "verifysignature()",
       "source_file": "lib/payments.ts",
       "source_location": "L3"
-    },
-    {
-      "id": "lib_supabase_admin_supabaseadmin",
-      "label": "supabaseAdmin()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "admin.ts",
-      "file_type": "code",
-      "norm_label": "supabaseadmin()",
-      "source_file": "lib/supabase/admin.ts",
-      "source_location": "L4"
-    },
-    {
-      "id": "lib_translate_translatemany",
-      "label": "translateMany()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "admin.ts",
-      "file_type": "code",
-      "norm_label": "translatemany()",
-      "source_file": "lib/translate.ts",
-      "source_location": "L9"
     },
     {
       "id": "app_actions_createpost",
@@ -1249,18 +1311,6 @@
       "norm_label": "setlang()",
       "source_file": "app/actions.ts",
       "source_location": "L18"
-    },
-    {
-      "id": "app_actions_signout",
-      "label": "signOut()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 9,
-      "community_name": "actions.ts",
-      "file_type": "code",
-      "norm_label": "signout()",
-      "source_file": "app/actions.ts",
-      "source_location": "L24"
     },
     {
       "id": "app_onboarding_handleform_handleform",
@@ -1405,6 +1455,30 @@
       "norm_label": "translatetext()",
       "source_file": "lib/google.ts",
       "source_location": "L83"
+    },
+    {
+      "id": "lib_supabase_admin_supabaseadmin",
+      "label": "supabaseAdmin()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "actions.ts",
+      "file_type": "code",
+      "norm_label": "supabaseadmin()",
+      "source_file": "lib/supabase/admin.ts",
+      "source_location": "L5"
+    },
+    {
+      "id": "lib_translate_translatemany",
+      "label": "translateMany()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "actions.ts",
+      "file_type": "code",
+      "norm_label": "translatemany()",
+      "source_file": "lib/translate.ts",
+      "source_location": "L9"
     },
     {
       "id": "eslint_config",
@@ -1792,6 +1866,17 @@
       "source_location": "L21"
     },
     {
+      "id": "ref_supabase_supabase_js",
+      "label": "@supabase/supabase-js",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "package.json",
+      "file_type": "concept",
+      "norm_label": "@supabase/supabase-js",
+      "source_file": "package.json",
+      "source_location": "L16"
+    },
+    {
       "id": "ref_tailwindcss",
       "label": "tailwindcss",
       "_origin": "ast",
@@ -1858,14 +1943,25 @@
       "source_location": "L31"
     },
     {
-      "id": "app_components_mapview",
-      "label": "MapView.tsx",
+      "id": "app_city_hubjsonld",
+      "label": "HubJsonLd.tsx",
       "_origin": "ast",
       "community": 1,
       "community_name": "[slug]/page.tsx",
       "file_type": "code",
-      "norm_label": "mapview.tsx",
-      "source_file": "app/components/MapView.tsx",
+      "norm_label": "hubjsonld.tsx",
+      "source_file": "app/city/HubJsonLd.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "app_components_postcard",
+      "label": "PostCard.tsx",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "[slug]/page.tsx",
+      "file_type": "code",
+      "norm_label": "postcard.tsx",
+      "source_file": "app/components/PostCard.tsx",
       "source_location": "L1"
     },
     {
@@ -1913,17 +2009,6 @@
       "source_location": "L1"
     },
     {
-      "id": "app_p_slug_sharebutton",
-      "label": "ShareButton.tsx",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "[slug]/page.tsx",
-      "file_type": "code",
-      "norm_label": "sharebutton.tsx",
-      "source_file": "app/p/[slug]/ShareButton.tsx",
-      "source_location": "L1"
-    },
-    {
       "id": "app_p_slug_toggleoriginal",
       "label": "ToggleOriginal.tsx",
       "_origin": "ast",
@@ -1935,6 +2020,28 @@
       "source_location": "L1"
     },
     {
+      "id": "app_sitemap",
+      "label": "sitemap.ts",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "[slug]/page.tsx",
+      "file_type": "code",
+      "norm_label": "sitemap.ts",
+      "source_file": "app/sitemap.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "app_sitemap_dynamic",
+      "label": "dynamic",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "[slug]/page.tsx",
+      "file_type": "code",
+      "norm_label": "dynamic",
+      "source_file": "app/sitemap.ts",
+      "source_location": "L5"
+    },
+    {
       "id": "lib_data_getpost",
       "label": "getPost",
       "_origin": "ast",
@@ -1943,7 +2050,7 @@
       "file_type": "code",
       "norm_label": "getpost",
       "source_file": "lib/data.ts",
-      "source_location": "L5"
+      "source_location": "L14"
     },
     {
       "id": "lib_slug",
@@ -1957,15 +2064,15 @@
       "source_location": "L1"
     },
     {
-      "id": "ref_react",
-      "label": "react",
+      "id": "lib_supabase_admin",
+      "label": "admin.ts",
       "_origin": "ast",
       "community": 1,
       "community_name": "[slug]/page.tsx",
-      "file_type": "concept",
-      "norm_label": "react",
-      "source_file": "package.json",
-      "source_location": "L19"
+      "file_type": "code",
+      "norm_label": "admin.ts",
+      "source_file": "lib/supabase/admin.ts",
+      "source_location": "L1"
     },
     {
       "id": "readme",
@@ -2687,17 +2794,6 @@
       "source_location": "L1"
     },
     {
-      "id": "app_components_postcard",
-      "label": "PostCard.tsx",
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "getLang",
-      "file_type": "code",
-      "norm_label": "postcard.tsx",
-      "source_file": "app/components/PostCard.tsx",
-      "source_location": "L1"
-    },
-    {
       "id": "app_layout",
       "label": "layout.tsx",
       "_origin": "ast",
@@ -2786,17 +2882,6 @@
       "source_location": "L1"
     },
     {
-      "id": "app_page",
-      "label": "app/page.tsx",
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "getLang",
-      "file_type": "code",
-      "norm_label": "app/page.tsx",
-      "source_file": "app/page.tsx",
-      "source_location": "L1"
-    },
-    {
       "id": "app_pricing_page",
       "label": "pricing/page.tsx",
       "_origin": "ast",
@@ -2830,28 +2915,6 @@
       "source_location": "L1"
     },
     {
-      "id": "app_terms_page",
-      "label": "terms/page.tsx",
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "getLang",
-      "file_type": "code",
-      "norm_label": "terms/page.tsx",
-      "source_file": "app/terms/page.tsx",
-      "source_location": "L1"
-    },
-    {
-      "id": "app_terms_page_metadata",
-      "label": "metadata",
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "getLang",
-      "file_type": "code",
-      "norm_label": "metadata",
-      "source_file": "app/terms/page.tsx",
-      "source_location": "L3"
-    },
-    {
       "id": "app_u_handle_page",
       "label": "[handle]/page.tsx",
       "_origin": "ast",
@@ -2872,39 +2935,6 @@
       "norm_label": "upload/page.tsx",
       "source_file": "app/upload/page.tsx",
       "source_location": "L1"
-    },
-    {
-      "id": "lib_data",
-      "label": "data.ts",
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "getLang",
-      "file_type": "code",
-      "norm_label": "data.ts",
-      "source_file": "lib/data.ts",
-      "source_location": "L1"
-    },
-    {
-      "id": "lib_geo",
-      "label": "geo.ts",
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "getLang",
-      "file_type": "code",
-      "norm_label": "geo.ts",
-      "source_file": "lib/geo.ts",
-      "source_location": "L1"
-    },
-    {
-      "id": "lib_geo_seoul",
-      "label": "SEOUL",
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "getLang",
-      "file_type": "code",
-      "norm_label": "seoul",
-      "source_file": "lib/geo.ts",
-      "source_location": "L12"
     },
     {
       "id": "lib_i18n",
@@ -2948,17 +2978,6 @@
       "file_type": "code",
       "norm_label": "server.ts",
       "source_file": "lib/supabase/server.ts",
-      "source_location": "L1"
-    },
-    {
-      "id": "lib_types",
-      "label": "types.ts",
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "getLang",
-      "file_type": "code",
-      "norm_label": "types.ts",
-      "source_file": "lib/types.ts",
       "source_location": "L1"
     },
     {
@@ -3197,17 +3216,6 @@
       "source_location": "L1"
     },
     {
-      "id": "app_city_hubjsonld",
-      "label": "HubJsonLd.tsx",
-      "_origin": "ast",
-      "community": 23,
-      "community_name": "[category]/page.tsx",
-      "file_type": "code",
-      "norm_label": "hubjsonld.tsx",
-      "source_file": "app/city/HubJsonLd.tsx",
-      "source_location": "L1"
-    },
-    {
       "id": "lib_category",
       "label": "category.ts",
       "_origin": "ast",
@@ -3252,148 +3260,125 @@
       "source_location": "L14"
     },
     {
-      "id": "claude",
-      "label": "CLAUDE.md",
+      "id": "app_components_cityhero",
+      "label": "CityHero.tsx",
       "_origin": "ast",
       "community": 24,
-      "community_name": "Look At This \u2014 Claude Code \uc791\uc5c5 \uc9c0\uce68",
-      "file_type": "document",
-      "node_kind": "page",
-      "norm_label": "claude.md",
-      "source_file": "CLAUDE.md",
+      "community_name": "data.ts",
+      "file_type": "code",
+      "norm_label": "cityhero.tsx",
+      "source_file": "app/components/CityHero.tsx",
       "source_location": "L1"
     },
     {
-      "id": "claude_graphify",
-      "label": "graphify",
+      "id": "app_components_cityhero_bebas",
+      "label": "bebas",
       "_origin": "ast",
       "community": 24,
-      "community_name": "Look At This \u2014 Claude Code \uc791\uc5c5 \uc9c0\uce68",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "graphify",
-      "source_file": "CLAUDE.md",
-      "source_location": "L83"
+      "community_name": "data.ts",
+      "file_type": "code",
+      "norm_label": "bebas",
+      "source_file": "app/components/CityHero.tsx",
+      "source_location": "L10"
     },
     {
-      "id": "claude_look_at_this_claude_code_\uc791\uc5c5_\uc9c0\uce68",
-      "label": "Look At This \u2014 Claude Code \uc791\uc5c5 \uc9c0\uce68",
+      "id": "app_components_mapview",
+      "label": "MapView.tsx",
       "_origin": "ast",
       "community": 24,
-      "community_name": "Look At This \u2014 Claude Code \uc791\uc5c5 \uc9c0\uce68",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "look at this \u2014 claude code \u110c\u1161\u11a8\u110b\u1165\u11b8 \u110c\u1175\u110e\u1175\u11b7",
-      "source_file": "CLAUDE.md",
-      "source_location": "L3"
+      "community_name": "data.ts",
+      "file_type": "code",
+      "norm_label": "mapview.tsx",
+      "source_file": "app/components/MapView.tsx",
+      "source_location": "L1"
     },
     {
-      "id": "claude_\uaddc\uce59_\uc704\uce58",
-      "label": "\uaddc\uce59 \uc704\uce58",
+      "id": "app_p_slug_sharebutton",
+      "label": "ShareButton.tsx",
       "_origin": "ast",
       "community": 24,
-      "community_name": "Look At This \u2014 Claude Code \uc791\uc5c5 \uc9c0\uce68",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "\u1100\u1172\u110e\u1175\u11a8 \u110b\u1171\u110e\u1175",
-      "source_file": "CLAUDE.md",
-      "source_location": "L34"
+      "community_name": "data.ts",
+      "file_type": "code",
+      "norm_label": "sharebutton.tsx",
+      "source_file": "app/p/[slug]/ShareButton.tsx",
+      "source_location": "L1"
     },
     {
-      "id": "claude_\ub9cc\ub4e4\uc9c0_\ub9d0_\uac83_\ubc31\ub85c\uadf8_\ucd94\uac00_\uc2dc\uc810",
-      "label": "\ub9cc\ub4e4\uc9c0 \ub9d0 \uac83 (\ubc31\ub85c\uadf8, \ucd94\uac00 \uc2dc\uc810)",
+      "id": "app_page",
+      "label": "app/page.tsx",
       "_origin": "ast",
       "community": 24,
-      "community_name": "Look At This \u2014 Claude Code \uc791\uc5c5 \uc9c0\uce68",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "\u1106\u1161\u11ab\u1103\u1173\u11af\u110c\u1175 \u1106\u1161\u11af \u1100\u1165\u11ba (\u1107\u1162\u11a8\u1105\u1169\u1100\u1173, \u110e\u116e\u1100\u1161 \u1109\u1175\u110c\u1165\u11b7)",
-      "source_file": "CLAUDE.md",
-      "source_location": "L76"
+      "community_name": "data.ts",
+      "file_type": "code",
+      "norm_label": "app/page.tsx",
+      "source_file": "app/page.tsx",
+      "source_location": "L1"
     },
     {
-      "id": "claude_\uba85\ub839",
-      "label": "\uba85\ub839",
+      "id": "lib_data",
+      "label": "data.ts",
       "_origin": "ast",
       "community": 24,
-      "community_name": "Look At This \u2014 Claude Code \uc791\uc5c5 \uc9c0\uce68",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "\u1106\u1167\u11bc\u1105\u1167\u11bc",
-      "source_file": "CLAUDE.md",
-      "source_location": "L13"
+      "community_name": "data.ts",
+      "file_type": "code",
+      "norm_label": "data.ts",
+      "source_file": "lib/data.ts",
+      "source_location": "L1"
     },
     {
-      "id": "claude_\uc2a4\ud0dd_\ubc14\uafb8\uc9c0_\ub9d0_\uac83",
-      "label": "\uc2a4\ud0dd (\ubc14\uafb8\uc9c0 \ub9d0 \uac83)",
+      "id": "lib_data_feedall",
+      "label": "feedAll",
       "_origin": "ast",
       "community": 24,
-      "community_name": "Look At This \u2014 Claude Code \uc791\uc5c5 \uc9c0\uce68",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "\u1109\u1173\u1110\u1162\u11a8 (\u1107\u1161\u1101\u116e\u110c\u1175 \u1106\u1161\u11af \u1100\u1165\u11ba)",
-      "source_file": "CLAUDE.md",
-      "source_location": "L9"
+      "community_name": "data.ts",
+      "file_type": "code",
+      "norm_label": "feedall",
+      "source_file": "lib/data.ts",
+      "source_location": "L32"
     },
     {
-      "id": "claude_\uc544\uc9c1_\uac80\uc99d_\uc548_\ub41c_\uac83_\ud0a4_\uc5c6\uc774_\ub9cc\ub4e4\uc5c8\uc74c",
-      "label": "\uc544\uc9c1 \uac80\uc99d \uc548 \ub41c \uac83 (\ud0a4 \uc5c6\uc774 \ub9cc\ub4e4\uc5c8\uc74c)",
+      "id": "lib_geo",
+      "label": "geo.ts",
       "_origin": "ast",
       "community": 24,
-      "community_name": "Look At This \u2014 Claude Code \uc791\uc5c5 \uc9c0\uce68",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "\u110b\u1161\u110c\u1175\u11a8 \u1100\u1165\u11b7\u110c\u1173\u11bc \u110b\u1161\u11ab \u1103\u116c\u11ab \u1100\u1165\u11ba (\u110f\u1175 \u110b\u1165\u11b9\u110b\u1175 \u1106\u1161\u11ab\u1103\u1173\u11af\u110b\u1165\u11bb\u110b\u1173\u11b7)",
-      "source_file": "CLAUDE.md",
-      "source_location": "L71"
+      "community_name": "data.ts",
+      "file_type": "code",
+      "norm_label": "geo.ts",
+      "source_file": "lib/geo.ts",
+      "source_location": "L1"
     },
     {
-      "id": "claude_\uc5c5\ub85c\ub4dc_\ud30c\uc774\ud504\ub77c\uc778_\uc21c\uc11c_\ubc14\uafb8\uc9c0_\ub9d0_\uac83",
-      "label": "\uc5c5\ub85c\ub4dc \ud30c\uc774\ud504\ub77c\uc778 (\uc21c\uc11c \ubc14\uafb8\uc9c0 \ub9d0 \uac83)",
+      "id": "lib_geo_seoul",
+      "label": "SEOUL",
       "_origin": "ast",
       "community": 24,
-      "community_name": "Look At This \u2014 Claude Code \uc791\uc5c5 \uc9c0\uce68",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "\u110b\u1165\u11b8\u1105\u1169\u1103\u1173 \u1111\u1161\u110b\u1175\u1111\u1173\u1105\u1161\u110b\u1175\u11ab (\u1109\u116e\u11ab\u1109\u1165 \u1107\u1161\u1101\u116e\u110c\u1175 \u1106\u1161\u11af \u1100\u1165\u11ba)",
-      "source_file": "CLAUDE.md",
-      "source_location": "L68"
+      "community_name": "data.ts",
+      "file_type": "code",
+      "norm_label": "seoul",
+      "source_file": "lib/geo.ts",
+      "source_location": "L12"
     },
     {
-      "id": "claude_\uc774\uac8c_\ubb54\uac00",
-      "label": "\uc774\uac8c \ubb54\uac00",
+      "id": "lib_types",
+      "label": "types.ts",
       "_origin": "ast",
       "community": 24,
-      "community_name": "Look At This \u2014 Claude Code \uc791\uc5c5 \uc9c0\uce68",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "\u110b\u1175\u1100\u1166 \u1106\u116f\u11ab\u1100\u1161",
-      "source_file": "CLAUDE.md",
-      "source_location": "L5"
+      "community_name": "data.ts",
+      "file_type": "code",
+      "norm_label": "types.ts",
+      "source_file": "lib/types.ts",
+      "source_location": "L1"
     },
     {
-      "id": "claude_\uc791\uc5c5_\ubc29\uc2dd",
-      "label": "\uc791\uc5c5 \ubc29\uc2dd",
+      "id": "ref_react",
+      "label": "react",
       "_origin": "ast",
       "community": 24,
-      "community_name": "Look At This \u2014 Claude Code \uc791\uc5c5 \uc9c0\uce68",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "\u110c\u1161\u11a8\u110b\u1165\u11b8 \u1107\u1161\u11bc\u1109\u1175\u11a8",
-      "source_file": "CLAUDE.md",
-      "source_location": "L79"
-    },
-    {
-      "id": "claude_\uc808\ub300_\uaddc\uce59",
-      "label": "\uc808\ub300 \uaddc\uce59",
-      "_origin": "ast",
-      "community": 24,
-      "community_name": "Look At This \u2014 Claude Code \uc791\uc5c5 \uc9c0\uce68",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "\u110c\u1165\u11af\u1103\u1162 \u1100\u1172\u110e\u1175\u11a8",
-      "source_file": "CLAUDE.md",
-      "source_location": "L24"
+      "community_name": "data.ts",
+      "file_type": "concept",
+      "norm_label": "react",
+      "source_file": "package.json",
+      "source_location": "L19"
     },
     {
       "id": "app_login_loginform",
@@ -3437,7 +3422,7 @@
       "file_type": "code",
       "norm_label": "config",
       "source_file": "proxy.ts",
-      "source_location": "L30"
+      "source_location": "L31"
     },
     {
       "id": "ref_supabase_ssr",
@@ -3529,6 +3514,28 @@
       "file_type": "code",
       "norm_label": "metadata",
       "source_file": "app/privacy/page.tsx",
+      "source_location": "L3"
+    },
+    {
+      "id": "app_terms_page",
+      "label": "terms/page.tsx",
+      "_origin": "ast",
+      "community": 29,
+      "community_name": "terms/page.tsx",
+      "file_type": "code",
+      "norm_label": "terms/page.tsx",
+      "source_file": "app/terms/page.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "app_terms_page_metadata",
+      "label": "metadata",
+      "_origin": "ast",
+      "community": 29,
+      "community_name": "terms/page.tsx",
+      "file_type": "code",
+      "norm_label": "metadata",
+      "source_file": "app/terms/page.tsx",
       "source_location": "L3"
     },
     {
@@ -4288,65 +4295,21 @@
       "label": "payments/route.ts",
       "_origin": "ast",
       "community": 7,
-      "community_name": "admin.ts",
+      "community_name": "payments.test.ts",
       "file_type": "code",
       "norm_label": "payments/route.ts",
       "source_file": "app/api/webhooks/payments/route.ts",
       "source_location": "L1"
     },
     {
-      "id": "app_sitemap",
-      "label": "sitemap.ts",
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "admin.ts",
-      "file_type": "code",
-      "norm_label": "sitemap.ts",
-      "source_file": "app/sitemap.ts",
-      "source_location": "L1"
-    },
-    {
-      "id": "app_sitemap_dynamic",
-      "label": "dynamic",
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "admin.ts",
-      "file_type": "code",
-      "norm_label": "dynamic",
-      "source_file": "app/sitemap.ts",
-      "source_location": "L5"
-    },
-    {
       "id": "lib_payments",
       "label": "payments.ts",
       "_origin": "ast",
       "community": 7,
-      "community_name": "admin.ts",
+      "community_name": "payments.test.ts",
       "file_type": "code",
       "norm_label": "payments.ts",
       "source_file": "lib/payments.ts",
-      "source_location": "L1"
-    },
-    {
-      "id": "lib_supabase_admin",
-      "label": "admin.ts",
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "admin.ts",
-      "file_type": "code",
-      "norm_label": "admin.ts",
-      "source_file": "lib/supabase/admin.ts",
-      "source_location": "L1"
-    },
-    {
-      "id": "lib_translate",
-      "label": "translate.ts",
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "admin.ts",
-      "file_type": "code",
-      "norm_label": "translate.ts",
-      "source_file": "lib/translate.ts",
       "source_location": "L1"
     },
     {
@@ -4354,7 +4317,7 @@
       "label": "category.test.ts",
       "_origin": "ast",
       "community": 7,
-      "community_name": "admin.ts",
+      "community_name": "payments.test.ts",
       "file_type": "code",
       "norm_label": "category.test.ts",
       "source_file": "tests/category.test.ts",
@@ -4365,7 +4328,7 @@
       "label": "payments.test.ts",
       "_origin": "ast",
       "community": 7,
-      "community_name": "admin.ts",
+      "community_name": "payments.test.ts",
       "file_type": "code",
       "norm_label": "payments.test.ts",
       "source_file": "tests/payments.test.ts",
@@ -4376,7 +4339,7 @@
       "label": "payload",
       "_origin": "ast",
       "community": 7,
-      "community_name": "admin.ts",
+      "community_name": "payments.test.ts",
       "file_type": "code",
       "norm_label": "payload",
       "source_file": "tests/payments.test.ts",
@@ -4387,22 +4350,11 @@
       "label": "raw",
       "_origin": "ast",
       "community": 7,
-      "community_name": "admin.ts",
+      "community_name": "payments.test.ts",
       "file_type": "code",
       "norm_label": "raw",
       "source_file": "tests/payments.test.ts",
       "source_location": "L11"
-    },
-    {
-      "id": "ref_supabase_supabase_js",
-      "label": "@supabase/supabase-js",
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "admin.ts",
-      "file_type": "concept",
-      "norm_label": "@supabase/supabase-js",
-      "source_file": "package.json",
-      "source_location": "L16"
     },
     {
       "id": "agents_skills_design_taste_frontend_skill_1_a_dial_inference_design_read_dial_values",
@@ -4508,6 +4460,17 @@
       "source_location": "L1"
     },
     {
+      "id": "lib_translate",
+      "label": "translate.ts",
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "actions.ts",
+      "file_type": "code",
+      "norm_label": "translate.ts",
+      "source_file": "lib/translate.ts",
+      "source_location": "L1"
+    },
+    {
       "id": "ref_vis_gl_react_google_maps",
       "label": "@vis.gl/react-google-maps",
       "_origin": "ast",
@@ -4517,6 +4480,42 @@
       "norm_label": "@vis.gl/react-google-maps",
       "source_file": "package.json",
       "source_location": "L17"
+    },
+    {
+      "id": "claude",
+      "label": "CLAUDE.md",
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "actions.ts",
+      "file_type": "document",
+      "node_kind": "page",
+      "norm_label": "claude.md",
+      "source_file": "CLAUDE.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "claude_graphify",
+      "label": "graphify",
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "actions.ts",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "graphify",
+      "source_file": "CLAUDE.md",
+      "source_location": "L83"
+    },
+    {
+      "id": "claude_look_at_this_claude_code_\uc791\uc5c5_\uc9c0\uce68",
+      "label": "Look At This \u2014 Claude Code \uc791\uc5c5 \uc9c0\uce68",
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "actions.ts",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "look at this \u2014 claude code \u110c\u1161\u11a8\u110b\u1165\u11b8 \u110c\u1175\u110e\u1175\u11b7",
+      "source_file": "CLAUDE.md",
+      "source_location": "L3"
     },
     {
       "id": "claude_\uad6c\uc870",
@@ -4529,6 +4528,114 @@
       "norm_label": "\u1100\u116e\u110c\u1169",
       "source_file": "CLAUDE.md",
       "source_location": "L47"
+    },
+    {
+      "id": "claude_\uaddc\uce59_\uc704\uce58",
+      "label": "\uaddc\uce59 \uc704\uce58",
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "actions.ts",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "\u1100\u1172\u110e\u1175\u11a8 \u110b\u1171\u110e\u1175",
+      "source_file": "CLAUDE.md",
+      "source_location": "L34"
+    },
+    {
+      "id": "claude_\ub9cc\ub4e4\uc9c0_\ub9d0_\uac83_\ubc31\ub85c\uadf8_\ucd94\uac00_\uc2dc\uc810",
+      "label": "\ub9cc\ub4e4\uc9c0 \ub9d0 \uac83 (\ubc31\ub85c\uadf8, \ucd94\uac00 \uc2dc\uc810)",
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "actions.ts",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "\u1106\u1161\u11ab\u1103\u1173\u11af\u110c\u1175 \u1106\u1161\u11af \u1100\u1165\u11ba (\u1107\u1162\u11a8\u1105\u1169\u1100\u1173, \u110e\u116e\u1100\u1161 \u1109\u1175\u110c\u1165\u11b7)",
+      "source_file": "CLAUDE.md",
+      "source_location": "L76"
+    },
+    {
+      "id": "claude_\uba85\ub839",
+      "label": "\uba85\ub839",
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "actions.ts",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "\u1106\u1167\u11bc\u1105\u1167\u11bc",
+      "source_file": "CLAUDE.md",
+      "source_location": "L13"
+    },
+    {
+      "id": "claude_\uc2a4\ud0dd_\ubc14\uafb8\uc9c0_\ub9d0_\uac83",
+      "label": "\uc2a4\ud0dd (\ubc14\uafb8\uc9c0 \ub9d0 \uac83)",
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "actions.ts",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "\u1109\u1173\u1110\u1162\u11a8 (\u1107\u1161\u1101\u116e\u110c\u1175 \u1106\u1161\u11af \u1100\u1165\u11ba)",
+      "source_file": "CLAUDE.md",
+      "source_location": "L9"
+    },
+    {
+      "id": "claude_\uc544\uc9c1_\uac80\uc99d_\uc548_\ub41c_\uac83_\ud0a4_\uc5c6\uc774_\ub9cc\ub4e4\uc5c8\uc74c",
+      "label": "\uc544\uc9c1 \uac80\uc99d \uc548 \ub41c \uac83 (\ud0a4 \uc5c6\uc774 \ub9cc\ub4e4\uc5c8\uc74c)",
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "actions.ts",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "\u110b\u1161\u110c\u1175\u11a8 \u1100\u1165\u11b7\u110c\u1173\u11bc \u110b\u1161\u11ab \u1103\u116c\u11ab \u1100\u1165\u11ba (\u110f\u1175 \u110b\u1165\u11b9\u110b\u1175 \u1106\u1161\u11ab\u1103\u1173\u11af\u110b\u1165\u11bb\u110b\u1173\u11b7)",
+      "source_file": "CLAUDE.md",
+      "source_location": "L71"
+    },
+    {
+      "id": "claude_\uc5c5\ub85c\ub4dc_\ud30c\uc774\ud504\ub77c\uc778_\uc21c\uc11c_\ubc14\uafb8\uc9c0_\ub9d0_\uac83",
+      "label": "\uc5c5\ub85c\ub4dc \ud30c\uc774\ud504\ub77c\uc778 (\uc21c\uc11c \ubc14\uafb8\uc9c0 \ub9d0 \uac83)",
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "actions.ts",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "\u110b\u1165\u11b8\u1105\u1169\u1103\u1173 \u1111\u1161\u110b\u1175\u1111\u1173\u1105\u1161\u110b\u1175\u11ab (\u1109\u116e\u11ab\u1109\u1165 \u1107\u1161\u1101\u116e\u110c\u1175 \u1106\u1161\u11af \u1100\u1165\u11ba)",
+      "source_file": "CLAUDE.md",
+      "source_location": "L68"
+    },
+    {
+      "id": "claude_\uc774\uac8c_\ubb54\uac00",
+      "label": "\uc774\uac8c \ubb54\uac00",
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "actions.ts",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "\u110b\u1175\u1100\u1166 \u1106\u116f\u11ab\u1100\u1161",
+      "source_file": "CLAUDE.md",
+      "source_location": "L5"
+    },
+    {
+      "id": "claude_\uc791\uc5c5_\ubc29\uc2dd",
+      "label": "\uc791\uc5c5 \ubc29\uc2dd",
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "actions.ts",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "\u110c\u1161\u11a8\u110b\u1165\u11b8 \u1107\u1161\u11bc\u1109\u1175\u11a8",
+      "source_file": "CLAUDE.md",
+      "source_location": "L79"
+    },
+    {
+      "id": "claude_\uc808\ub300_\uaddc\uce59",
+      "label": "\uc808\ub300 \uaddc\uce59",
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "actions.ts",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "\u110c\u1165\u11af\u1103\u1162 \u1100\u1172\u110e\u1175\u11a8",
+      "source_file": "CLAUDE.md",
+      "source_location": "L24"
     },
     {
       "id": "app_globals",
@@ -4571,7 +4678,7 @@
       "label": "ref_node_assert",
       "_origin": "semantic",
       "community": 7,
-      "community_name": "admin.ts",
+      "community_name": "payments.test.ts",
       "external": true,
       "file_type": "concept",
       "norm_label": "ref_node_assert",
@@ -4583,7 +4690,7 @@
       "label": "ref_node_crypto",
       "_origin": "semantic",
       "community": 7,
-      "community_name": "admin.ts",
+      "community_name": "payments.test.ts",
       "external": true,
       "file_type": "concept",
       "norm_label": "ref_node_crypto",
@@ -4595,7 +4702,7 @@
       "label": "ref_node_test",
       "_origin": "semantic",
       "community": 7,
-      "community_name": "admin.ts",
+      "community_name": "payments.test.ts",
       "external": true,
       "file_type": "concept",
       "norm_label": "ref_node_test",
@@ -5082,6 +5189,54 @@
       "context": "call",
       "source_file": "app/city/HubJsonLd.tsx",
       "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_cityhero_cityhero",
+      "target": "app_components_cityhero_topcities",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "app/components/CityHero.tsx",
+      "source_location": "L33",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_cityhero_cityhero",
+      "target": "app_components_cityhero_photourl",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "app/components/CityHero.tsx",
+      "source_location": "L44",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_cityhero_cityhero",
+      "target": "lib_slug_postpath",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "app/components/CityHero.tsx",
+      "source_location": "L86",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_cityhero_cityhero",
+      "target": "lib_slug_money",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "app/components/CityHero.tsx",
+      "source_location": "L88",
       "weight": 1.0
     },
     {
@@ -5669,7 +5824,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "app/page.tsx",
-      "source_location": "L11",
+      "source_location": "L12",
       "weight": 1.0
     },
     {
@@ -5681,7 +5836,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "app/page.tsx",
-      "source_location": "L12",
+      "source_location": "L13",
       "weight": 1.0
     },
     {
@@ -5693,7 +5848,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "app/page.tsx",
-      "source_location": "L12",
+      "source_location": "L13",
       "weight": 1.0
     },
     {
@@ -5705,7 +5860,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "app/page.tsx",
-      "source_location": "L13",
+      "source_location": "L14",
       "weight": 1.0
     },
     {
@@ -5717,7 +5872,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "app/page.tsx",
-      "source_location": "L14",
+      "source_location": "L15",
       "weight": 1.0
     },
     {
@@ -5914,14 +6069,14 @@
     },
     {
       "source": "lib_data_feedall",
-      "target": "lib_supabase_server_createclient",
+      "target": "lib_data_publicclient",
       "relation": "calls",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "lib/data.ts",
-      "source_location": "L23",
+      "source_location": "L34",
       "weight": 1.0
     },
     {
@@ -5933,7 +6088,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "lib/data.ts",
-      "source_location": "L60",
+      "source_location": "L74",
       "weight": 1.0
     },
     {
@@ -5945,7 +6100,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "lib/data.ts",
-      "source_location": "L34",
+      "source_location": "L48",
       "weight": 1.0
     },
     {
@@ -5957,7 +6112,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "lib/data.ts",
-      "source_location": "L47",
+      "source_location": "L61",
       "weight": 1.0
     },
     {
@@ -5969,7 +6124,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "lib/data.ts",
-      "source_location": "L12",
+      "source_location": "L21",
       "weight": 1.0
     },
     {
@@ -5981,7 +6136,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "lib/data.ts",
-      "source_location": "L6",
+      "source_location": "L15",
       "weight": 1.0
     },
     {
@@ -6053,7 +6208,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "lib/supabase/server.ts",
-      "source_location": "L25",
+      "source_location": "L26",
       "weight": 1.0
     },
     {
@@ -6534,6 +6689,42 @@
       "context": "import",
       "source_file": "app/city/HubJsonLd.tsx",
       "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_cityhero",
+      "target": "lib_types_feedrow",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "app/components/CityHero.tsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_cityhero",
+      "target": "lib_slug_money",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "app/components/CityHero.tsx",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_cityhero",
+      "target": "lib_slug_postpath",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "app/components/CityHero.tsx",
+      "source_location": "L8",
       "weight": 1.0
     },
     {
@@ -7282,7 +7473,7 @@
     },
     {
       "source": "app_page",
-      "target": "app_components_mapview_mapview",
+      "target": "app_components_cityhero_cityhero",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -7294,7 +7485,7 @@
     },
     {
       "source": "app_page",
-      "target": "app_components_postcard_postcard",
+      "target": "app_components_mapview_mapview",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -7302,6 +7493,18 @@
       "context": "import",
       "source_file": "app/page.tsx",
       "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "app_page",
+      "target": "app_components_postcard_postcard",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "app/page.tsx",
+      "source_location": "L7",
       "weight": 1.0
     },
     {
@@ -7517,7 +7720,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "lib/data.ts",
-      "source_location": "L2",
+      "source_location": "L4",
       "weight": 1.0
     },
     {
@@ -7529,7 +7732,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "lib/data.ts",
-      "source_location": "L3",
+      "source_location": "L5",
       "weight": 1.0
     },
     {
@@ -7541,7 +7744,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "lib/data.ts",
-      "source_location": "L3",
+      "source_location": "L5",
       "weight": 1.0
     },
     {
@@ -8219,6 +8422,55 @@
       "source_file": "app/city/HubJsonLd.tsx",
       "source_location": "L2",
       "type_only": true,
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_cityhero",
+      "target": "ref_react",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "app/components/CityHero.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_cityhero",
+      "target": "ref_next",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "app/components/CityHero.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_cityhero",
+      "target": "lib_types",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "app/components/CityHero.tsx",
+      "source_location": "L7",
+      "type_only": true,
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_cityhero",
+      "target": "lib_slug",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "app/components/CityHero.tsx",
+      "source_location": "L8",
       "weight": 1.0
     },
     {
@@ -8936,7 +9188,7 @@
     },
     {
       "source": "app_page",
-      "target": "app_components_mapview",
+      "target": "app_components_cityhero",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -8948,7 +9200,7 @@
     },
     {
       "source": "app_page",
-      "target": "app_components_postcard",
+      "target": "app_components_mapview",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -8956,6 +9208,18 @@
       "context": "import",
       "source_file": "app/page.tsx",
       "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "app_page",
+      "target": "app_components_postcard",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "app/page.tsx",
+      "source_location": "L7",
       "weight": 1.0
     },
     {
@@ -9241,7 +9505,7 @@
     },
     {
       "source": "lib_data",
-      "target": "ref_react",
+      "target": "ref_supabase_supabase_js",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -9253,7 +9517,7 @@
     },
     {
       "source": "lib_data",
-      "target": "lib_supabase_server",
+      "target": "ref_next",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -9265,7 +9529,7 @@
     },
     {
       "source": "lib_data",
-      "target": "lib_types",
+      "target": "ref_react",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -9273,6 +9537,30 @@
       "context": "import",
       "source_file": "lib/data.ts",
       "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "lib_data",
+      "target": "lib_supabase_server",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "lib/data.ts",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "lib_data",
+      "target": "lib_types",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "lib/data.ts",
+      "source_location": "L5",
       "type_only": true,
       "weight": 1.0
     },
@@ -10962,6 +11250,83 @@
       "weight": 1.0
     },
     {
+      "source": "app_components_cityhero",
+      "target": "app_components_cityhero_bebas",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "app/components/CityHero.tsx",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_cityhero",
+      "target": "app_components_cityhero_photourl",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "app/components/CityHero.tsx",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_cityhero",
+      "target": "app_components_cityhero_citystat",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "app/components/CityHero.tsx",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_cityhero",
+      "target": "app_components_cityhero_topcities",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "app/components/CityHero.tsx",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_cityhero",
+      "target": "app_components_cityhero_labels",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "app/components/CityHero.tsx",
+      "source_location": "L30",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_cityhero",
+      "target": "app_components_cityhero_cityhero",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "app/components/CityHero.tsx",
+      "source_location": "L32",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_cityhero",
+      "target": "app_components_cityhero_fact",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "app/components/CityHero.tsx",
+      "source_location": "L95",
+      "weight": 1.0
+    },
+    {
       "source": "app_components_footer",
       "target": "app_components_footer_footer",
       "relation": "contains",
@@ -11431,7 +11796,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "app/page.tsx",
-      "source_location": "L8",
+      "source_location": "L9",
       "weight": 1.0
     },
     {
@@ -11843,13 +12208,24 @@
     },
     {
       "source": "lib_data",
+      "target": "lib_data_getpost",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/data.ts",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "lib_data",
       "target": "lib_data_getcomments",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "lib/data.ts",
-      "source_location": "L11",
+      "source_location": "L20",
       "weight": 1.0
     },
     {
@@ -11860,7 +12236,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "lib/data.ts",
-      "source_location": "L22",
+      "source_location": "L32",
       "weight": 1.0
     },
     {
@@ -11871,7 +12247,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "lib/data.ts",
-      "source_location": "L33",
+      "source_location": "L47",
       "weight": 1.0
     },
     {
@@ -11882,18 +12258,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "lib/data.ts",
-      "source_location": "L46",
-      "weight": 1.0
-    },
-    {
-      "source": "lib_data",
-      "target": "lib_data_getpost",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "lib/data.ts",
-      "source_location": "L5",
+      "source_location": "L60",
       "weight": 1.0
     },
     {
@@ -11904,7 +12269,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "lib/data.ts",
-      "source_location": "L59",
+      "source_location": "L73",
       "weight": 1.0
     },
     {
@@ -11915,7 +12280,18 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "lib/data.ts",
-      "source_location": "L74",
+      "source_location": "L88",
+      "weight": 1.0
+    },
+    {
+      "source": "lib_data",
+      "target": "lib_data_publicclient",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/data.ts",
+      "source_location": "L9",
       "weight": 1.0
     },
     {
@@ -12140,24 +12516,24 @@
     },
     {
       "source": "lib_supabase_admin",
-      "target": "lib_supabase_admin_supabaseadmin",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "lib/supabase/admin.ts",
-      "source_location": "L4",
-      "weight": 1.0
-    },
-    {
-      "source": "lib_supabase_admin",
       "target": "lib_supabase_admin_photourl",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "lib/supabase/admin.ts",
-      "source_location": "L9",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "lib_supabase_admin",
+      "target": "lib_supabase_admin_supabaseadmin",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/supabase/admin.ts",
+      "source_location": "L5",
       "weight": 1.0
     },
     {
@@ -12168,7 +12544,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "lib/supabase/browser.ts",
-      "source_location": "L3",
+      "source_location": "L4",
       "weight": 1.0
     },
     {
@@ -12179,7 +12555,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "lib/supabase/server.ts",
-      "source_location": "L24",
+      "source_location": "L25",
       "weight": 1.0
     },
     {
@@ -12190,7 +12566,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "lib/supabase/server.ts",
-      "source_location": "L4",
+      "source_location": "L5",
       "weight": 1.0
     },
     {
@@ -12619,7 +12995,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "proxy.ts",
-      "source_location": "L30",
+      "source_location": "L31",
       "weight": 1.0
     },
     {
@@ -12630,7 +13006,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "proxy.ts",
-      "source_location": "L5",
+      "source_location": "L6",
       "weight": 1.0
     },
     {
@@ -12977,7 +13353,7 @@
     },
     {
       "source": "app_p_slug_sharebutton_sharebutton_native",
-      "target": "lib_supabase_admin_photourl",
+      "target": "app_components_cityhero_photourl",
       "relation": "indirect_call",
       "_origin": "ast",
       "confidence": "INFERRED",
@@ -13037,5 +13413,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "e514cfa06c3ded279b05cdd95a39696dbb45ff1c"
+  "built_at_commit": "417bc9c68d99fc93f2b8924cc7b642ae4b0f2cf2"
 }

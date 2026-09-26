@@ -60,9 +60,9 @@
     "semantic_hash": ""
   },
   "app/layout.tsx": {
-    "mtime": 1790344413.3697395,
-    "seen": 1790344909.1842794,
-    "ast_hash": "bc7ff0d57c46bea815b80490a3eaaa5f",
+    "mtime": 1790375551.4379828,
+    "seen": 1790399550.2154489,
+    "ast_hash": "550e87d4616d97e68fdbc803689fd7d9",
     "semantic_hash": ""
   },
   "app/login/LoginForm.tsx": {
@@ -108,9 +108,9 @@
     "semantic_hash": ""
   },
   "app/page.tsx": {
-    "mtime": 1790346418.6763356,
-    "seen": 1790346442.7302797,
-    "ast_hash": "2af6767763a9d956130fe41bcb58ce10",
+    "mtime": 1790399523.9004476,
+    "seen": 1790399550.215719,
+    "ast_hash": "a533d8cbdd6fe74ceb57771f977972e4",
     "semantic_hash": ""
   },
   "app/pricing/page.tsx": {
@@ -156,9 +156,9 @@
     "semantic_hash": ""
   },
   "lib/data.ts": {
-    "mtime": 1790344849.5937655,
-    "seen": 1790344909.1847644,
-    "ast_hash": "4d3e93ff9a26f1a5325904e72633d1ca",
+    "mtime": 1790375835.3499997,
+    "seen": 1790399550.2160108,
+    "ast_hash": "d793cd5e231cdb821a7fbd94129f24ba",
     "semantic_hash": ""
   },
   "lib/geo.ts": {
@@ -192,21 +192,21 @@
     "semantic_hash": ""
   },
   "lib/supabase/admin.ts": {
-    "mtime": 1790250942.947677,
-    "seen": 1790250970.867507,
-    "ast_hash": "bb80afc5777d755d20cb2f01cd7580a7",
+    "mtime": 1790379815.7406578,
+    "seen": 1790399550.2161303,
+    "ast_hash": "a081dc814b5e42d08723c805bd124ecd",
     "semantic_hash": ""
   },
   "lib/supabase/browser.ts": {
-    "mtime": 1789842526.5246344,
-    "seen": 1789842594.351857,
-    "ast_hash": "b4807e89a6d9352a0e8c3b6627bcc782",
+    "mtime": 1790379807.9686575,
+    "seen": 1790399550.2161312,
+    "ast_hash": "8c632939534379241981b9bdbf74764d",
     "semantic_hash": ""
   },
   "lib/supabase/server.ts": {
-    "mtime": 1789842526.5246546,
-    "seen": 1789842594.3518577,
-    "ast_hash": "2858747df2c02bc380a49a448f5338c7",
+    "mtime": 1790379811.1046576,
+    "seen": 1790399550.2161322,
+    "ast_hash": "2a9a78b201bc5599c861b2c0f019e36d",
     "semantic_hash": ""
   },
   "lib/translate.ts": {
@@ -222,15 +222,15 @@
     "semantic_hash": ""
   },
   "messages/en.json": {
-    "mtime": 1790363224.6750464,
-    "seen": 1790363243.6071963,
-    "ast_hash": "ee696420f2ee0d22fe6822fd83e09d3d",
+    "mtime": 1790399417.4444413,
+    "seen": 1790399550.216179,
+    "ast_hash": "e5c6faa7428f7fd6ecd29bb44eb72e57",
     "semantic_hash": ""
   },
   "messages/ko.json": {
-    "mtime": 1790363226.6710465,
-    "seen": 1790363243.607198,
-    "ast_hash": "69e6781b42fdcae945834cf0490d80d0",
+    "mtime": 1790399423.0604415,
+    "seen": 1790399550.2161806,
+    "ast_hash": "34b5ad4c2709664b76cb14d8c3b06562",
     "semantic_hash": ""
   },
   "next.config.ts": {
@@ -252,9 +252,9 @@
     "semantic_hash": ""
   },
   "proxy.ts": {
-    "mtime": 1789842526.5244853,
-    "seen": 1789842594.3518639,
-    "ast_hash": "48bbd1666c7699c7fb282921d68ceb71",
+    "mtime": 1790379819.5846581,
+    "seen": 1790399550.2162545,
+    "ast_hash": "f031496e664c0a8a8638ca8fc17754ee",
     "semantic_hash": ""
   },
   "scripts/db-test.sh": {
@@ -390,9 +390,15 @@
     "semantic_hash": ""
   },
   "app/p/[slug]/ShareButton.tsx": {
-    "mtime": 1790363218.7310462,
-    "seen": 1790363243.6066182,
-    "ast_hash": "688d70d8efa9788de743deb409560f45",
+    "mtime": 1790363340.9910533,
+    "seen": 1790399550.2156339,
+    "ast_hash": "6ad72e86baf48177a3714ee32c1e4de8",
+    "semantic_hash": ""
+  },
+  "app/components/CityHero.tsx": {
+    "mtime": 1790399519.8844473,
+    "seen": 1790399550.2152889,
+    "ast_hash": "ba3ab7e2df07e688b022e7263d1cba98",
     "semantic_hash": ""
   }
 }
