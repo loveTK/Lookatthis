@@ -41,7 +41,7 @@ export function CityHero({ posts, labels }: { posts: FeedRow[]; labels: Labels }
   const many = cities.length > 1;
 
   return (
-    <section className="relative h-dvh min-h-[600px] w-full overflow-hidden bg-bg">
+    <section className="relative h-dvh min-h-[600px] w-full overflow-hidden bg-bg [text-shadow:0_1px_2px_rgba(0,0,0,.9),0_2px_14px_rgba(0,0,0,.7)]">
       {/* 배경 사진 */}
       <div key={`${city.slug}-bg`} className="absolute inset-0 animate-[hero-bg-in_0.8s_ease-out]">
         <Image src={photoUrl(city.top.photo_path)} alt="" fill priority sizes="100vw" className="scale-[1.02] object-cover" />
@@ -99,7 +99,12 @@ export function CityHero({ posts, labels }: { posts: FeedRow[]; labels: Labels }
           <Fact label={labels.posts} value={<><b className="text-accent">{city.count}</b> {labels.postsTail}</>} />
           <Fact
             label={labels.topPost}
-            value={<Link href={postPath(city.top.id, city.top.title)} className="hover:underline">{city.top.title} <span className="text-white/60">▲{city.top.votes}</span></Link>}
+            value={
+              <Link href={postPath(city.top.id, city.top.title)} className="block hover:underline">
+                <span className="font-semibold">{city.top.title}</span> <span className="text-white/60">▲{city.top.votes}</span>
+                {city.top.body && <span className="mt-0.5 line-clamp-2 block text-white/75">{city.top.body}</span>}
+              </Link>
+            }
           />
           <Fact label={labels.value} value={city.top.value_usd != null ? <b className="text-accent">{money(city.top.value_usd)}</b> : <span className="text-white/60">{labels.pending}</span>} />
         </dl>
@@ -112,7 +117,7 @@ function Fact({ label, value }: { label: string; value: React.ReactNode }) {
   return (
     <div className="grid grid-cols-[92px_1fr] gap-[18px] border-b border-white/50 py-1.5 last:border-0 sm:grid-cols-[138px_1fr] sm:py-2">
       <dt className="font-bold">{label}:</dt>
-      <dd className="m-0">{value}</dd>
+      <dd className="m-0 min-w-0">{value}</dd>
     </div>
   );
 }

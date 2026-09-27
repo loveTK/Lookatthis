@@ -23,7 +23,7 @@ export async function Header() {
           <span className="text-ink">Look At This</span>
         </Link>
         <nav className="flex items-center gap-3 text-sm font-semibold text-dim">
-          <Link href="/upload" className="btn-accent py-1.5!">{tr("nav.upload")}</Link>
+          <Link href="/upload" className="btn-accent py-2! text-[15px] shadow-[0_0_0_2px_rgba(0,0,0,.35),0_4px_16px_rgba(67,255,161,.35)]">{tr("nav.upload")}</Link>
           <Link href="/pricing" className="hidden sm:inline hover:text-ink">{tr("nav.pricing")}</Link>
           <form action={setLang}>
             <input type="hidden" name="lang" value={lang === "ko" ? "en" : "ko"} />

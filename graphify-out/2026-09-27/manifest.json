@@ -42,9 +42,9 @@
     "semantic_hash": ""
   },
   "app/components/Header.tsx": {
-    "mtime": 1790494991.06109,
-    "seen": 1790495056.6029382,
-    "ast_hash": "3c5aff67812c7ebe56f33fc0754ca81b",
+    "mtime": 1790342977.493654,
+    "seen": 1790343233.4501474,
+    "ast_hash": "b30cec8deef6c210e25aa4154cec4c41",
     "semantic_hash": ""
   },
   "app/components/MapView.tsx": {
@@ -396,9 +396,9 @@
     "semantic_hash": ""
   },
   "app/components/CityHero.tsx": {
-    "mtime": 1790494988.6650898,
-    "seen": 1790495056.6028864,
-    "ast_hash": "624a9922398bccc0d85ae7ecde6c651d",
+    "mtime": 1790405622.4922647,
+    "seen": 1790405649.979041,
+    "ast_hash": "06213b84661ee261ba6a21dccc418377",
     "semantic_hash": ""
   }
 }
