@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Geist } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
@@ -33,6 +34,13 @@ export default async function RootLayout({ children }: { children: React.ReactNo
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-PSD2L7JJJN" strategy="afterInteractive" />
+        <Script id="ga4" strategy="afterInteractive">{`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-PSD2L7JJJN');
+        `}</Script>
       </body>
     </html>
   );
